@@ -51,3 +51,17 @@
     }
   }
 }
+
+@media (min-width: $tablet) {
+  .promo__text {
+    font-size: 28px;
+  }
+
+  .promo {
+    background-image: url("../img/promo-mobile-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/promo-mobile-tablet@2x.jpg");
+    }
+  }
+}

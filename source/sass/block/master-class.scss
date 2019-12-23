@@ -1,6 +1,8 @@
 .master-class {
   position: relative;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   padding: 75px 20px 20px 20px;
   text-decoration: none;
   background-color: $black-clear-color;
@@ -93,5 +95,14 @@
 @media (min-width: $horizontal-mobile) {
   .master-class {
     padding-top: 199px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .master-classes__watch-more {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 268px;
   }
 }

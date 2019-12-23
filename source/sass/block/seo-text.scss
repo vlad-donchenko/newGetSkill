@@ -60,3 +60,10 @@
   margin-top: 62px;
   margin-bottom: 58px;
 }
+
+@media (min-width: $tablet) {
+  .seo-text--main-page {
+    margin-top: 94px;
+    margin-bottom: 100px;
+  }
+}

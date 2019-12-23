@@ -3,3 +3,9 @@
   font-weight: 500;
   line-height: normal;
 }
+
+@media (min-width: $tablet) {
+  .h1 {
+    font-size: 50px;
+  }
+}
