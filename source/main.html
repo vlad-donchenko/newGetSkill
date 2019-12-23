@@ -1136,7 +1136,10 @@
       <div class="proposition__inner container">
         <div class="proposition__img">
           <picture>
-            <img src="img/proposition-mobile-@1x.jpg" width="257" height="171" alt="Вы преподавательили представляетеучебное заведение?">
+            <source type="image/webp" media="(min-width: 1366px)" srcset="img/proposition-desktop-@1x.webp 1x, img/proposition-desktop-@2x.webp 2x">
+            <source type="image/webp" srcset="img/proposition-mobile-@1x.webp 1x, img/proposition-mobile-@2x.webp 2x">
+            <source media="(min-width: 1366px)" srcset="img/proposition-desktop-@1x.jpg 1x, img/proposition-desktop-@2x.jpg 2x">
+            <img src="img/proposition-mobile-@1x.jpg" srcset="img/proposition-mobile-@2x.jpg 2x" width="257" height="171" alt="Вы преподавательили представляетеучебное заведение?">
           </picture>
         </div>
         <div class="proposition__info-block">
