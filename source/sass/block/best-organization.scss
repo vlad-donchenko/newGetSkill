@@ -1,0 +1,30 @@
+.best-organization {
+  margin-top: 60px;
+}
+
+.best-organization__title {
+  margin-bottom: 29px;
+  text-align: center;
+}
+
+.best-organization__list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.best-organization__item {
+  margin-top: 30px;
+
+  &:nth-child(1) {
+    margin-top: 0;
+  }
+}
+
+.best-organization__watch-more {
+  margin-top: 30px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 11px;
+}
