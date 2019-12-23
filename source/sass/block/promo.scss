@@ -58,10 +58,25 @@
   }
 
   .promo {
+    margin-top: 0;
     background-image: url("../img/promo-mobile-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/promo-mobile-tablet@2x.jpg");
     }
+  }
+}
+
+@media (min-width: $tablet-large) {
+  .promo {
+    padding-top: 202px;
+    padding-bottom: 201px;
+  }
+
+  .promo__text {
+    margin-top: 68px;
+    max-width: 792px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

@@ -67,3 +67,10 @@
     margin-bottom: 100px;
   }
 }
+
+@media (min-width: $tablet-large) {
+  .seo-text--main-page {
+    margin-top: 83px;
+    margin-bottom: 99px;
+  }
+}

@@ -67,3 +67,19 @@
     padding-bottom: 28px;
   }
 }
+
+@media (min-width: $tablet) {
+  .article__name {
+    padding-right: 0;
+  }
+}
+
+@media (min-width: $tablet-large) {
+  .article__time {
+    margin-top: 27px;
+  }
+
+  .article__info-block {
+    padding-bottom: 18px;
+  }
+}

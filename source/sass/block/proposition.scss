@@ -90,3 +90,42 @@
     max-width: 268px;
   }
 }
+
+@media (min-width: $tablet-large) {
+  .proposition {
+    margin-top: 62px;
+  }
+
+  .proposition__img {
+    max-width: 379px;
+    padding-right: 30px;
+
+    &::after {
+      bottom: -32px;
+    }
+  }
+
+  .proposition__info-block {
+    padding-top: 22px;
+    padding-left: 30px;
+    max-width: 100%;
+    width: calc(100% - 379px);
+  }
+
+  .proposition__text,
+  .proposition__title {
+    text-align: left;
+  }
+
+  .proposition__text {
+    margin-top: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 411px;
+    width: 100%;
+  }
+
+  .proposition__show-more {
+    margin-left: 0;
+  }
+}
