@@ -7,3 +7,89 @@
 .another-curse__inner {
   margin-top: 70px;
 }
+
+@media (min-width: $laptop) {
+  .another-curse__inner .catalog__list--vertical .catalog__item {
+    margin-top: 0;
+  }
+
+  .another-curse__inner .catalog__item {
+    border-top: 1px solid #d8d8d8;
+
+    &:last-child {
+      border-bottom: 1px solid #d8d8d8;
+    }
+  }
+
+  .another-curse__inner .catalog__list--vertical .product,
+  .another-curse__inner .catalog__list--vertical .product-school {
+    border: 0;
+    position: relative;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    flex-grow: 1;
+
+    &:hover {
+      box-shadow: 0 0 0 0;
+    }
+  }
+
+  .another-curse__inner .catalog__list--vertical .product__picture,
+  .another-curse__inner .catalog__list--vertical .product-school__picture {
+    max-width: 37%;
+    width: 100%;
+  }
+
+  .another-curse__inner .catalog__list--vertical .product__info-block,
+  .another-curse__inner .catalog__list--vertical .product-school__info-block {
+    max-width: 63%;
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 10px;
+  }
+
+  .another-curse__inner .catalog__list--vertical .product__rating,
+  .another-curse__inner .catalog__list--vertical .product-school__rating {
+    position: static;
+    margin-top: 10px;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .another-curse__inner .catalog__list--vertical .product__features,
+  .another-curse__inner {
+    display: none;
+  }
+
+  .another-curse__inner .catalog__list--vertical .product__price,
+  .another-curse__inner .catalog__list--vertical .product-school__price {
+    position: absolute;
+    left: 0;
+    top: inherit;
+    bottom: 25px;
+    margin-top: 0;
+  }
+
+  .another-curse__inner .catalog__list--vertical .product__actions,
+  .another-curse__inner .catalog__list--vertical .product-school__actions {
+    position: initial;
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+
+  .another-curse__inner .catalog__list--vertical .product__buy svg,
+  .another-curse__inner .catalog__list--vertical .product-school__buy svg {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 14px;
+  }
+
+  .another-curse__inner .catalog__list--vertical .product__buy,
+  .another-curse__inner .catalog__list--vertical .product-school__buy {
+    padding: 7px 16px;
+    min-width: 35px;
+    font-size: 0;
+  }
+}
