@@ -1,0 +1,81 @@
+.master-classes {
+  margin-top: 63px;
+}
+
+.master-classes__list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.master-classes__item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 28px;
+
+  &:nth-child(1) {
+    margin-top: 0;
+  }
+}
+
+.master-classes__title {
+  margin-bottom: 27px;
+  text-align: center;
+}
+
+.master-classes__watch-more {
+  width: 100%;
+  margin-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 11px;
+}
+
+@media (min-width: $tablet) {
+  .master-classes__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+
+  .master-classes__item {
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    &:nth-child(2) {
+      margin-top: 0;
+    }
+  }
+
+  .master-classes__title br {
+    display: none;
+  }
+
+  .master-classes__watch-more {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 268px;
+  }
+}
+
+@media (min-width: $tablet-large) {
+  .master-classes__title {
+    margin-bottom: 56px;
+  }
+}
+
+@media (min-width: $laptop) {
+  .master-classes {
+    margin-top: 104px;
+  }
+
+  .master-classes__item {
+    max-width: 33.33%;
+
+    &:nth-child(3) {
+      margin-top: 0;
+    }
+  }
+}

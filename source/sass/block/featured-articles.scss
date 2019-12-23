@@ -1,0 +1,84 @@
+.featured-articles__list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.featured-articles {
+  margin-top: 61px;
+}
+
+.featured-articles__title {
+  margin-bottom: 29px;
+  text-align: center;
+}
+
+.featured-articles__item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.featured-articles__show-more {
+  margin-top: 32px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 11px;
+  width: 100%;
+}
+
+@media (min-width: $iphone-breakpoint) {
+  .featured-articles__show-more {
+    margin-top: 29px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .featured-articles__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+
+  .featured-articles__item {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 50%;
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-top: 0;
+    }
+  }
+
+  .featured-articles__show-more {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 268px;
+  }
+}
+
+@media (min-width: $tablet-large) {
+  .featured-articles {
+    margin-top: 112px;
+  }
+
+  .featured-articles__title {
+    margin-bottom: 59px;
+  }
+}
+
+@media (min-width: $laptop) {
+  .featured-articles {
+    margin-top: 101px;
+  }
+
+  .featured-articles__item {
+    width: 33.33%;
+
+    &:nth-child(3) {
+      margin-top: 0;
+    }
+  }
+}
