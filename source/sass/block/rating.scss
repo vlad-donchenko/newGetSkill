@@ -1,0 +1,12 @@
+.rating {
+  display: flex;
+}
+
+.rating__star {
+  line-height: 0;
+  color: $gray-color;
+}
+
+.rating__star--active {
+  color: $violet-dark-color;
+}

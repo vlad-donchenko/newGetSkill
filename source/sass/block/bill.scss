@@ -1,0 +1,158 @@
+.bill__title {
+  padding-top: 3px;
+  padding-left: 20px;
+  margin-top: 0;
+  margin-bottom: 29px;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 16px;
+  color: #0a0a0a;
+}
+
+.bill__list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.bill__content {
+  padding-top: 32px;
+  padding-bottom: 19px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.bill__item {
+  border-top: 1px solid $gray-color;
+
+  &:last-child {
+    border-bottom: 1px solid $gray-color;
+  }
+}
+
+.bill__info {
+  margin-top: 12px;
+
+  &:nth-child(1) {
+    margin-top: 0;
+  }
+}
+
+.bill__info--success {
+  color: $green-color;
+}
+
+.bill__content--pending,
+.bill__info--pending {
+  color: $red-color;
+}
+
+.bill__form {
+  padding-top: 9px;
+  padding-bottom: 10px;
+}
+
+.bill__form .button {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: $tablet) {
+  .bill__content {
+    display: flex;
+    align-items: center;
+    padding: 32px 0;
+  }
+
+  .bill__info {
+    max-width: 135px;
+    width: 100%;
+    margin-top: 0;
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: $tablet-large) {
+  .bill__info {
+    text-align: left;
+  }
+
+  .bill__content {
+    padding: 32px 20px 30px 20px;
+  }
+
+  .bill__content--pending {
+    padding-top: 19px;
+    padding-bottom: 18px;
+  }
+
+  .bill__info--id {
+    max-width: 100px;
+    margin-right: 104px;
+  }
+
+  .bill__info--sum {
+    max-width: 100px;
+    margin-right: 91px;
+  }
+
+  .bill__info--status {
+    max-width: 110px;
+    margin-right: 109px;
+  }
+
+  .bill__info--pay {
+    max-width: 112px;
+    margin-left: auto;
+  }
+
+  .bill__form {
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .bill__info--data {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: $laptop) {
+  .bill__info--id {
+    margin-right: 74px;
+  }
+
+  .bill__info--sum {
+    margin-right: 61px;
+  }
+
+  .bill__info--status {
+    margin-right: 89px;
+  }
+
+  .bill__content {
+    &:hover {
+      box-shadow: 0 0 5px rgba($black-color, 0.2);
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .bill__info--id {
+    margin-right: 121px;
+  }
+
+  .bill__info--sum {
+    margin-right: 111px;
+  }
+
+  .bill__info--status {
+    margin-right: 113px;
+  }
+}

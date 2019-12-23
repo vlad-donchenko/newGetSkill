@@ -1,0 +1,134 @@
+.categories__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.categories__item {
+  width: 100%;
+  margin-top: 20px;
+
+  &:nth-child(1) {
+    margin-top: 0;
+  }
+}
+
+.categories__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  border-right: 1px solid $gray-color;
+}
+
+.categories__link {
+  display: flex;
+  min-height: 45px;
+  color: $black-color;
+  font-size: 16px;
+  text-decoration: none;
+  border: 1px solid $gray-color;
+  border-radius: 3px;
+
+  &:focus {
+    outline: none;
+    border-color: $violet-dark-color;
+    box-shadow: 0 0 0 0.2rem rgba($violet-dark-color, 0.25);
+  }
+}
+
+.categories__link:focus .categories__icon {
+  border-right-color: $violet-dark-color;
+}
+
+.categories__link:focus .categories__count {
+  border-left-color: $violet-dark-color;
+}
+
+.categories__count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3px;
+  min-width: 44px;
+  border-left: 1px solid $gray-color;
+}
+
+.categories__title {
+  display: block;
+  flex-grow: 1;
+  padding: 14px 10px 10px 10px;
+}
+
+.categories {
+  margin-top: 29px;
+}
+
+@media (min-width: $tablet) {
+  .categories__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .categories__item {
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    &:nth-child(2) {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (min-width: $tablet-large) {
+  .categories__item {
+    max-width: 33.33%;
+
+    &:nth-child(3) {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .categories__item {
+    max-width: 25%;
+
+    &:nth-child(4) {
+      margin-top: 0;
+    }
+  }
+
+  .categories__link {
+    &:hover {
+      border-color: $violet-dark-color;
+
+      .categories__icon {
+        border-right-color: $violet-dark-color;
+      }
+
+      .categories__count {
+        border-left-color: $violet-dark-color;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .categories__item {
+    width: 25%;
+    margin-top: 20px;
+
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4) {
+      margin-top: 0;
+    }
+  }
+}

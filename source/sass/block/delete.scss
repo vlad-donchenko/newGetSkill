@@ -1,0 +1,66 @@
+.delete {
+  position: relative;
+  padding: 0 9px;
+  background-color: transparent;
+  border: none;
+  z-index: 1;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    top: -7px;
+    left: 0;
+    display: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  &:focus {
+    outline: none;
+
+    &::after {
+      display: block;
+      background-color: #f1f3f4;
+    }
+
+    svg {
+      fill: $black-color;
+    }
+  }
+}
+
+.delete svg {
+  fill: $gray-lite-color;
+}
+
+@media (min-width: $laptop) {
+  .delete {
+    &:hover {
+      outline: none;
+
+      &::after {
+        display: block;
+        background-color: #f1f3f4;
+      }
+
+      svg {
+        fill: $black-color;
+      }
+    }
+
+    &:focus {
+      outline: none;
+
+      &::after {
+        display: block;
+        background-color: #edeeef;
+      }
+
+      svg {
+        fill: $black-color;
+      }
+    }
+  }
+}

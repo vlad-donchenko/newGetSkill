@@ -1,0 +1,45 @@
+.page-catalog {
+  margin-top: 30px;
+  padding-bottom: 59px;
+}
+
+@media (min-width: $tablet) {
+  .page-catalog {
+    margin-top: 49px;
+    padding-bottom: 89px;
+  }
+}
+
+@media (min-width: $laptop) {
+  .page-catalog__inner {
+    display: flex;
+  }
+
+  .page-catalog__inner .filter {
+    max-width: 270px;
+  }
+
+  .page-catalog__inner .filter__tags {
+    display: none;
+  }
+
+  .page-catalog__inner .catalog {
+    max-width: 870px;
+    margin-left: auto;
+  }
+
+  .page-catalog {
+    margin-top: 60px;
+    padding-bottom: 150px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-catalog__inner .catalog {
+    max-width: 1005px;
+  }
+
+  .page-catalog__inner .filter {
+    max-width: 315px;
+  }
+}

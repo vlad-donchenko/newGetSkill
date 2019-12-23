@@ -1,0 +1,114 @@
+.sorting__dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  display: none;
+  width: 250px;
+  margin-top: 10px;
+  margin: 0;
+  padding-left: 0;
+  background-color: $white-color;
+  list-style: none;
+  box-shadow: 0 3px 6px rgba($black-color, 0.16);
+  z-index: 2;
+}
+
+.sorting {
+  position: relative;
+}
+
+.sorting__toggle {
+  position: relative;
+  padding-left: 27px;
+  padding-right: 23px;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.sorting__arrow {
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+
+.sorting__toggle .sorting__icon {
+  position: absolute;
+  left: 0;
+  top: 1px;
+}
+
+.sorting__selected {
+  max-width: 103px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.sorting--open .sorting__dropdown {
+  display: block;
+  right: 0;
+  top: 100%;
+  margin-top: 10px;
+  z-index: 2;
+}
+
+.sorting__option {
+  position: relative;
+  width: 100%;
+  padding: 12px 31px 11px 46px;
+  font-size: 16px;
+  text-align: left;
+  background-color: $white-color;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background-color: #f5f5f5;
+  }
+  &:focus {
+    outline: none;
+    background-color: $gray-standard-color;
+  }
+}
+
+.sorting__option svg {
+  position: absolute;
+  left: 20px;
+  top: 13px;
+}
+
+@media (max-width: 767px) {
+  .sorting__toggle {
+    padding: 8px 17px 9px 17px;
+    font-weight: 500;
+    color: $violet-dark-color;
+    background-color: $violet-lite-color;
+    border-radius: 3px;
+
+    &:focus {
+      box-shadow: 0 0 0 0.2rem rgba($violet-dark-color, 0.25);
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .sorting__toggle:hover .sorting__arrow {
+    opacity: 0.6;
+  }
+
+  .sorting__toggle:hover .sorting__selected {
+    opacity: 0.6;
+  }
+
+  .sorting__toggle:focus .sorting__arrow {
+    opacity: 0.3;
+  }
+
+  .sorting__toggle:focus .sorting__selected {
+    opacity: 0.3;
+  }
+}

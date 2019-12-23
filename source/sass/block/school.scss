@@ -1,0 +1,370 @@
+.school__img {
+  display: block;
+  text-align: center;
+}
+
+.school__name {
+  margin-top: 22px;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.school__name a {
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: $black-color;
+
+  &:focus {
+    color: rgba($black-color, 0.3);
+  }
+}
+
+// .school {
+// padding-top: 56px;
+// }
+
+.school__rating {
+  display: flex;
+  align-items: center;
+  margin-top: 21px;
+}
+.school__rating.in-reviews {
+  margin-top: 0;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.school__rating.school--filter {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-left: 41px;
+}
+
+.school__reviews-count {
+  margin: 0 0 0 10px;
+  font-size: 16px;
+  color: $gray-color;
+
+  &::before {
+    content: "(";
+  }
+
+  &::after {
+    content: ")";
+  }
+}
+
+.school__rating-stars {
+  max-width: 93px;
+}
+
+.school__rating-status {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.school__list-contacts {
+  margin: 25px 0 0 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.school__list-contacts a {
+  font-size: 16px;
+  color: $violet-dark-color;
+  text-decoration: none;
+  border-bottom: 1px dashed $violet-dark-color;
+}
+
+.school__list-contacts li {
+  position: relative;
+  padding-left: 32px;
+  margin-top: 20px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.school__list-contacts svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.button__all-numbers,
+.button__show-about-curse {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $violet-lite-color;
+  // margin-top: 30px;
+  cursor: pointer;
+  z-index: 99;
+  color: $violet-dark-color;
+  font-size: 16px;
+  font-weight: 600;
+  i {
+    font-weight: 400;
+    font-size: 12px;
+    font-style: normal;
+  }
+}
+.button__show-about-curse {
+  max-width: calc(100% - 40px);
+  margin-bottom: 8px;
+}
+
+.school__what-numbers {
+  min-width: calc(100% - 40px);
+  .popup__all-numbers {
+    display: none;
+  }
+}
+.popup__all-numbers.tabs__item--open {
+  display: block;
+  height: auto;
+  padding: 20px 30px 8px;
+  // > span {
+  //   display: none;
+  // }
+  position: fixed;
+  left: 0;
+  width: 100%;
+  bottom: 150px;
+  background-color: #fff;
+  box-shadow: rgba(10, 10, 10, 0.1) 0px 1px 10px;
+
+  p {
+    margin: 0 0 10px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  ul li {
+    padding-left: 0;
+  }
+  .all-numbers {
+    display: block;
+    margin-bottom: 18.5px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $violet-dark-color;
+    font-size: 16px;
+    :active,
+    :focus {
+      color: inherit;
+      outline: none;
+    }
+  }
+}
+
+.school__about-this-curse {
+  display: none;
+}
+
+.school__about-this-curse.popup--open {
+  position: fixed;
+  display: block;
+  min-width: 100%;
+  left: 0;
+  bottom: 150px;
+  padding: 20px;
+  background-color: #fff;
+  z-index: 9;
+  box-shadow: rgba(10, 10, 10, 0.1) 0px 1px 10px;
+}
+
+.popup__button-close {
+  content: " ";
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 25px;
+  height: 25px;
+  &::after,
+  &::before {
+    content: " ";
+    position: absolute;
+    right: 0;
+    top: 12px;
+    width: 25px;
+    height: 1px;
+    background-color: #a8a8a8;
+  }
+  &::before {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  &::after {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
+@media (min-width: 320px) {
+  .school__fixed-block {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 10px 0;
+    background-color: #fff;
+    box-shadow: rgba(10, 10, 10, 0.1) 0px -3px 10px;
+    z-index: 9;
+  }
+}
+
+@media (min-width: $horizontal-mobile) {
+  .school__fixed-block {
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px 20px;
+  }
+  .button__show-about-curse {
+    max-width: calc(50% - 40px);
+    margin-bottom: 0;
+  }
+  .school__what-numbers {
+    min-width: calc(50% - 40px);
+  }
+  .popup__all-numbers.tabs__item--open {
+    left: 20px;
+    width: calc(100% - 40px);
+  }
+  .school__about-this-curse.popup--open {
+    min-width: auto;
+    width: calc(100% - 40px);
+    left: auto;
+  }
+}
+
+@media (max-height: $horizontal-mobile) {
+  .popup__all-numbers.tabs__item--open,
+  .school__about-this-curse.popup--open {
+    top: 20px;
+    bottom: inherit;
+    max-height: calc(100% - 100px);
+    overflow-y: scroll;
+  }
+}
+
+@media (min-width: 580px) {
+  .school__what-numbers {
+    left: auto;
+    right: auto;
+    max-width: 535px;
+  }
+  .school__about-this-curse.popup--open {
+    min-width: auto;
+    width: 100%;
+    max-width: calc(100% - 200px);
+    left: 100px;
+  }
+  .popup__all-numbers.tabs__item--open {
+    min-width: auto;
+    width: 100%;
+    max-width: calc(100% - 200px);
+    left: 100px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .school__what-numbers {
+    position: initial;
+    max-width: 100%;
+    z-index: 1;
+  }
+}
+
+@media (min-width: $tablet-large) {
+  .button__all-numbers {
+    border-radius: 3px;
+    max-width: 314px;
+  }
+  .school__about-this-curse {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .button__show-about-curse {
+    display: none;
+  }
+  .school__logo {
+    max-width: 314px;
+    width: 100%;
+    margin-right: 30px;
+    img {
+      max-width: 315px;
+      width: 100%;
+    }
+  }
+  .school__fixed-block {
+    position: relative;
+    padding: 0;
+    background-color: #fff;
+    box-shadow: 0 0 0 0;
+    z-index: 9;
+  }
+  .popup__button-close {
+    display: none;
+  }
+  .popup__all-numbers.tabs__item--open {
+    position: relative;
+    max-width: 314px;
+    left: inherit;
+    bottom: inherit;
+    background-color: $violet-lite-color;
+    border-radius: 3px;
+    box-shadow: 0 0 0 0;
+  }
+  #shadow-two {
+    display: none !important;
+    z-index: -1;
+  }
+
+  .school {
+    padding-top: 56px;
+  }
+  .school__img {
+    text-align: left;
+  }
+}
+
+@media (min-width: $laptop) {
+  .school__about-this-curse {
+    display: block;
+  }
+  .school {
+    padding-top: 0;
+  }
+  // .school__img {
+  //   text-align: left;
+  // }
+  .school__what-numbers {
+    max-width: 100%;
+    width: 100%;
+  }
+  .school__logo {
+    max-width: 315px;
+    margin-right: 30px;
+    img {
+      max-width: 315px;
+      width: 100%;
+    }
+  }
+  .button__all-numbers {
+    width: 100%;
+    max-width: 100%;
+  }
+  .popup__all-numbers.tabs__item--open {
+    max-width: 100%;
+  }
+}

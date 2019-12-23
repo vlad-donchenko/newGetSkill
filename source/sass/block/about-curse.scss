@@ -1,0 +1,305 @@
+.about-curse {
+  padding-top: 3px;
+  margin-bottom: 60px;
+}
+
+.about-curse__price {
+  display: flex;
+  align-items: center;
+  margin-top: 34px;
+}
+
+.about-curse__price p {
+  line-height: 21px;
+}
+
+.about-curse__price-label {
+  margin: 0 9px 0 0;
+  font-size: 16px;
+}
+
+.about-curse__price__sum {
+  position: relative;
+  margin: 0;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.about-curse__price__sum .price__sum__discount {
+  display: none;
+}
+
+.price__sum__discount {
+  position: absolute;
+  color: #fe5555;
+  right: -22px;
+  top: -8px;
+  font-size: 14px;
+}
+
+.price__sum--active-discount .price__sum__discount {
+  display: inline-block;
+}
+
+.about-curse__views {
+  position: relative;
+  margin-top: 42px;
+  margin-bottom: 0;
+  padding-left: 34px;
+  font-size: 16px;
+}
+
+.about-curse__views svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.about-curse__like {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.about-curse__like p {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.about-curse__info-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.about-curse__info-item p {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.about-curse__info-value {
+  max-width: 90px;
+  width: 100%;
+  margin: 0;
+  font-weight: 500;
+}
+
+.about-curse__info-label {
+  margin: 0;
+  max-width: 135px;
+  width: 100%;
+}
+
+.about-curse__description *:first-child {
+  margin-top: 0;
+}
+
+.about-curse__description h2 {
+  margin-bottom: 29px;
+}
+
+.about-curse__description p {
+  margin: 23px 0;
+  font-size: 16px;
+}
+
+.about-curse__teachers {
+  margin-top: 32px;
+  margin-bottom: 58px;
+}
+
+.about-curse__teachers .h2 {
+  margin-bottom: 27px;
+}
+
+.about-curse__teacher-name {
+  margin-top: 33px;
+  margin-bottom: 19px;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.about-curse__teacher__img {
+  line-height: 0;
+}
+
+.about-curse__teacher-text {
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.about-curse__teacher {
+  margin-bottom: 58px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.about-curse__consultation .h2 {
+  margin-top: 0;
+  margin-bottom: 33px;
+}
+
+.about-curse__consultation-item {
+  margin-top: 32px;
+  margin-bottom: 0;
+}
+
+.about-curse__consultation-item--submit {
+  margin-top: 32px;
+}
+
+.about-curse__consultation-submit svg {
+  top: 11px;
+}
+
+.about-curse__consultation-text {
+  margin-top: 32px;
+
+  & * {
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.about-curse__consultation-text p {
+  margin: 28px 0;
+  font-size: 16px;
+}
+
+.about-curse__item {
+  margin-top: 60px;
+  padding-top: 33px;
+  border-top: 1px solid $gray-color;
+}
+.about-curse__item.curse-gallery-description {
+  margin-top: 30px;
+  border-top: 0;
+}
+.about-curse-reviews__item {
+  min-width: 100%;
+  margin-top: 30px;
+  border-top: 0;
+}
+
+.about-curse__description {
+  margin-top: 0;
+}
+
+@media (min-width: $tablet) {
+  .about-curse__info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+
+  .about-curse__info-label {
+    max-width: 205px;
+  }
+
+  .about-curse__info-item {
+    margin-top: 30px;
+    margin-bottom: 0;
+    max-width: 330px;
+    width: 100%;
+
+    &:nth-child(2n) {
+      margin-left: auto;
+    }
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (min-width: $tablet-large) {
+  .about-curse {
+    margin-top: 30px;
+    margin-bottom: 111px;
+  }
+
+  .about-curse__teacher {
+    display: flex;
+  }
+
+  .about-curse__teacher-info-block {
+    width: 100%;
+    max-width: 607px;
+  }
+
+  .about-curse__teacher__img {
+    max-width: 315px;
+    margin-right: 30px;
+  }
+
+  .about-curse__short-info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-curse__price {
+    margin-top: 0;
+    max-width: 176px;
+    width: 100%;
+    margin-left: auto;
+  }
+
+  .about-curse__views {
+    margin-top: 0;
+    margin-right: 30px;
+  }
+
+  .about-curse__like {
+    margin-top: 0;
+  }
+
+  .about-curse__name h2 {
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .about-curse__short-info-service {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 27px;
+  }
+}
+
+@media (min-width: $laptop) {
+  .about-curse__row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .about-curse__left {
+    max-width: 70.2%;
+    width: 100%;
+  }
+
+  .another-curse {
+    max-width: 26.5%;
+    width: 100%;
+  }
+  .another-curse__inner {
+    margin-top: 60px;
+  }
+}
+@media (min-width: $desktop) {
+  .about-curse__info-item:nth-child(2n) {
+    margin-left: 10%;
+  }
+}

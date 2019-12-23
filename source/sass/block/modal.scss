@@ -1,0 +1,88 @@
+#shadow, #shadow-two {
+  position: fixed;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+}
+
+#shadow-two {
+  z-index: 5;
+}
+
+.modalwin {
+  width: calc(100% - 40px);
+  background: #fff;
+  z-index: 9999;
+  display: none;
+  padding: 14px 30px;
+  border-radius: 10px;
+}
+
+.modalwin .modalwin__title {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.modalwin__description {
+  margin-bottom: 30px;
+}
+
+.modalwin .modalwin__button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.modalwin .modalwin__button .button {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  padding: 10px 0;
+  cursor: pointer;
+  svg {
+    margin-right: 5px;
+  }
+  margin-bottom: 10px;
+}
+
+.modalwin .modalwin__button .button.button--cancel {
+  background-color: transparent;
+  border: 0;
+  color: $gray-lite-color;
+  &:hover {
+    color: $gray-hover-color;
+  }
+}
+
+@media (min-width: 550px) {
+  .modalwin .modalwin__button {
+    justify-content: flex-end;
+  }
+  .modalwin .modalwin__button .button {
+    max-width: 155px;
+    &.button--cancel {
+      margin-left: 20px;
+      max-width: 90px;
+    }
+  }
+}
+@media (min-width: 580px) {
+  .modalwin {
+    max-width: 535px;
+  }
+}
+@media (min-width: $tablet) {
+  .modalwin {
+    max-width: 660px;
+  }
+}

@@ -1,0 +1,22 @@
+.view__icon {
+  display: block;
+  color: $gray-color;
+}
+
+.view__input:checked + .view__icon {
+  color: $violet-dark-color;
+}
+
+@media (min-width: $laptop) {
+  .view:hover .view__icon {
+    color: $gray-hover-color;
+  }
+
+  .view__input:checked + .view__icon {
+    color: $violet-dark-color;
+  }
+
+  .view__input:focus + .view__icon {
+    color: rgba($violet-dark-color, 0.6);
+  }
+}

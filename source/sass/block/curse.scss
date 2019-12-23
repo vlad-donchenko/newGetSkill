@@ -1,0 +1,276 @@
+.curse__header {
+  display: flex;
+  align-content: center;
+  padding-bottom: 30px;
+  border-bottom: 1px solid $gray-color;
+}
+
+.curse__header--edit {
+  border-bottom: 0;
+}
+
+.curse__list {
+  margin: 10px 0 0 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.curse__header .h2 {
+  padding-top: 5px;
+  margin-right: 40px;
+  width: calc(100% - 85px);
+}
+
+.curse__content {
+  padding: 30px 20px;
+}
+
+.curse__img {
+  display: block;
+  line-height: 0;
+  min-height: 66px;
+}
+
+.curse__img img {
+  width: 100%;
+}
+
+.curse__item {
+  border-bottom: 1px solid $gray-color;
+}
+
+.curse__link-wrap {
+  font-size: 16px;
+  margin: 0 0 10px 0;
+}
+
+.curse__link-wrap a {
+  font-size: 16px;
+  color: $black-color;
+  text-decoration: none;
+
+  &:focus {
+    color: rgba($black-color, 0.3);
+  }
+}
+
+.curse__name {
+  margin-top: 22px;
+}
+
+.curse__status-time {
+  color: $gray-lite-color;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.curse__price {
+  margin: 12px 0 12px 0;
+  font-size: 16px;
+}
+
+.curse__status {
+  margin: 0;
+  font-size: 16px;
+}
+
+.curse__status--active {
+  color: $green-color;
+}
+
+.curse__action .select-standard__toggle {
+  height: 33px;
+  padding-left: 20px;
+  padding-right: 35px;
+}
+
+.curse__action .select-standard__title {
+  line-height: 33px;
+}
+
+.curse__action {
+  margin-top: 21px;
+}
+
+.curse__status--hidden {
+  color: $gray-lite-color;
+}
+
+.curse__status--rejected {
+  display: flex;
+  align-items: flex-start;
+  color: $red-color;
+}
+
+.curse__status--rejected svg {
+  margin-left: 10px;
+  margin-top: 3px;
+}
+
+.curse__navigation {
+  margin-top: 27px;
+}
+
+.curse__navigation-right {
+  margin-top: 30px;
+}
+
+.curse__navigation-right .select-standard__toggle {
+  padding-right: 35px;
+  height: 35px;
+}
+
+.curse__navigation-right .select-standard__title {
+  line-height: 35px;
+}
+
+.curse__header.curse__header--edit {
+  position: relative;
+}
+
+.curse__teachers--edit .edit-information__name {
+  margin-bottom: 30px;
+}
+
+@media (min-width: $tablet) {
+  .curse__content {
+    display: flex;
+  }
+
+  .curse__img {
+    max-width: 118px;
+  }
+
+  .curse__name {
+    margin-top: 0;
+    margin-left: 20px;
+    max-width: 175px;
+    width: 100%;
+  }
+
+  .curse__price {
+    margin: 0 0 0 20px;
+    max-width: 68px;
+    width: 100%;
+  }
+
+  .curse__action {
+    margin-top: 0;
+    margin-left: auto;
+    max-width: 146px;
+    width: 100%;
+  }
+
+  .curse__status {
+    max-width: 100px;
+    width: 100%;
+    margin-left: 20px;
+  }
+
+  .curse__navigation {
+    display: flex;
+    margin-top: 60px;
+  }
+
+  .curse__navigation-left {
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .curse__navigation-right {
+    margin-top: 0;
+    margin-left: auto;
+    max-width: 169px;
+    width: 100%;
+  }
+
+  .curse__header .h2 {
+    max-width: 450px;
+    width: 100%;
+  }
+
+  .curse__header .button {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: $tablet-large) {
+  .curse__list {
+    margin-top: 0;
+  }
+
+  .curse__header {
+    padding-bottom: 57px;
+  }
+
+  .curse__content {
+    padding: 30px 20px 30px 20px;
+  }
+
+  .curse__name {
+    max-width: 233px;
+  }
+
+  .curse__link-wrap {
+    margin-bottom: 12px;
+  }
+
+  .curse__price {
+    margin-left: 100px;
+  }
+
+  .curse__status {
+    margin-left: 61px;
+  }
+
+  .curse__navigation-right {
+    margin-right: 82px;
+  }
+}
+
+@media (min-width: $laptop) {
+  .curse__link-wrap a {
+    &:hover {
+      color: rgba($black-color, 0.6);
+    }
+
+    &:focus {
+      color: rgba($black-color, 0.3);
+    }
+  }
+
+  .curse__price {
+    margin-left: 56px;
+  }
+
+  .curse__status {
+    margin-left: 31px;
+  }
+
+  .curse__navigation-right {
+    margin-right: 0;
+  }
+
+  .curse__header .h2 {
+    padding-top: 9px;
+  }
+
+  .curse__item:hover {
+    box-shadow: 0 0 5px rgba($black-color, 0.2);
+  }
+}
+
+@media (min-width: $desktop) {
+  .curse__price {
+    margin-left: 30px;
+  }
+
+  .curse__name {
+    max-width: 314px;
+  }
+
+  .curse__status {
+    margin-left: 81px;
+  }
+}

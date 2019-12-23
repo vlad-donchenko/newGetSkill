@@ -1,0 +1,324 @@
+.edit-information__buttons {
+  display: none;
+}
+
+.edit-information__input-elements {
+  margin-bottom: 33px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.edit-information__item {
+  padding-top: 31px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid $gray-color;
+}
+
+.edit-information__header {
+  margin-bottom: 15px;
+}
+
+.edit-information__tabs .tabs__list {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.edit-information__wrapper-name .edit-information__input-elements {
+  margin-bottom: 32px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.edit-information__wrapper-name {
+  margin-bottom: 31px;
+}
+
+.edit-information__name {
+  padding-bottom: 63px;
+  border-bottom: 1px solid $gray-color;
+}
+
+.edit-information__business-information {
+  padding-top: 32px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid $gray-color;
+}
+
+.edit-information__business-information .edit-information__input-elements {
+  margin-bottom: 33px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.edit-information__business-information .label {
+  margin-top: 0;
+}
+
+.edit-information__details {
+  padding-top: 29px;
+}
+
+.edit-information__add {
+  margin-bottom: 0;
+  margin-top: 30px;
+  text-align: right;
+}
+
+.edit-information__description .edit-information__input-elements {
+  margin-bottom: 32px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.edit-information__item--type .label {
+  margin-top: 0;
+}
+
+.edit-information__section-name {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: $black-color;
+  font-weight: 500;
+}
+
+.edit-information__input-merged {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.edit-information__input-merged .label {
+  width: 100%;
+}
+
+.edit-information__input-merged .input {
+  max-width: calc(100% - 85px);
+  border-right-color: transparent;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+
+  &:focus {
+    border-right-color: $violet-dark-color;
+  }
+}
+
+.edit-information__input-merged .select-standard {
+  max-width: 85px;
+  width: 100%;
+}
+
+.edit-information__input-merged .select-standard__toggle {
+  padding-right: 30px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.edit-information__item .label {
+  margin-top: 0;
+}
+
+.dit-information__normal-wrap {
+  margin-bottom: 30px;
+}
+
+.edit-information__add-sale {
+  margin: 30px 0 0 0;
+}
+
+.edit-information__radio {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 0 0 0;
+  padding-left: 0;
+  max-width: 280px;
+  width: 100%;
+  list-style: none;
+}
+
+.edit-information__radio li {
+  margin-right: 29px;
+  margin-top: 21px;
+
+  &:nth-child(1),
+  &:nth-child(2) {
+    margin-top: 0;
+  }
+}
+
+.edit-information__tumbler {
+  margin-top: 29px;
+  margin-bottom: 31px;
+}
+
+.edit-information__item--last {
+  padding-bottom: 30px;
+}
+
+@media (min-width: $tablet) {
+  .edit-information__buttons {
+    display: flex;
+    max-width: 342px;
+  }
+
+  .edit-information__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  .edit-information__buttons .button--yellow {
+    margin-right: 20px;
+  }
+
+  .edit-information__header h2 {
+    max-width: 350px;
+  }
+}
+
+@media (min-width: $tablet-large) {
+  .edit-information__name {
+    display: flex;
+  }
+
+  .edit-information__wrapper-name {
+    flex-grow: 1;
+    margin-bottom: 0;
+  }
+
+  .edit-information__name .load-file {
+    margin-left: 30px;
+    width: 202px;
+  }
+
+  .edit-information__name .load-file__content {
+    width: 100%;
+  }
+
+  .edit-information__header h2 {
+    margin-top: 7px;
+    max-width: 450px;
+  }
+
+  .edit-information__business-information {
+    padding-bottom: 58px;
+  }
+
+  .edit-information__item--type {
+    display: flex;
+  }
+
+  .edit-information__item--type .edit-information__input-elements {
+    margin-bottom: 0;
+  }
+
+  .edit-information__input-elements--small {
+    max-width: 315px;
+    width: 100%;
+  }
+
+  .edit-information__item--type .edit-information__input-elements--small {
+    margin-right: 30px;
+  }
+
+  .edit-information__input-elements--large {
+    flex-grow: 1;
+  }
+
+  .edit-information__input-elements--merged {
+    display: flex;
+  }
+
+  .edit-information__input-merged {
+    max-width: 315px;
+    width: 100%;
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+
+  .edit-information__input-elements--merged .edit-information__normal-wrap {
+    max-width: 200px;
+    width: 100%;
+    margin-right: 30px;
+  }
+
+  .edit-information__add-sale {
+    margin-top: 0;
+    padding-top: 28px;
+  }
+
+  .edit-information__radio {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+
+  .edit-information__radio li {
+    margin-top: 0;
+  }
+
+  .edit-information__tumbler {
+    margin-top: 32px;
+    margin-bottom: 20px;
+  }
+
+  .edit-information__tree-column {
+    display: flex;
+  }
+
+  .edit-information__tree-column .edit-information__input-elements {
+    max-width: 297px;
+    width: 100%;
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .edit-information__item {
+    padding-bottom: 59px;
+  }
+
+  .edit-information__item--last .edit-information__input-elements {
+    margin-bottom: 0;
+  }
+
+  .edit-information__input-merged .input {
+    &:hover {
+      border-right-color: $black-color;
+    }
+
+    &:focus {
+      border-right-color: $violet-dark-color;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .edit-information__header h2 {
+    margin-top: 9px;
+    max-width: 550px;
+  }
+
+  .edit-information__header {
+    margin-bottom: 45px;
+  }
+
+  .edit-information__name {
+    padding-bottom: 60px;
+  }
+
+  .edit-information__tree-column .edit-information__input-elements {
+    max-width: 315px;
+    width: 100%;
+  }
+}

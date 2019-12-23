@@ -1,0 +1,195 @@
+.user-features {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 466px;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.user-features--header {
+  margin-left: auto;
+}
+
+.user-features__link {
+  position: relative;
+  display: block;
+  color: $black-color;
+  text-decoration: none;
+  font-weight: 300;
+
+  &:focus {
+    color: rgba($black-color, 0.3);
+  }
+}
+
+.user-features__item {
+  position: relative;
+  margin-right: 30px;
+
+  &:first-child {
+    margin-right: 60px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.user-features__item--registration .user-features__link,
+.user-features__item--organization .user-features__link,
+.user-features__item--user .user-features__link {
+  padding-right: 33px;
+}
+.user-features__item--organization .user-features__link,
+.user-features__item--user .user-features__link {
+  padding-left: 20px;
+}
+
+.user-features__drop-icon {
+  position: absolute;
+  top: 6px;
+  right: 0;
+}
+.user-features__login-icon {
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+
+.user-features__item--registration,
+.user-features__item--organization,
+.user-features__item--user {
+  position: relative;
+}
+
+.user-features__dropdown {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 365px;
+  padding: 30px;
+  background-color: $white-color;
+  box-shadow: 0 3px 6px rgba($black-color, 0.16);
+  list-style: none;
+  opacity: 0;
+  pointer-events: none;
+  z-index: -3;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    top: -10px;
+    left: 0;
+    background-color: transparent;
+  }
+}
+
+.user-features__item--organization .user-features__dropdown,
+.user-features__item--user .user-features__dropdown {
+  width: auto;
+  padding: 10px 0 0;
+  flex-direction: column;
+}
+
+.user-features__dropdown .button {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.user-features__item--organization .user-features__dropdown .button,
+.user-features__item--user .user-features__dropdown .button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  text-align: left;
+  min-width: 240px;
+  min-height: 41px;
+  padding: 0 20px;
+  width: auto;
+  background-color: #fff;
+  color: $black-color;
+  font-weight: 300;
+  border: 0;
+  &:hover {
+    background-color: $gray-standard-color;
+  }
+}
+.user-features__item--organization .user-features__dropdown {
+  li:last-child {
+    .button {
+      font-weight: 500;
+      color: $violet-dark-color;
+      background-color: $violet-lite-color;
+    }
+    .button:hover {
+      color: rgba(120, 53, 187, 0.6);
+    }
+  }
+}
+
+.user-features__item--user .user-features__dropdown {
+  li {
+    .button {
+      svg {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-large) {
+  .user-features__link {
+    &:hover {
+      color: rgba($black-color, 0.6);
+    }
+
+    &:focus {
+      color: rgba($black-color, 0.3);
+    }
+  }
+
+  .user-features__item--registration:hover .user-features__dropdown,
+  .user-features__item--organization:hover .user-features__dropdown,
+  .user-features__item--user:hover .user-features__dropdown {
+    opacity: 1;
+    z-index: 1;
+    pointer-events: initial;
+  }
+
+  .user-features__item--registration:focus-within .user-features__dropdown,
+  .user-features__item--organization:hover .user-features__dropdown,
+  .user-features__item--user:hover .user-features__dropdown {
+    opacity: 1;
+    z-index: 1;
+    pointer-events: initial;
+  }
+
+  .user-features__item--registration:hover .user-features__link {
+    color: rgba($black-color, 0.6);
+  }
+
+  .user-features__item--registration:focus-within .user-features__link {
+    color: rgba($black-color, 0.6);
+  }
+
+  .user-features__item--registration:hover .user-features__drop-icon,
+  .user-features__item--organization:hover .user-features__drop-icon,
+  .user-features__item--user:hover .user-features__drop-icon {
+    opacity: 0.6;
+    transform: rotate(-180deg);
+  }
+
+  .user-features__item--registration:focus-within .user-features__drop-icon,
+  .user-features__item--organization:hover .user-features__drop-icon,
+  .user-features__item--user:hover .user-features__drop-icon {
+    opacity: 0.6;
+    transform: rotate(-180deg);
+  }
+}

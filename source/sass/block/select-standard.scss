@@ -1,0 +1,157 @@
+.select-standard__toggle {
+  position: relative;
+  padding: 0 53px 0 20px;
+  text-align: left;
+  height: 45px;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid $gray-color;
+  border-radius: 3px;
+
+  &:focus {
+    outline: none;
+    border-color: $violet-dark-color;
+    box-shadow: 0 0 0 0.2rem rgba($violet-dark-color, 0.25);
+  }
+}
+
+.select-standard__toggle:focus .select-standard__arrow {
+  border-color: $violet-dark-color;
+  box-shadow: 0 0 0 0.2rem rgba($violet-dark-color, 0.25);
+}
+
+.select-standard__toggle .select-standard__title {
+  display: block;
+  font-size: 16px;
+  line-height: 45px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.select-standard__arrow {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  width: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $gray-color;
+}
+
+.select-standard__body {
+  display: none;
+}
+
+.select-standard--without-search .select-standard__arrow {
+  border-color: transparent;
+}
+
+.select-standard--without-search
+  .select-standard__toggle:focus
+  .select-standard__arrow {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.select-standard__title--placeholder {
+  color: $gray-color;
+}
+
+.select-standard {
+  position: relative;
+}
+
+.select-standard__body {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 175px;
+  border: 1px solid $gray-color;
+  border-top: 0;
+  border-radius: 0 0 3px 3px;
+  background-color: #fff;
+  overflow-y: scroll;
+  z-index: 2;
+  .select-standard__list {
+    list-style: none;
+    padding-left: 0;
+
+    .select-standard__option {
+      border: 0;
+      background-color: #fff;
+      min-height: 45px;
+      width: 100%;
+      text-align: left;
+      padding: 0 20px;
+      cursor: pointer;
+      outline: none;
+      &:hover {
+        background-color: $gray-standard-color;
+      }
+    }
+  }
+}
+
+.select-standard {
+  .search {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px 15px 0;
+    .search__button {
+      padding: 15px 15px 0 0;
+    }
+    .input--search {
+      height: 37px;
+    }
+  }
+}
+
+.select-standard__body.select_list.select_list-for-curse {
+  max-height: inherit;
+  overflow-y: overlay;
+  margin-top: 10px;
+  // padding: 10px 0;
+  right: 0;
+  left: inherit;
+  border: 0;
+  min-width: 210px;
+  box-shadow: 0 3px 6px rgba(10,10,10,.16);
+}
+
+@media (min-width: $laptop) {
+  .select-standard__toggle:hover .select-standard__arrow {
+    border-color: $black-color;
+  }
+
+  .select-standard__toggle:focus .select-standard__arrow {
+    border-color: $violet-dark-color;
+    box-shadow: 0 0 0 0.2rem rgba($violet-dark-color, 0.25);
+  }
+
+  .select-standard__toggle {
+    &:hover {
+      border-color: $black-color;
+    }
+
+    &:focus {
+      border-color: $violet-dark-color;
+      box-shadow: 0 0 0 0.2rem rgba($violet-dark-color, 0.25);
+    }
+  }
+
+  .select-standard--without-search
+    .select-standard__toggle:hover
+    .select-standard__arrow {
+    border-color: transparent;
+  }
+
+  .select-standard--without-search
+    .select-standard__toggle:focus
+    .select-standard__arrow {
+    border-color: transparent;
+    box-shadow: none;
+  }
+}

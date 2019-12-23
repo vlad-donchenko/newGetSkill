@@ -1,0 +1,67 @@
+.switcher__label {
+  position: relative;
+}
+
+.switcher__tumbler {
+  position: relative;
+  display: block;
+  width: 39px;
+  height: 21px;
+  background-color: $gray-color;
+  border-radius: 15px;
+  transition: background-color $animation-time $timing-function;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 22px;
+    height: 21px;
+    background-color: $white-color;
+    border-radius: 50%;
+    box-shadow: 0 0 6px rgba($black-color, 0.16);
+    transition: transform $animation-time $timing-function;
+  }
+}
+
+.switcher__checkbox:focus + .switcher__tumbler {
+  box-shadow: 0 0 6px rgba($black-color, 0.5);
+}
+
+.switcher__checkbox:checked + .switcher__tumbler::before {
+  transform: translateX(84%);
+}
+
+.switcher__checkbox:checked + .switcher__tumbler {
+  background-color: $green-color;
+}
+
+.switcher__title {
+  font-weight: 500;
+  font-size: 16px;
+  color: $black-color;
+}
+
+.switcher__label--with-text {
+  display: flex;
+  align-items: center;
+}
+
+.switcher__label--with-text .switcher__title {
+  margin-right: 20px;
+}
+
+@media (min-width: $laptop) {
+  .switcher__checkbox:hover + .switcher__tumbler {
+    background-color: $gray-hover-color;
+  }
+
+  .switcher__checkbox:focus + .switcher__tumbler {
+    box-shadow: 0 0 6px rgba($black-color, 0.5);
+  }
+
+  .switcher__checkbox:checked + .switcher__tumbler {
+    background-color: $green-color;
+  }
+}
