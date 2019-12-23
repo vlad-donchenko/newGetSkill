@@ -70,7 +70,7 @@
   }
 }
 
-@media (min-width: $tablet-large) {
+@media (min-width: $laptop) {
   .best-organization {
     margin-top: 102px;
   }
@@ -81,5 +81,11 @@
     &:nth-child(4) {
       margin-top: 0;
     }
+  }
+}
+
+@media (min-width: $desktop) {
+  .best-organization__title {
+    margin-bottom: 58px;
   }
 }

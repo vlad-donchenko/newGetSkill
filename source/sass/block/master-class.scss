@@ -110,3 +110,13 @@
     padding-top: 127px;
   }
 }
+
+@media (min-width: $desktop) {
+  .master-class {
+    padding-top: 182px;
+  }
+
+  .master-class__name {
+    padding-right: 38px;
+  }
+}

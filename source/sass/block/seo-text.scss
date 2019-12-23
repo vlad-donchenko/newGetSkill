@@ -36,6 +36,10 @@
   margin-left: auto;
   color: $gray-lite-color;
   text-decoration: none;
+
+  &:focus {
+    color: $black-color;
+  }
 }
 
 .seo-text__show-more svg {
@@ -79,5 +83,21 @@
   .seo-text--main-page {
     margin-top: 150px;
     margin-bottom: 150px;
+  }
+
+  .seo-text__show-more {
+    &:hover {
+      color: $gray-hover-color;
+    }
+
+    &:focus {
+      color: $black-color;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .seo-text--main-page {
+    margin-top: 153px;
   }
 }

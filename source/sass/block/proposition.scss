@@ -150,3 +150,24 @@
     width: calc(100% - 570px);
   }
 }
+
+@media (min-width: $desktop) {
+  .proposition__img {
+    padding-right: 50px;
+    max-width: 622px;
+
+    &::after {
+      bottom: -50px;
+      left: 50px;
+    }
+  }
+
+  .proposition__info-block {
+    padding-left: 100px;
+    width: calc(100% - 622px);
+  }
+
+  .proposition__title {
+    max-width: 550px;
+  }
+}
