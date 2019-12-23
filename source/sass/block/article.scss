@@ -1,0 +1,47 @@
+.article {
+  box-shadow: 0 3px 6px rgba($black-clear-color, 0.16);
+}
+
+.article__info-block {
+  padding: 22px 20px 18px 20px;
+}
+
+.article__name {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: $black-clear-color;
+}
+
+.article__name a {
+  color: $black-clear-color;
+  text-decoration: none;
+
+  &:focus {
+    color: rgba($black-clear-color, 0.3);
+  }
+}
+
+.article__text {
+  margin-top: 22px;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.article__time {
+  margin-top: 13px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 300;
+}
+
+.article__img {
+  display: block;
+}
+
+.article__img img {
+  display: block;
+  border-radius: 3px;
+}

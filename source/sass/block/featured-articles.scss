@@ -5,10 +5,22 @@
 }
 
 .featured-articles {
-  margin-top: 63px;
+  margin-top: 61px;
 }
 
 .featured-articles__title {
-  margin-bottom: 31px;
+  margin-bottom: 29px;
   text-align: center;
+}
+
+.featured-articles__item {
+  margin-top: 30px;
+}
+
+.featured-articles__show-more {
+  margin-top: 32px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 11px;
+  width: 100%;
 }
