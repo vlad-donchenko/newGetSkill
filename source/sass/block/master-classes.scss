@@ -1,0 +1,29 @@
+.master-classes {
+  margin-top: 63px;
+}
+
+.master-classes__list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.master-classes__item {
+  margin-top: 30px;
+
+  &:nth-child(1) {
+    margin-top: 0;
+  }
+}
+
+.master-classes__title {
+  margin-bottom: 31px;
+  text-align: center;
+}
+
+.master-classes__watch-more {
+  width: 100%;
+  margin-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
