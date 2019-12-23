@@ -69,3 +69,17 @@
     margin-bottom: 60px;
   }
 }
+
+@media (min-width: $tablet-large) {
+  .best-organization {
+    margin-top: 102px;
+  }
+
+  .best-organization__item {
+    width: 25%;
+
+    &:nth-child(4) {
+      margin-top: 0;
+    }
+  }
+}

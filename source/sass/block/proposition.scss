@@ -69,7 +69,7 @@
 @media (min-width: $tablet) {
   .proposition__inner {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .proposition__img {
@@ -127,5 +127,26 @@
 
   .proposition__show-more {
     margin-left: 0;
+  }
+}
+
+@media (min-width: $laptop) {
+  .proposition {
+    margin-top: 100px;
+  }
+
+  .proposition__img {
+    max-width: 570px;
+    padding-right: 46px;
+
+    &::after {
+      bottom: -46px;
+    }
+  }
+
+  .proposition__info-block {
+    padding-top: 108px;
+    padding-left: 83px;
+    width: calc(100% - 570px);
   }
 }

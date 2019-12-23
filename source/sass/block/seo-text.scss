@@ -74,3 +74,10 @@
     margin-bottom: 99px;
   }
 }
+
+@media (min-width: $laptop) {
+  .seo-text--main-page {
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+}

@@ -104,3 +104,9 @@
     top: 21px;
   }
 }
+
+@media (min-width: $laptop) {
+  .master-class {
+    padding-top: 127px;
+  }
+}

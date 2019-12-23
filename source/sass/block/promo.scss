@@ -4,6 +4,7 @@
   padding-top: 94px;
   padding-bottom: 96px;
   color: $white-color;
+  background-color: $black-clear-color;
   background-image: url("../img/promo-mobile@1x.jpg");
   background-size: cover;
   background-position: center;
@@ -78,5 +79,22 @@
     max-width: 792px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media (min-width: $laptop) {
+  .promo {
+    padding-top: 234px;
+    padding-bottom: 234px;
+    background-image: url("../img/promo-laptop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/promo-laptop@2x.jpg");
+    }
+  }
+
+  .promo__text {
+    margin-top: 64px;
+    max-width: 986px;
   }
 }

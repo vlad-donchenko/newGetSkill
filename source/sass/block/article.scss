@@ -83,3 +83,9 @@
     padding-bottom: 18px;
   }
 }
+
+@media (min-width: $laptop) {
+  .article__time {
+    margin-top: 34px;
+  }
+}

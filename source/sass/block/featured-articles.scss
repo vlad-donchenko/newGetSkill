@@ -68,3 +68,17 @@
     margin-bottom: 59px;
   }
 }
+
+@media (min-width: $laptop) {
+  .featured-articles {
+    margin-top: 101px;
+  }
+
+  .featured-articles__item {
+    width: 33.33%;
+
+    &:nth-child(3) {
+      margin-top: 0;
+    }
+  }
+}

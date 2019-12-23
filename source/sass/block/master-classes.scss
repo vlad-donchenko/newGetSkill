@@ -65,3 +65,17 @@
     margin-bottom: 56px;
   }
 }
+
+@media (min-width: $laptop) {
+  .master-classes {
+    margin-top: 104px;
+  }
+
+  .master-classes__item {
+    max-width: 33.33%;
+
+    &:nth-child(3) {
+      margin-top: 0;
+    }
+  }
+}
