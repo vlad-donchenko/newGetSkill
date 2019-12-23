@@ -91,3 +91,9 @@
   font-weight: 500;
   line-height: 21px;
 }
+
+@media (min-width: $iphone-breakpoint) {
+  .best-curse {
+    padding-top: 234px;
+  }
+}

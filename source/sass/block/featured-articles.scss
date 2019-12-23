@@ -24,3 +24,9 @@
   padding-bottom: 11px;
   width: 100%;
 }
+
+@media (min-width: $iphone-breakpoint) {
+  .featured-articles__show-more {
+    margin-top: 29px;
+  }
+}

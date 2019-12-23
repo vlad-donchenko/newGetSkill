@@ -50,3 +50,18 @@
   padding-bottom: 11px;
   width: 100%;
 }
+
+@media (min-width: $iphone-breakpoint) {
+  .proposition__img {
+    padding-right: 28px;
+  }
+
+  .proposition__img::after {
+    left: 27px;
+    bottom: -27px;
+  }
+
+  .proposition__info-block {
+    margin-top: 59px;
+  }
+}

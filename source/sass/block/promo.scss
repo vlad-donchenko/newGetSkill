@@ -39,3 +39,15 @@
   line-height: normal;
   text-align: center;
 }
+
+@media (min-width: $iphone-breakpoint) {
+  .promo {
+    padding-top: 171px;
+    padding-bottom: 170px;
+    background-image: url("../img/promo-mobile-iphone-@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/promo-mobile-iphone@2x.jpg");
+    }
+  }
+}

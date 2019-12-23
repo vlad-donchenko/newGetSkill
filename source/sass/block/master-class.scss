@@ -68,3 +68,30 @@
   font-weight: 500;
   line-height: 21px;
 }
+
+@media (min-width: $iphone-breakpoint) {
+  .master-class {
+    padding-top: 107px;
+  }
+
+  .master-class__time {
+    padding-top: 28px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .master-class__day {
+    font-size: 28px;
+  }
+
+  .master-class__month {
+    margin-top: 2px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: $horizontal-mobile) {
+  .master-class {
+    padding-top: 199px;
+  }
+}
