@@ -1,0 +1,122 @@
+.action-circle {
+  position: relative;
+}
+
+.action-circle__toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+
+  &:focus {
+    outline: none;
+    background-color: $gray-standard-color;
+  }
+}
+
+.action-circle__toggle span {
+  margin-top: 3px;
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-color: $gray-lite-color;
+  border-radius: 50%;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.action-circle__wrapper {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  display: none;
+  padding: 15px 25px;
+  margin-top: 5px;
+  width: 182px;
+  background-color: $white-color;
+  box-shadow: 0 0 6px rgba($black-clear-color, 0.1);
+  z-index: 1;
+}
+
+.action-circle--open .action-circle__wrapper {
+  display: block;
+}
+
+.action-circle--open .action-circle__toggle {
+  background-color: $gray-standard-color;
+}
+
+.action-circle__item {
+  margin-top: 23px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .action-circle__edit,
+  .action-circle__delete {
+    display: flex;
+    padding: 0;
+    width: auto;
+    height: auto;
+
+    &::after {
+      position: static;
+      content: attr(aria-label);
+      display: inline-block;
+      width: auto;
+      height: auto;
+      color: $red-color;
+      font-size: 16px;
+      font-weight: 300;
+      margin-left: 10px;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+      opacity: 0.3;
+    }
+  }
+
+  .action-circle__delete svg {
+    fill: $red-color;
+  }
+
+  .action-circle__delete:focus svg {
+    fill: $red-color;
+  }
+
+  .action-circle__edit {
+    background-color: transparent;
+
+    &::after {
+      color: $green-color;
+    }
+  }
+
+  .action-circle__delete {
+    background-color: transparent;
+    box-shadow: none;
+
+    &:focus {
+      &::after {
+        display: inline-block;
+      }
+    }
+
+    &::after {
+      display: inline-block;
+    }
+  }
+}
