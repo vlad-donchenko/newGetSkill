@@ -30,7 +30,7 @@
 
 .deals__item {
   position: relative;
-  padding: 34px 20px 28px 20px;
+  padding: 34px 50px 28px 20px;
   border-top: 1px solid $gray-color;
 
   &:last-child {
@@ -113,6 +113,45 @@
   display: none;
 }
 
+.deals__item p {
+  font-size: 16px;
+}
+
+.deals__phone {
+  margin-bottom: 0;
+  margin-top: 12px;
+}
+
+.deals--clients .deals__author {
+  margin-top: 0;
+}
+
+.deal__email {
+  margin-top: 13px;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.deals__search {
+  margin-top: 30px;
+  max-width: 100%;
+}
+
+.deals__search .input {
+  width: 100%;
+  padding-left: 45px;
+  padding-right: 20px;
+}
+
+.deals__search .search__button {
+  right: initial;
+  left: 1px;
+}
+
+.deals--clients .deals__list {
+  margin-top: 58px;
+}
+
 @media (min-width: $iphone-breakpoint) {
   .deals__list {
     margin-top: 98px;
@@ -163,6 +202,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-right: 20px;
   }
 
   .deal__tags,
@@ -226,6 +266,31 @@
   .deals__sort-item--date {
     margin-right: 130px;
   }
+
+  .deals__phone {
+    margin-top: 0;
+    max-width: 145px;
+  }
+
+  .deals__search {
+    margin-top: 60px;
+  }
+
+  .deals--clients .deals__list {
+    margin-top: 17px;
+  }
+
+  .deal__email {
+    margin-top: 0;
+    max-width: 138px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .deals--clients .deals__sort-item--name {
+    margin-right: 133px;
+  }
 }
 
 @media (min-width: $tablet-large) {
@@ -260,6 +325,22 @@
 
   .deals__sort-item--date {
     margin-right: 195px;
+  }
+
+  .deals--clients .deals__author {
+    margin-right: 86px;
+  }
+
+  .deals__phone {
+    margin-right: 100px;
+  }
+
+  .deals--clients .deals__sort-item--name {
+    margin-right: 152px;
+  }
+
+  .deals--clients .deals__sort-item--date {
+    margin-right: 154px;
   }
 }
 
@@ -297,6 +378,18 @@
       opacity: 0.3;
     }
   }
+
+  .deals__search {
+    margin-top: 58px;
+  }
+
+  .deals__sort-list {
+    margin-top: 61px;
+  }
+
+  .deals--clients .deals__list {
+    margin-top: 18px;
+  }
 }
 
 @media (min-width: $desktop) {
@@ -322,5 +415,9 @@
 
   .deals__sort-item--date {
     margin-right: 195px;
+  }
+
+  .deal__email {
+    max-width: 300px;
   }
 }
