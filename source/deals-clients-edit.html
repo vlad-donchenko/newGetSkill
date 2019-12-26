@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <title>Get Skill</title>
+  <link rel="preload" href="fonts/Roboto-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<div style="display: none">
+  <include src="build/img/sprite.svg"></include>
+</div>
+<div class="wrapper">
+  <header>
+    <nav class="navigation navigation--no-js">
+      <div class="mobile-menu">
+        <div class="mobile-menu__header">
+          <div class="logo logo--mobile-menu">
+            <a href="/" class="logo__link">
+              <picture>
+                <img src="img/logo-375.png" width="167" height="45" alt="Логотип сайта">
+              </picture>
+            </a>
+          </div>
+          <a href="#" class="button button--mobile-menu">
+            Мой кабинет
+          </a>
+        </div>
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-mobile-home"></use>
+              </svg>
+              Главная
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-mobile-curse"></use>
+              </svg>
+              Курсы
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-mobile-curse-online"></use>
+              </svg>
+              Онлайн-курсы
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <svg width="20" height="21">
+                <use xlink:href="#icon-mobile-master-class"></use>
+              </svg>
+              Мастер-классы
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-mobile-school"></use>
+              </svg>
+              Школы
+            </a>
+          </li>
+          <li class="mobile-menu__item mobile-menu__item--indicator">
+            <a href="#" class="mobile-menu__link">
+              <svg width="23" height="21">
+                <use xlink:href="#icon-mobile-like"></use>
+              </svg>
+              Избранные
+              <span class="mobile-menu__indicator">
+                1
+              </span>
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <svg width="23" height="21">
+                <use xlink:href="#icon-mobile-place"></use>
+              </svg>
+              Разместить огранизацию
+            </a>
+          </li>
+        </ul>
+        <div class="mobile-menu__footer">
+          <ul class="language">
+            <li class="language__item">
+              <a href="#" class="language__link">
+                українська
+              </a>
+            </li>
+            <li class="language__item language__item--active">
+              <a class="language__link">
+                русский
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="navigation__user-wrapper">
+        <div class="container navigation__user--inner">
+          <ul class="language language--header">
+            <li class="language__item">
+              <a href="#" class="language__link">
+                українська
+              </a>
+            </li>
+            <li class="language__item language__item--active">
+              <a class="language__link">
+                русский
+              </a>
+            </li>
+          </ul>
+          <ul class="user-features user-features--header">
+            <li class="user-features__item">
+              <a href="#" class="user-features__link">
+                Идеи по улучшению сайта
+              </a>
+            </li>
+            <li class="user-features__item">
+              <a href="#" class="user-features__link">
+                Войти
+              </a>
+            </li>
+            <li class="user-features__item user-features__item--registration">
+              <a href="#" class="user-features__link">
+                Зарегистрироваться
+                <svg width="13" height="7" class="user-features__drop-icon">
+                  <use xlink:href="#icon-arrow"></use>
+                </svg>
+              </a>
+              <ul class="user-features__dropdown">
+                <li>
+                  <a href="#" class="button">
+                    Пользователь
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="button">
+                    Организация
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container navigation__inner navigation__inner--middle">
+        <button type="button" class="navigation__open-menu" aria-label="Открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="logo logo--header">
+          <a href="/" class="logo__link">
+            <picture>
+              <img src="img/logo-375.png" width="167" height="45" alt="Логотип сайта">
+            </picture>
+          </a>
+        </div>
+        <div class="navigation__text">
+          <p class="navigation__curse">
+            6 544
+          </p>
+          <p class="navigation__count-curse">
+            Объявления
+            о курсах
+          </p>
+        </div>
+        <a href="#" class="like like--active like--header" aria-label="Понравившееся">
+          <svg width="23" height="21">
+            <use xlink:href="#icon-like"></use>
+          </svg>
+          <span class="like__count">
+            1
+          </span>
+        </a>
+        <div class="search">
+          <form method="get" action="search.php" autocomplete="off">
+            <label for="search" class="visually-hidden">
+              Поиск
+            </label>
+            <button class="search__button" aria-label="Искать">
+              <svg width="15" height="16" class="search__icon">
+                <use xlink:href="#icon-search"></use>
+              </svg>
+            </button>
+            <input type="search" name="search" class="input input--search" placeholder="Я ищу..." id="search">
+          </form>
+        </div>
+        <a href="#" class="button button--organization-header">
+          Разместить организацию
+        </a>
+      </div>
+      <div class="navigation__wrapper-menu">
+        <div class="container navigation__inner--menu">
+          <ul class="menu">
+            <li class="menu__list menu__list--active">
+              <a class="menu__link">
+                Курсы
+              </a>
+            </li>
+            <li class="menu__list">
+              <a href="#" class="menu__link">
+                Онлайн курсы
+              </a>
+            </li>
+            <li class="menu__list">
+              <a href="#" class="menu__link">
+                Мастер-классы
+              </a>
+            </li>
+            <li class="menu__list">
+              <a href="#" class="menu__link">
+                Школы
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </nav>
+  </header>
+  <main class="site-main">
+    <section class="breadcrumbs">
+      <div class="container">
+        <h2 class="visually-hidden">
+          Постраничная Навигация
+        </h2>
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a href="/">
+              Главная
+            </a>
+          </li>
+          <li>
+            Поиск
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="cabinet">
+      <div class="container cabinet__inner">
+        <div class="menu-cabinet">
+          <div class="menu-cabinet__item">
+            <a href="#" class="menu-cabinet__link">
+              <svg width="23" height="21">
+                <use xlink:href="#icon-cab-org-analysts"></use>
+              </svg>
+              Аналитика
+            </a>
+          </div>
+          <div class="menu-cabinet__item">
+            <a href="#" class="menu-cabinet__link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-cab-org-dartz"></use>
+              </svg>
+              Сделки
+              <span class="menu-cabinet__indicator">
+                2
+              </span>
+            </a>
+          </div>
+          <div class="menu-cabinet__item">
+            <a href="#" class="menu-cabinet__link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-cabinet-clients"></use>
+              </svg>
+              Клиенты
+            </a>
+          </div>
+          <div class="menu-cabinet__item">
+            <a href="#" class="menu-cabinet__link">
+              <svg width="21" height="20">
+                <use xlink:href="#icon-cabinet-star"></use>
+              </svg>
+              Отзывы
+              <span class="menu-cabinet__indicator">
+                2
+              </span>
+            </a>
+          </div>
+          <div class="menu-cabinet__item menu-cabinet__item--separator active">
+            <a class="menu-cabinet__link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-cabinet-book"></use>
+              </svg>
+              Список курсов
+            </a>
+          </div>
+          <div class="menu-cabinet__item">
+            <a href="#" class="menu-cabinet__link">
+              <svg width="20" height="21">
+                <use xlink:href="#icon-cabinet-master"></use>
+              </svg>
+              Мастер-классы
+            </a>
+          </div>
+          <div class="menu-cabinet__item">
+            <a href="#" class="menu-cabinet__link">
+              <svg width="21" height="18">
+                <use xlink:href="#icon-cabinet-teacher"></use>
+              </svg>
+              Преподаватели
+            </a>
+          </div>
+          <div class="menu-cabinet__item">
+            <a href="#" class="menu-cabinet__link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-cabinet-organization"></use>
+              </svg>
+              Организация
+            </a>
+          </div>
+          <div class="menu-cabinet__item menu-cabinet__item--separator menu-cabinet__item--active">
+            <a href="#" class="menu-cabinet__link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-cabinet-setting"></use>
+              </svg>
+              Настройки
+            </a>
+          </div>
+          <div class="menu-cabinet__item">
+            <a href="#" class="menu-cabinet__link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-cabinet-card"></use>
+              </svg>
+              Счета и оплата
+            </a>
+          </div>
+          <div class="menu-cabinet__item">
+            <a href="#" class="menu-cabinet__link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-cabinet-exit"></use>
+              </svg>
+              Выход
+            </a>
+          </div>
+        </div>
+        <div class="cabinet__info-block">
+          <div class="deals deals--clients-edit">
+            <div class="deals__top">
+              <h2 class="h2 deals__title">
+                Редактирование
+              </h2>
+              <div class="deals__button fixed-button-wrapper">
+                <button type="reset" class="button button--with-icon button--red">
+                  <svg width="20" height="21">
+                    <use xlink:href="#icon-trash"></use>
+                  </svg>
+                  Удалить
+                </button>
+                <button type="submit" class="button button--with-icon button--green">
+                  <svg width="20" height="21">
+                    <use xlink:href="#icon-save"></use>
+                  </svg>
+                  Сохранить
+                </button>
+              </div>
+            </div>
+            <div class="deals__clients-edit-form">
+              <form action="deals_clients_edit.php" method="post">
+                <div class="deals__clients-edit-item">
+                  <label for="deals_clients_edit_name" class="label label--required">
+                    Имя
+                  </label>
+                  <input type="text" name="deals_clients_edit_name" class="input input--full-width" id="deals_clients_edit_name" required>
+                </div>
+                <div class="deals__clients-edit-item">
+                  <label for="deals_clients_edit_phone" class="label label--required">
+                    Телефон
+                  </label>
+                  <input type="text" name="deals_clients_edit_phone" class="input input--full-width" id="deals_clients_edit_phone" required>
+                </div>
+                <div class="deals__clients-edit-item">
+                  <label for="deals_clients_edit_email" class="label label--required">
+                    E-mail
+                  </label>
+                  <input type="text" name="deals_clients_edit_phone" class="input input--full-width" id="deals_clients_edit_email" required>
+                </div>
+              </form>
+            </div>
+            <ul class="deals__sort-list">
+              <li class="deals__sort-item deals__sort-item--name">
+                <a href="#" class="deals__sort-element">
+                  Курсы
+                  <svg width="12" height="15">
+                    <use xlink:href="#icon-double-arrow-black"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="deals__sort-item deals__sort-item--price">
+                <a href="#" class="deals__sort-element">
+                  Бюджет
+                  <svg width="12" height="15">
+                    <use xlink:href="#icon-double-arrow-black"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="deals__sort-item deals__sort-item--status">
+                <a href="#" class="deals__sort-element">
+                  Статус
+                  <svg width="12" height="15">
+                    <use xlink:href="#icon-double-arrow-black"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <ul class="deals__list">
+              <li class="deals__item">
+                <p class="deals__curse">
+                  Курс по наращиванию ресниц
+                </p>
+                <p class="deals__sum">
+                  2000 грн.
+                </p>
+                <div class="deal__tags">
+                  <div class="deal__tag-status deal__tag-status--new-request">
+                    Новая заявка
+                  </div>
+                  <div class="deal__tag-marker">
+                    А
+                  </div>
+                </div>
+                <div class="action-circle action-circle--open deal__action">
+                  <button type="button" class="action-circle__toggle" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </button>
+                  <div class="action-circle__wrapper">
+                    <div class="action-circle__list">
+                      <div class="action-circle__item">
+                        <button type="button" class="delete delete--view-square action-circle__delete" aria-label="Удалить">
+                          <svg width="13" height="15">
+                            <use xlink:href="#icon-trash"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="action-circle__item">
+                        <button type="button" class="edit action-circle__edit" aria-label="Редактировать">
+                          <svg width="16" height="15">
+                            <use xlink:href="#icon-pen"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="deals__item">
+                <p class="deals__curse">
+                  Курс по наращиванию ресниц
+                </p>
+                <p class="deals__sum">
+                  2000 грн.
+                </p>
+                <div class="deal__tags">
+                  <div class="deal__tag-status deal__tag-status--in-processing">
+                    В обработке
+                  </div>
+                  <div class="deal__tag-marker">
+                    А
+                  </div>
+                </div>
+                <div class="action-circle deal__action">
+                  <button type="button" class="action-circle__toggle" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </button>
+                  <div class="action-circle__wrapper">
+                    <div class="action-circle__list">
+                      <div class="action-circle__item">
+                        <button type="button" class="delete delete--view-square action-circle__delete" aria-label="Удалить">
+                          <svg width="13" height="15">
+                            <use xlink:href="#icon-trash"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="action-circle__item">
+                        <button type="button" class="edit action-circle__edit" aria-label="Редактировать">
+                          <svg width="16" height="15">
+                            <use xlink:href="#icon-pen"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="deals__item">
+                <p class="deals__curse">
+                  Курс по наращиванию ресниц
+                </p>
+                <p class="deals__sum">
+                  2000 грн.
+                </p>
+                <div class="deal__tags">
+                  <div class="deal__tag-status deal__tag-status--completed">
+                    Завершен
+                  </div>
+                  <div class="deal__tag-marker">
+                    B
+                  </div>
+                </div>
+                <div class="action-circle deal__action">
+                  <button type="button" class="action-circle__toggle" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </button>
+                  <div class="action-circle__wrapper">
+                    <div class="action-circle__list">
+                      <div class="action-circle__item">
+                        <button type="button" class="delete delete--view-square action-circle__delete" aria-label="Удалить">
+                          <svg width="13" height="15">
+                            <use xlink:href="#icon-trash"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="action-circle__item">
+                        <button type="button" class="edit action-circle__edit" aria-label="Редактировать">
+                          <svg width="16" height="15">
+                            <use xlink:href="#icon-pen"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="deals__item">
+                <p class="deals__curse">
+                  Курс по наращиванию ресниц
+                </p>
+                <p class="deals__sum">
+                  2000 грн.
+                </p>
+                <div class="deal__tags">
+                  <div class="deal__tag-status deal__tag-status--canceled">
+                    Отменен
+                  </div>
+                  <div class="deal__tag-marker">
+                    C
+                  </div>
+                </div>
+                <div class="action-circle deal__action">
+                  <button type="button" class="action-circle__toggle" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </button>
+                  <div class="action-circle__wrapper">
+                    <div class="action-circle__list">
+                      <div class="action-circle__item">
+                        <button type="button" class="delete delete--view-square action-circle__delete" aria-label="Удалить">
+                          <svg width="13" height="15">
+                            <use xlink:href="#icon-trash"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="action-circle__item">
+                        <button type="button" class="edit action-circle__edit" aria-label="Редактировать">
+                          <svg width="16" height="15">
+                            <use xlink:href="#icon-pen"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="deals__item">
+                <p class="deals__curse">
+                  Курс по наращиванию ресниц
+                </p>
+                <p class="deals__sum">
+                  2000 грн.
+                </p>
+                <div class="deal__tags">
+                  <div class="deal__tag-status deal__tag-status--in-processing">
+                    В обработке
+                  </div>
+                  <div class="deal__tag-marker">
+                    B
+                  </div>
+                </div>
+                <div class="action-circle deal__action">
+                  <button type="button" class="action-circle__toggle" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </button>
+                  <div class="action-circle__wrapper">
+                    <div class="action-circle__list">
+                      <div class="action-circle__item">
+                        <button type="button" class="delete delete--view-square action-circle__delete" aria-label="Удалить">
+                          <svg width="13" height="15">
+                            <use xlink:href="#icon-trash"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="action-circle__item">
+                        <button type="button" class="edit action-circle__edit" aria-label="Редактировать">
+                          <svg width="16" height="15">
+                            <use xlink:href="#icon-pen"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="deals__pagination">
+              <ul class="pagination">
+                <li class="pagination__item pagination__item--prev">
+                  <a href="#" class="pagination__link">
+                    <svg width="7" height="13">
+                      <use xlink:href="#icon-arrow-left"></use>
+                    </svg>
+                    Назад
+                  </a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">
+                    1
+                  </a>
+                </li>
+                <li class="pagination__item pagination__item--active">
+                  <a class="pagination__link">
+                    2
+                  </a>
+                </li>
+                <li class="pagination__item pagination__item--next">
+                  <a href="#" class="pagination__link">
+                    Вперед
+                    <svg width="7" height="13">
+                      <use xlink:href="#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container site-footer__inner-top">
+      <div class="site-footer__social">
+        <div class="logo logo--footer">
+          <a href="/" class="logo__link">
+            <picture>
+              <img src="img/logo-375.png" width="167" height="45" alt="Логотип сайта">
+            </picture>
+          </a>
+        </div>
+        <div class="social social--footer">
+          <p class="social__title">
+            Присойденяйтесь к нам
+          </p>
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#" class="social__link" aria-label="Мы в инстаграм">
+                <svg width="20" height="19">
+                  <use xlink:href="#icon-instargam"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link" aria-label="Мы в ютуб">
+                <svg width="27" height="19">
+                  <use xlink:href="#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link" aria-label="Мы в телеграм">
+                <svg width="20" height="19">
+                  <use xlink:href="#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__navigation">
+        <div class="site-footer__column">
+          <div class="site-footer__title-wrapper">
+            <h6 class="h6">
+              Пользователям
+            </h6>
+            <button type="button" class="site-footer__toggle" aria-label="Открыть меню">
+              <svg width="13" height="7">
+                <use xlink:href="#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="site-footer__menu site-footer__menu--no-js">
+            <li>
+              <a href="#">
+                Офлайн курсы
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Онлайн курсы
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Мастер-классы
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Школы
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Статьи
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="site-footer__column">
+          <div class="site-footer__title-wrapper">
+            <h6 class="h6">
+              Организациям
+            </h6>
+            <button type="button" class="site-footer__toggle" aria-label="Открыть меню">
+              <svg width="13" height="7">
+                <use xlink:href="#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="site-footer__menu site-footer__menu--no-js">
+            <li>
+              <a href="#">
+                О проекте
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Услуги и тарифы
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                База знаний
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="site-footer__column">
+          <div class="site-footer__title-wrapper">
+            <h6 class="h6">
+              Общее
+            </h6>
+            <button type="button" class="site-footer__toggle" aria-label="Открыть меню">
+              <svg width="13" height="7">
+                <use xlink:href="#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="site-footer__menu site-footer__menu--no-js">
+            <li>
+              <a href="#">
+                Улучшения сайта
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Правила сайта
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Оферта
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer__background">
+      <div class="container site-footer__inner site-footer__inner--bottom">
+        <p class="site-footer__copyright">
+          © 2019 Get Skill
+        </p>
+        <ul class="site-footer__pay">
+          <li>
+            <picture>
+              <source media="(min-width: 992px)" srcset="img/visa-tablet.png">
+              <img src="img/visa.png" width="45" height="14" alt="Visa">
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <source media="(min-width: 992px)" srcset="img/mastercard-tablet.png">
+              <img src="img/mastercard.png" width="32" height="19" alt="MasterCard">
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <source media="(min-width: 992px)" srcset="img/liqpay-tablet.png">
+              <img src="img/liqpay.png" width="64" height="14" alt="Liqpay">
+            </picture>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</div>
+<script src="js/scripts.min.js"></script>
+</body>
+</html>

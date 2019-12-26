@@ -152,6 +152,33 @@
   margin-top: 58px;
 }
 
+.deals__clients-edit-form {
+  margin-top: 62px;
+}
+
+.deals--clients-edit .deals__clients-edit-form {
+  max-width: 430px;
+  width: 100%;
+}
+
+.deals__clients-edit-item {
+  margin-top: 32px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.deals__sum {
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+.deals--clients-edit .deals__curse {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 @media (min-width: $iphone-breakpoint) {
   .deals__list {
     margin-top: 98px;
@@ -291,6 +318,28 @@
   .deals--clients .deals__sort-item--name {
     margin-right: 133px;
   }
+
+  .deals__sum {
+    margin-top: 0;
+  }
+
+  .deals__curse {
+    max-width: 223px;
+    width: 100%;
+  }
+
+  .deals__sum {
+    max-width: 78px;
+    width: 100%;
+  }
+
+  .deals--clients-edit .deals__sort-item--name {
+    margin-right: 202px;
+  }
+
+  .deals--clients-edit .deals__sort-item--price {
+    margin-right: 45px;
+  }
 }
 
 @media (min-width: $tablet-large) {
@@ -341,6 +390,26 @@
 
   .deals--clients .deals__sort-item--date {
     margin-right: 154px;
+  }
+
+  .deals--clients-edit .deals__curse {
+    margin-right: 100px;
+  }
+
+  .deals--clients-edit .deals__sum {
+    margin-right: 100px;
+  }
+
+  .deals__curse {
+    max-width: 250px;
+  }
+
+  .deals--clients-edit .deals__sort-item--name {
+    margin-right: 275px;
+  }
+
+  .deals--clients-edit .deals__sort-item--price {
+    margin-right: 98px;
   }
 }
 
@@ -419,5 +488,21 @@
 
   .deal__email {
     max-width: 300px;
+  }
+
+  .deals--clients-edit .deals__sort-item--name {
+    margin-right: 338px;
+  }
+
+  .deals--clients-edit .deals__sort-item--price {
+    margin-right: 190px;
+  }
+
+  .deals__curse {
+    max-width: 309px;
+  }
+
+  .deals--clients-edit .deals__sum {
+    margin-right: 194px;
   }
 }
