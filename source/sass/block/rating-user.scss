@@ -1,0 +1,74 @@
+.rating-use__group {
+  position: relative;
+  width: 10em;
+  height: 2em;
+  background-image: url("../img/rating-star.svg");
+  background-repeat: repeat-x;
+  background-size: 2em 1.9em;
+}
+
+.rating-user__star {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2em;
+  height: 2em;
+  margin: 0;
+  font-size: inherit;
+  appearance: none;
+}
+
+.rating-user__input:checked + .rating-user__star {
+  background-image: url("../img/rating-star-cheked.svg");
+  background-repeat: repeat-x;
+  background-size: 2em 1.9em;
+}
+
+.rating-user__star:hover {
+  background-image: url("../img/rating-star-cheked.svg");
+  background-repeat: repeat-x;
+  background-size: 2em 1.9em;
+}
+
+.rating-user__star:hover ~ .rating-user__star {
+  background-image: url("../img/rating-star.svg");
+  background-repeat: repeat-x;
+  background-size: 2em 1.9em;
+}
+
+.rating-user__star {
+  &:nth-of-type(1) {
+    z-index: 5;
+    width: 2em;
+  }
+
+  &:nth-of-type(2) {
+    z-index: 4;
+    width: 4em;
+  }
+
+  &:nth-of-type(3) {
+    z-index: 3;
+    width: 6em;
+  }
+
+  &:nth-of-type(4) {
+    z-index: 2;
+    width: 8em;
+  }
+
+  &:nth-of-type(5) {
+    z-index: 1;
+    width: 10em;
+  }
+}
+
+.rating-user {
+  display: flex;
+  align-items: center;
+}
+
+.rating-user__label {
+  margin-right: 10px;
+  margin-bottom: 0;
+}

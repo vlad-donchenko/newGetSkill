@@ -507,12 +507,23 @@
                   <p class="curse__price">
                     2000 грн.
                   </p>
-                  <p class="curse__status curse__status--rejected">
-                    Отклонен
-                    <svg width="15" height="15">
-                      <use xlink:href="#icon-info-red"></use>
-                    </svg>
-                  </p>
+                  <div class="curse__status curse__status--rejected tooltip tooltip--open">
+                    <button type="button" class="tooltip__toggle">
+                      Отклонен
+                      <svg width="15" height="15">
+                        <use xlink:href="#icon-info-red"></use>
+                      </svg>
+                    </button>
+                    <div class="tooltip__content">
+                      <p class="tooltip__label">
+                        Причины отклонения:
+                      </p>
+                      <p class="tooltip__text">
+                        Ваше объявление нарушает правила GetSkill: дубликат объявления.
+                        У вас уже есть объявление с таким же содержанием.
+                      </p>
+                    </div>
+                  </div>
                   <div class="curse__action">
                     <div class="select-standard select-standard--without-search">
                       <button type="button" class="select-standard__toggle" aria-label="Открыть список">

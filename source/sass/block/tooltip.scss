@@ -1,0 +1,99 @@
+.tooltip {
+  position: relative;
+  z-index: 1;
+}
+
+.tooltip__toggle {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  font-size: 16px;
+  color: $red-color;
+  background-color: transparent;
+  border: none;
+
+  &:focus {
+    outline: none;
+    opacity: 0.3;
+  }
+}
+
+.tooltip__toggle svg {
+  margin-top: 0;
+}
+
+.tooltip__content {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 260px;
+  margin-top: 10px;
+  padding: 20px;
+  background-color: $white-color;
+  box-shadow: 0 3px 10px rgba($black-color, 0.1);
+  color: $black-color;
+}
+
+.tooltip--open .tooltip__content {
+  display: block;
+}
+
+.tooltip__label {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: $gray-lite-color;
+}
+
+.tooltip__text {
+  margin: 0;
+  font-size: 16px;
+}
+
+
+.tooltip__content::before,
+.tooltip__content::after {
+  content: " ";
+  position: absolute;
+  background: $white-color;
+  left: 83px;
+  top: -5px;
+  width: 10px;
+  height: 10px;
+  box-shadow: 0 3px 10px rgba($black-color, 0.25);
+  z-index: -1;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.tooltip__content::after {
+  z-index: 3;
+  box-shadow: none;
+}
+
+@media (min-width: $tablet) {
+  .tooltip__content {
+    width: 545px;
+    right: -20px;
+    left: initial;
+  }
+
+  .tooltip__content::before,
+  .tooltip__content::after {
+    left: inherit;
+    right: 25px;
+  }
+}
+
+@media (min-width: $laptop) {
+  .tooltip__toggle {
+    &:focus {
+      opacity: 0.3;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}

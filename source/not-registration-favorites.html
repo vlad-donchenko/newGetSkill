@@ -252,1396 +252,1342 @@
         </ul>
       </div>
     </section>
-    <section class="cabinet">
-      <div class="container cabinet__inner">
-        <div class="menu-cabinet">
-          <div class="menu-cabinet__item active">
-            <a href="#" class="menu-cabinet__link">
-              <svg width="21" height="21">
-                <use xlink:href="#icon-cabinet-like"></use>
-              </svg>
-              Избранные
-            </a>
-          </div>
-          <div class="menu-cabinet__item">
-            <a href="#" class="menu-cabinet__link">
-              <svg width="21" height="21">
-                <use xlink:href="#icon-cabinet-setting"></use>
-              </svg>
-              Настройки
-            </a>
-          </div>
-          <div class="menu-cabinet__item">
-            <a href="#" class="menu-cabinet__link">
-              <svg width="21" height="20">
-                <use xlink:href="#icon-cabinet-star"></use>
-              </svg>
-              Отзывы
-            </a>
-          </div>
-          <div class="menu-cabinet__item menu-cabinet__item--separator">
-            <a href="#" class="menu-cabinet__link">
-              <svg width="21" height="21">
-                <use xlink:href="#icon-cabinet-exit"></use>
-              </svg>
-              Выход
-            </a>
-          </div>
-        </div>
-        <div class="cabinet__info-block">
-          <form action="user-cabinet.php" method="post" enctype="multipart/form-data">
-            <div class="cabinet__form">
-              <div class="cabinet__page-name">
-                <h2 class="h2">
-                    Избранные
-                </h2>
-                <div class="cabinet__submit cabinet__submit--hidden">
-                  <button type="submit" class="button button--cabinet-delete button--save button--red">
-                    <svg width="17" height="21">
-                        <use xlink:href="#icon-trash-red"></use>
-                    </svg>
-                    Очистить избранные
-                  </button>
-                </div>
-              </div>
-
-              <section class="catalog catalog-for-favorites">
-                <div class="catalog__filter">
-                  <div class="catalog__filter-top">
-                    <p class="catalog__info">
+    <div class="not-registration-favorites">
+      <div class="not-registration-favorites__inner container">
+        <section class="catalog  catalog-for-favorites not-registration-favorites__catalog">
+          <div class="catalog__filter">
+            <div class="catalog__filter-top">
+              <p class="catalog__info">
                       <span class="catalog__hidden">
                         Добавлено
                       </span>
-                      8 курсов / мастер-классов
-                    </p>
+                8 курсов / мастер-классов
+              </p>
 
 
-                    <div class="catalog__view">
-                      <label class="view" aria-label="Показать плиткой">
-                        <input type="radio" name="orientation" class="view__input visually-hidden" value="vertical" checked="">
-                        <span class="view__icon">
+              <div class="catalog__view">
+                <label class="view" aria-label="Показать плиткой">
+                  <input type="radio" name="orientation" class="view__input visually-hidden" value="vertical" checked="">
+                  <span class="view__icon">
                           <svg width="21" height="21">
                             <use xlink:href="#icon-vertical"></use>
                           </svg>
                         </span>
-                      </label>
-                      <label class="view" aria-label="Показать полосой">
-                        <input type="radio" name="orientation" class="view__input visually-hidden" value="default" >
-                        <span class="view__icon">
+                </label>
+                <label class="view" aria-label="Показать полосой">
+                  <input type="radio" name="orientation" class="view__input visually-hidden" value="default" >
+                  <span class="view__icon">
                           <svg width="21" height="21">
                             <use xlink:href="#icon-tile"></use>
                           </svg>
                         </span>
-                      </label>
-                    </div>
-                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+          <ul class="catalog__list catalog__list--vertical">
+            <li class="catalog__item">
+              <article class="product product--top">
+                <div class="product__picture">
+                  <a href="#" class="product__img">
+                    <picture>
+                      <source type="image/webp" srcset="img/product-1.webp">
+                      <img src="img/product-1.jpg" width="280" height="155" alt="Курс по маникюру">
+                    </picture>
+                  </a>
                 </div>
-                <ul class="catalog__list catalog__list--vertical">
-                  <li class="catalog__item">
-                    <article class="product product--top">
-                      <div class="product__picture">
-                        <a href="#" class="product__img">
-                          <picture>
-                            <source type="image/webp" srcset="img/product-1.webp">
-                            <img src="img/product-1.jpg" width="280" height="155" alt="Курс по маникюру">
-                          </picture>
-                        </a>
-                      </div>
-                      <div class="product__info-block">
-                        <h6 class="product__name">
-                          <a href="#">
-                            Курс по маникюру
-                          </a>
-                        </h6>
-                        <p class="product__organization">
-                          Makeup house school
-                        </p>
-                        <div class="product__cities">
-                          <svg width="11" height="16">
-                            <use xlink:href="#icon-location"></use>
-                          </svg>
-                          <p>
-                            Киев,
-                          </p>
-                          <p class="product__cities__more">
-                            <a href="#">
-                              еще 3 города
-                            </a>
-                          </p>
-                        </div>
-                        <div class="product__rating">
-                          5.00
-                          <svg width="17" height="15">
-                            <use xlink:href="#icon-star"></use>
-                          </svg>
-                        </div>
-                        <ul class="product__features">
-                          <li>
-                            <svg width="12" height="15">
-                              <use xlink:href="#icon-medal"></use>
-                            </svg>
-                            Выдаеться сертификат
-                          </li>
-                          <li>
-                            <svg width="12" height="15">
-                              <use xlink:href="#icon-group"></use>
-                            </svg>
-                            Группой / Индивид.
-                          </li>
-                        </ul>
-                        <div class="product__price">
-                          <p class="product__label-price">
-                            занятие:
-                          </p>
-                          <p class="product__sum">
-                            1800
-                            <span>
+                <div class="product__info-block">
+                  <h6 class="product__name">
+                    <a href="#">
+                      Курс по маникюру
+                    </a>
+                  </h6>
+                  <p class="product__organization">
+                    Makeup house school
+                  </p>
+                  <div class="product__cities">
+                    <svg width="11" height="16">
+                      <use xlink:href="#icon-location"></use>
+                    </svg>
+                    <p>
+                      Киев,
+                    </p>
+                    <p class="product__cities__more">
+                      <a href="#">
+                        еще 3 города
+                      </a>
+                    </p>
+                  </div>
+                  <div class="product__rating">
+                    5.00
+                    <svg width="17" height="15">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </div>
+                  <ul class="product__features">
+                    <li>
+                      <svg width="12" height="15">
+                        <use xlink:href="#icon-medal"></use>
+                      </svg>
+                      Выдаеться сертификат
+                    </li>
+                    <li>
+                      <svg width="12" height="15">
+                        <use xlink:href="#icon-group"></use>
+                      </svg>
+                      Группой / Индивид.
+                    </li>
+                  </ul>
+                  <div class="product__price">
+                    <p class="product__label-price">
+                      занятие:
+                    </p>
+                    <p class="product__sum">
+                      1800
+                      <span>
                               грн
                             </span>
-                            <span class="product__sale">
+                      <span class="product__sale">
                               -5%
                             </span>
-                          </p>
-                        </div>
-                      </div>
-                      <div class="product__actions">
-                        <a href="#" class="like like--active like-small" aria-label="Добавить в избранное">
-                          <svg width="17" height="16">
-                            <use xlink:href="#icon-like"></use>
-                          </svg>
-                        </a>
-                        <a href="#" class="button product__buy">
-                          Подробнее
-                          <svg width="7" height="13">
-                            <use xlink:href="#icon-arrow-right"></use>
-                          </svg>
-                        </a>
-                      </div>
-                    </article>
-                  </li>
-                  <li class="catalog__item">
-                    <article class="product product--top">
-                      <div class="product__picture">
-                        <a href="#" class="product__img">
-                          <picture>
-                            <source type="image/webp" srcset="img/product-1.webp">
-                            <img src="img/product-1.jpg" width="280" height="155" alt="Курс по маникюру">
-                          </picture>
-                        </a>
-                      </div>
-                      <div class="product__info-block">
-                        <h6 class="product__name">
-                          <a href="#">
-                            Курс по маникюру
-                          </a>
-                        </h6>
-                        <p class="product__organization">
-                          Makeup house school
-                        </p>
-                        <div class="product__cities">
-                          <svg width="11" height="16">
-                            <use xlink:href="#icon-location"></use>
-                          </svg>
-                          <p>
-                            Киев,
-                          </p>
-                          <p class="product__cities__more">
-                            <a href="#">
-                              еще 3 города
-                            </a>
-                          </p>
-                        </div>
-                        <div class="product__rating">
-                          5.00
-                          <svg width="17" height="15">
-                            <use xlink:href="#icon-star"></use>
-                          </svg>
-                        </div>
-                        <ul class="product__features">
-                          <li>
-                            <svg width="12" height="15">
-                              <use xlink:href="#icon-medal"></use>
-                            </svg>
-                            Выдаеться сертификат
-                          </li>
-                          <li>
-                            <svg width="12" height="15">
-                              <use xlink:href="#icon-group"></use>
-                            </svg>
-                            Группой / Индивид.
-                          </li>
-                        </ul>
-                        <div class="product__price">
-                          <p class="product__label-price">
-                            занятие:
-                          </p>
-                          <p class="product__sum">
-                            1800
-                            <span>
-                              грн
-                            </span>
-                          </p>
-                        </div>
-                      </div>
-                      <div class="product__actions">
-                        <a href="#" class="like like--active like-small" aria-label="Добавить в избранное">
-                          <svg width="17" height="16">
-                            <use xlink:href="#icon-like"></use>
-                          </svg>
-                        </a>
-                        <a href="#" class="button product__buy">
-                          Подробнее
-                          <svg width="7" height="13">
-                            <use xlink:href="#icon-arrow-right"></use>
-                          </svg>
-                        </a>
-                      </div>
-                    </article>
-                  </li>
-                  <li class="catalog__item">
-                    <article class="product product--top">
-                      <div class="product__picture">
-                        <a href="#" class="product__img">
-                          <picture>
-                            <source type="image/webp" srcset="img/product-1.webp">
-                            <img src="img/product-1.jpg" width="280" height="155" alt="Курс по маникюру">
-                          </picture>
-                        </a>
-                      </div>
-                      <div class="product__info-block">
-                        <h6 class="product__name">
-                          <a href="#">
-                            Курс по маникюру
-                          </a>
-                        </h6>
-                        <p class="product__organization">
-                          Makeup house school
-                        </p>
-                        <div class="product__cities">
-                          <svg width="11" height="16">
-                            <use xlink:href="#icon-location"></use>
-                          </svg>
-                          <p>
-                            Киев,
-                          </p>
-                          <p class="product__cities__more">
-                            <a href="#">
-                              еще 3 города
-                            </a>
-                          </p>
-                        </div>
-                        <div class="product__rating">
-                          5.00
-                          <svg width="17" height="15">
-                            <use xlink:href="#icon-star"></use>
-                          </svg>
-                        </div>
-                        <ul class="product__features">
-                          <li>
-                            <svg width="12" height="15">
-                              <use xlink:href="#icon-medal"></use>
-                            </svg>
-                            Выдаеться сертификат
-                          </li>
-                          <li>
-                            <svg width="12" height="15">
-                              <use xlink:href="#icon-group"></use>
-                            </svg>
-                            Группой / Индивид.
-                          </li>
-                        </ul>
-                        <div class="product__price">
-                          <p class="product__label-price">
-                            занятие:
-                          </p>
-                          <p class="product__sum">
-                            1800
-                            <span>
-                              грн
-                            </span>
-                          </p>
-                        </div>
-                      </div>
-                      <div class="product__actions">
-                        <a href="#" class="like like--active like-small" aria-label="Добавить в избранное">
-                          <svg width="17" height="16">
-                            <use xlink:href="#icon-like"></use>
-                          </svg>
-                        </a>
-                        <a href="#" class="button product__buy">
-                          Подробнее
-                          <svg width="7" height="13">
-                            <use xlink:href="#icon-arrow-right"></use>
-                          </svg>
-                        </a>
-                      </div>
-                    </article>
-                  </li>
-                  <li class="catalog__item">
-                    <article class="product">
-                      <div class="product__picture">
-                        <a href="#" class="product__img">
-                          <picture>
-                            <source type="image/webp" srcset="img/product-1.webp">
-                            <img src="img/product-1.jpg" width="280" height="155" alt="Курс по маникюру">
-                          </picture>
-                        </a>
-                      </div>
-                      <div class="product__info-block">
-                        <h6 class="product__name">
-                          <a href="#">
-                            Курс по маникюру
-                          </a>
-                        </h6>
-                        <p class="product__organization">
-                          Makeup house school
-                        </p>
-                        <div class="product__cities">
-                          <svg width="11" height="16">
-                            <use xlink:href="#icon-location"></use>
-                          </svg>
-                          <p>
-                            Киев,
-                          </p>
-                          <p class="product__cities__more">
-                            <a href="#">
-                              еще 3 города
-                            </a>
-                          </p>
-                        </div>
-                        <div class="product__rating">
-                          5.00
-                          <svg width="17" height="15">
-                            <use xlink:href="#icon-star"></use>
-                          </svg>
-                        </div>
-                        <ul class="product__features">
-                          <li>
-                            <svg width="12" height="15">
-                              <use xlink:href="#icon-medal"></use>
-                            </svg>
-                            Выдаеться сертификат
-                          </li>
-                          <li>
-                            <svg width="12" height="15">
-                              <use xlink:href="#icon-group"></use>
-                            </svg>
-                            Группой / Индивид.
-                          </li>
-                        </ul>
-                        <div class="product__price">
-                          <p class="product__label-price">
-                            занятие:
-                          </p>
-                          <p class="product__sum">
-                            1800
-                            <span>
-                              грн
-                            </span>
-                          </p>
-                        </div>
-                      </div>
-                      <div class="product__actions">
-                        <a href="#" class="like like-small" aria-label="Добавить в избранное">
-                          <svg width="17" height="16">
-                            <use xlink:href="#icon-like"></use>
-                          </svg>
-                        </a>
-                        <a href="#" class="button product__buy">
-                          Подробнее
-                          <svg width="7" height="13">
-                            <use xlink:href="#icon-arrow-right"></use>
-                          </svg>
-                        </a>
-                      </div>
-                    </article>
-                  </li>
-                  <li class="catalog__item">
-                    <article class="product">
-                      <div class="product__picture">
-                        <a href="#" class="product__img">
-                          <picture>
-                            <source type="image/webp" srcset="img/product-1.webp">
-                            <img src="img/product-1.jpg" width="280" height="155" alt="Курс по маникюру">
-                          </picture>
-                        </a>
-                      </div>
-                      <div class="product__info-block">
-                        <h6 class="product__name">
-                          <a href="#">
-                            Курс по маникюру
-                          </a>
-                        </h6>
-                        <p class="product__organization">
-                          Makeup house school
-                        </p>
-                        <div class="product__cities">
-                          <svg width="11" height="16">
-                            <use xlink:href="#icon-location"></use>
-                          </svg>
-                          <p>
-                            Киев,
-                          </p>
-                          <p class="product__cities__more">
-                            <a href="#">
-                              еще 3 города
-                            </a>
-                          </p>
-                        </div>
-                        <div class="product__rating">
-                          5.00
-                          <svg width="17" height="15">
-                            <use xlink:href="#icon-star"></use>
-                          </svg>
-                        </div>
-                        <ul class="product__features">
-                          <li>
-                            <svg width="12" height="15">
-                              <use xlink:href="#icon-medal"></use>
-                            </svg>
-                            Выдаеться сертификат
-                          </li>
-                          <li>
-                            <svg width="12" height="15">
-                              <use xlink:href="#icon-group"></use>
-                            </svg>
-                            Группой / Индивид.
-                          </li>
-                        </ul>
-                        <div class="product__price">
-                          <p class="product__label-price">
-                            занятие:
-                          </p>
-                          <p class="product__sum">
-                            1800
-                            <span>
-                              грн
-                            </span>
-                          </p>
-                        </div>
-                      </div>
-                      <div class="product__actions">
-                        <a href="#" class="like like-small" aria-label="Добавить в избранное">
-                          <svg width="17" height="16">
-                            <use xlink:href="#icon-like"></use>
-                          </svg>
-                        </a>
-                        <a href="#" class="button product__buy">
-                          Подробнее
-                          <svg width="7" height="13">
-                            <use xlink:href="#icon-arrow-right"></use>
-                          </svg>
-                        </a>
-                      </div>
-                    </article>
-                  </li>
-                  <li class="catalog__item">
-                    <article class="product">
-                      <div class="product__picture">
-                        <a href="#" class="product__img">
-                          <picture>
-                            <source type="image/webp" srcset="img/product-1.webp">
-                            <img src="img/product-1.jpg" width="280" height="155" alt="Курс по маникюру">
-                          </picture>
-                        </a>
-                      </div>
-                      <div class="product__info-block">
-                        <h6 class="product__name">
-                          <a href="#">
-                            Курс по маникюру
-                          </a>
-                        </h6>
-                        <p class="product__organization">
-                          Makeup house school
-                        </p>
-                        <div class="product__cities">
-                          <svg width="11" height="16">
-                            <use xlink:href="#icon-location"></use>
-                          </svg>
-                          <p>
-                            Киев,
-                          </p>
-                          <p class="product__cities__more">
-                            <a href="#">
-                              еще 3 города
-                            </a>
-                          </p>
-                        </div>
-                        <div class="product__rating">
-                          5.00
-                          <svg width="17" height="15">
-                            <use xlink:href="#icon-star"></use>
-                          </svg>
-                        </div>
-                        <ul class="product__features">
-                          <li>
-                            <svg width="12" height="15">
-                              <use xlink:href="#icon-medal"></use>
-                            </svg>
-                            Выдаеться сертификат
-                          </li>
-                          <li>
-                            <svg width="12" height="15">
-                              <use xlink:href="#icon-group"></use>
-                            </svg>
-                            Группой / Индивид.
-                          </li>
-                        </ul>
-                        <div class="product__price">
-                          <p class="product__label-price">
-                            занятие:
-                          </p>
-                          <p class="product__sum">
-                            1800
-                            <span>
-                              грн
-                            </span>
-                          </p>
-                        </div>
-                      </div>
-                      <div class="product__actions">
-                        <a href="#" class="like like-small" aria-label="Добавить в избранное">
-                          <svg width="17" height="16">
-                            <use xlink:href="#icon-like"></use>
-                          </svg>
-                        </a>
-                        <a href="#" class="button product__buy">
-                          Подробнее
-                          <svg width="7" height="13">
-                            <use xlink:href="#icon-arrow-right"></use>
-                          </svg>
-                        </a>
-                      </div>
-                    </article>
-                  </li>
-                  <li class="catalog__item">
-                    <article class="product">
-                      <div class="product__picture">
-                        <a href="#" class="product__img">
-                          <picture>
-                            <source type="image/webp" srcset="img/product-1.webp">
-                            <img src="img/product-1.jpg" width="280" height="155" alt="Курс по маникюру">
-                          </picture>
-                        </a>
-                      </div>
-                      <div class="product__info-block">
-                        <h6 class="product__name">
-                          <a href="#">
-                            Курс по маникюру
-                          </a>
-                        </h6>
-                        <p class="product__organization">
-                          Makeup house school
-                        </p>
-                        <div class="product__cities">
-                          <svg width="11" height="16">
-                            <use xlink:href="#icon-location"></use>
-                          </svg>
-                          <p>
-                            Киев,
-                          </p>
-                          <p class="product__cities__more">
-                            <a href="#">
-                              еще 3 города
-                            </a>
-                          </p>
-                        </div>
-                        <div class="product__rating">
-                          5.00
-                          <svg width="17" height="15">
-                            <use xlink:href="#icon-star"></use>
-                          </svg>
-                        </div>
-                        <ul class="product__features">
-                          <li>
-                            <svg width="12" height="15">
-                              <use xlink:href="#icon-medal"></use>
-                            </svg>
-                            Выдаеться сертификат
-                          </li>
-                          <li>
-                            <svg width="12" height="15">
-                              <use xlink:href="#icon-group"></use>
-                            </svg>
-                            Группой / Индивид.
-                          </li>
-                        </ul>
-                        <div class="product__price">
-                          <p class="product__label-price">
-                            занятие:
-                          </p>
-                          <p class="product__sum">
-                            1800
-                            <span>
-                              грн
-                            </span>
-                          </p>
-                        </div>
-                      </div>
-                      <div class="product__actions">
-                        <a href="#" class="like like-small" aria-label="Добавить в избранное">
-                          <svg width="17" height="16">
-                            <use xlink:href="#icon-like"></use>
-                          </svg>
-                        </a>
-                        <a href="#" class="button product__buy">
-                          Подробнее
-                          <svg width="7" height="13">
-                            <use xlink:href="#icon-arrow-right"></use>
-                          </svg>
-                        </a>
-                      </div>
-                    </article>
-                  </li>
-                  <li class="catalog__item">
-                    <article class="product">
-                      <div class="product__picture">
-                        <a href="#" class="product__img">
-                          <picture>
-                            <source type="image/webp" srcset="img/product-1.webp">
-                            <img src="img/product-1.jpg" width="280" height="155" alt="Курс по маникюру">
-                          </picture>
-                        </a>
-                      </div>
-                      <div class="product__info-block">
-                        <h6 class="product__name">
-                          <a href="#">
-                            Курс по маникюру
-                          </a>
-                        </h6>
-                        <p class="product__organization">
-                          Makeup house school
-                        </p>
-                        <div class="product__cities">
-                          <svg width="11" height="16">
-                            <use xlink:href="#icon-location"></use>
-                          </svg>
-                          <p>
-                            Киев,
-                          </p>
-                          <p class="product__cities__more">
-                            <a href="#">
-                              еще 3 города
-                            </a>
-                          </p>
-                        </div>
-                        <div class="product__rating">
-                          5.00
-                          <svg width="17" height="15">
-                            <use xlink:href="#icon-star"></use>
-                          </svg>
-                        </div>
-                        <ul class="product__features">
-                          <li>
-                            <svg width="12" height="15">
-                              <use xlink:href="#icon-medal"></use>
-                            </svg>
-                            Выдаеться сертификат
-                          </li>
-                          <li>
-                            <svg width="12" height="15">
-                              <use xlink:href="#icon-group"></use>
-                            </svg>
-                            Группой / Индивид.
-                          </li>
-                        </ul>
-                        <div class="product__price">
-                          <p class="product__label-price">
-                            занятие:
-                          </p>
-                          <p class="product__sum">
-                            1800
-                            <span>
-                              грн
-                            </span>
-                          </p>
-                        </div>
-                      </div>
-                      <div class="product__actions">
-                        <a href="#" class="like like-small" aria-label="Добавить в избранное">
-                          <svg width="17" height="16">
-                            <use xlink:href="#icon-like"></use>
-                          </svg>
-                        </a>
-                        <a href="#" class="button product__buy">
-                          Подробнее
-                          <svg width="7" height="13">
-                            <use xlink:href="#icon-arrow-right"></use>
-                          </svg>
-                        </a>
-                      </div>
-                    </article>
-                  </li>
-                  <li class="catalog__item">
-                    <article class="product">
-                      <div class="product__picture">
-                        <a href="#" class="product__img">
-                          <picture>
-                            <source type="image/webp" srcset="img/product-1.webp">
-                            <img src="img/product-1.jpg" width="280" height="155" alt="Курс по маникюру">
-                          </picture>
-                        </a>
-                      </div>
-                      <div class="product__info-block">
-                        <h6 class="product__name">
-                          <a href="#">
-                            Курс по маникюру
-                          </a>
-                        </h6>
-                        <p class="product__organization">
-                          Makeup house school
-                        </p>
-                        <div class="product__cities">
-                          <svg width="11" height="16">
-                            <use xlink:href="#icon-location"></use>
-                          </svg>
-                          <p>
-                            Киев,
-                          </p>
-                          <p class="product__cities__more">
-                            <a href="#">
-                              еще 3 города
-                            </a>
-                          </p>
-                        </div>
-                        <div class="product__rating">
-                          5.00
-                          <svg width="17" height="15">
-                            <use xlink:href="#icon-star"></use>
-                          </svg>
-                        </div>
-                        <ul class="product__features">
-                          <li>
-                            <svg width="12" height="15">
-                              <use xlink:href="#icon-medal"></use>
-                            </svg>
-                            Выдаеться сертификат
-                          </li>
-                          <li>
-                            <svg width="12" height="15">
-                              <use xlink:href="#icon-group"></use>
-                            </svg>
-                            Группой / Индивид.
-                          </li>
-                        </ul>
-                        <div class="product__price">
-                          <p class="product__label-price">
-                            занятие:
-                          </p>
-                          <p class="product__sum">
-                            1800
-                            <span>
-                              грн
-                            </span>
-                          </p>
-                        </div>
-                      </div>
-                      <div class="product__actions">
-                        <a href="#" class="like like-small" aria-label="Добавить в избранное">
-                          <svg width="17" height="16">
-                            <use xlink:href="#icon-like"></use>
-                          </svg>
-                        </a>
-                        <a href="#" class="button product__buy">
-                          Подробнее
-                          <svg width="7" height="13">
-                            <use xlink:href="#icon-arrow-right"></use>
-                          </svg>
-                        </a>
-                      </div>
-                    </article>
-                  </li>
-                  <li class="catalog__item">
-                    <article class="product">
-                      <div class="product__picture">
-                        <a href="#" class="product__img">
-                          <picture>
-                            <source type="image/webp" srcset="img/product-1.webp">
-                            <img src="img/product-1.jpg" width="280" height="155" alt="Курс по маникюру">
-                          </picture>
-                        </a>
-                      </div>
-                      <div class="product__info-block">
-                        <h6 class="product__name">
-                          <a href="#">
-                            Курс по маникюру
-                          </a>
-                        </h6>
-                        <p class="product__organization">
-                          Makeup house school
-                        </p>
-                        <div class="product__cities">
-                          <svg width="11" height="16">
-                            <use xlink:href="#icon-location"></use>
-                          </svg>
-                          <p>
-                            Киев,
-                          </p>
-                          <p class="product__cities__more">
-                            <a href="#">
-                              еще 3 города
-                            </a>
-                          </p>
-                        </div>
-                        <div class="product__rating">
-                          5.00
-                          <svg width="17" height="15">
-                            <use xlink:href="#icon-star"></use>
-                          </svg>
-                        </div>
-                        <ul class="product__features">
-                          <li>
-                            <svg width="12" height="15">
-                              <use xlink:href="#icon-medal"></use>
-                            </svg>
-                            Выдаеться сертификат
-                          </li>
-                          <li>
-                            <svg width="12" height="15">
-                              <use xlink:href="#icon-group"></use>
-                            </svg>
-                            Группой / Индивид.
-                          </li>
-                        </ul>
-                        <div class="product__price">
-                          <p class="product__label-price">
-                            занятие:
-                          </p>
-                          <p class="product__sum">
-                            1800
-                            <span>
-                              грн
-                            </span>
-                          </p>
-                        </div>
-                      </div>
-                      <div class="product__actions">
-                        <a href="#" class="like like-small" aria-label="Добавить в избранное">
-                          <svg width="17" height="16">
-                            <use xlink:href="#icon-like"></use>
-                          </svg>
-                        </a>
-                        <a href="#" class="button product__buy">
-                          Подробнее
-                          <svg width="7" height="13">
-                            <use xlink:href="#icon-arrow-right"></use>
-                          </svg>
-                        </a>
-                      </div>
-                    </article>
-                  </li>
-                  <li class="catalog__item">
-                    <article class="product">
-                      <div class="product__picture">
-                        <a href="#" class="product__img">
-                          <picture>
-                            <source type="image/webp" srcset="img/product-1.webp">
-                            <img src="img/product-1.jpg" width="280" height="155" alt="Курс по маникюру">
-                          </picture>
-                        </a>
-                      </div>
-                      <div class="product__info-block">
-                        <h6 class="product__name">
-                          <a href="#">
-                            Курс по маникюру
-                          </a>
-                        </h6>
-                        <p class="product__organization">
-                          Makeup house school
-                        </p>
-                        <div class="product__cities">
-                          <svg width="11" height="16">
-                            <use xlink:href="#icon-location"></use>
-                          </svg>
-                          <p>
-                            Киев,
-                          </p>
-                          <p class="product__cities__more">
-                            <a href="#">
-                              еще 3 города
-                            </a>
-                          </p>
-                        </div>
-                        <div class="product__rating">
-                          5.00
-                          <svg width="17" height="15">
-                            <use xlink:href="#icon-star"></use>
-                          </svg>
-                        </div>
-                        <ul class="product__features">
-                          <li>
-                            <svg width="12" height="15">
-                              <use xlink:href="#icon-medal"></use>
-                            </svg>
-                            Выдаеться сертификат
-                          </li>
-                          <li>
-                            <svg width="12" height="15">
-                              <use xlink:href="#icon-group"></use>
-                            </svg>
-                            Группой / Индивид.
-                          </li>
-                        </ul>
-                        <div class="product__price">
-                          <p class="product__label-price">
-                            занятие:
-                          </p>
-                          <p class="product__sum">
-                            1800
-                            <span>
-                              грн
-                            </span>
-                          </p>
-                        </div>
-                      </div>
-                      <div class="product__actions">
-                        <a href="#" class="like like-small" aria-label="Добавить в избранное">
-                          <svg width="17" height="16">
-                            <use xlink:href="#icon-like"></use>
-                          </svg>
-                        </a>
-                        <a href="#" class="button product__buy">
-                          Подробнее
-                          <svg width="7" height="13">
-                            <use xlink:href="#icon-arrow-right"></use>
-                          </svg>
-                        </a>
-                      </div>
-                    </article>
-                  </li>
-                  <li class="catalog__item">
-                    <article class="product">
-                      <div class="product__picture">
-                        <a href="#" class="product__img">
-                          <picture>
-                            <source type="image/webp" srcset="img/product-1.webp">
-                            <img src="img/product-1.jpg" width="280" height="155" alt="Курс по маникюру">
-                          </picture>
-                        </a>
-                      </div>
-                      <div class="product__info-block">
-                        <h6 class="product__name">
-                          <a href="#">
-                            Курс по маникюру
-                          </a>
-                        </h6>
-                        <p class="product__organization">
-                          Makeup house school
-                        </p>
-                        <div class="product__cities">
-                          <svg width="11" height="16">
-                            <use xlink:href="#icon-location"></use>
-                          </svg>
-                          <p>
-                            Киев,
-                          </p>
-                          <p class="product__cities__more">
-                            <a href="#">
-                              еще 3 города
-                            </a>
-                          </p>
-                        </div>
-                        <div class="product__rating">
-                          5.00
-                          <svg width="17" height="15">
-                            <use xlink:href="#icon-star"></use>
-                          </svg>
-                        </div>
-                        <ul class="product__features">
-                          <li>
-                            <svg width="12" height="15">
-                              <use xlink:href="#icon-medal"></use>
-                            </svg>
-                            Выдаеться сертификат
-                          </li>
-                          <li>
-                            <svg width="12" height="15">
-                              <use xlink:href="#icon-group"></use>
-                            </svg>
-                            Группой / Индивид.
-                          </li>
-                        </ul>
-                        <div class="product__price">
-                          <p class="product__label-price">
-                            занятие:
-                          </p>
-                          <p class="product__sum">
-                            1800
-                            <span>
-                              грн
-                            </span>
-                          </p>
-                        </div>
-                      </div>
-                      <div class="product__actions">
-                        <a href="#" class="like like-small" aria-label="Добавить в избранное">
-                          <svg width="17" height="16">
-                            <use xlink:href="#icon-like"></use>
-                          </svg>
-                        </a>
-                        <a href="#" class="button product__buy">
-                          Подробнее
-                          <svg width="7" height="13">
-                            <use xlink:href="#icon-arrow-right"></use>
-                          </svg>
-                        </a>
-                      </div>
-                    </article>
-                  </li>
-                  <li class="catalog__item">
-                    <article class="product">
-                      <div class="product__picture">
-                        <a href="#" class="product__img">
-                          <picture>
-                            <source type="image/webp" srcset="img/product-1.webp">
-                            <img src="img/product-1.jpg" width="280" height="155" alt="Курс по маникюру">
-                          </picture>
-                        </a>
-                      </div>
-                      <div class="product__info-block">
-                        <h6 class="product__name">
-                          <a href="#">
-                            Курс по маникюру
-                          </a>
-                        </h6>
-                        <p class="product__organization">
-                          Makeup house school
-                        </p>
-                        <div class="product__cities">
-                          <svg width="11" height="16">
-                            <use xlink:href="#icon-location"></use>
-                          </svg>
-                          <p>
-                            Киев,
-                          </p>
-                          <p class="product__cities__more">
-                            <a href="#">
-                              еще 3 города
-                            </a>
-                          </p>
-                        </div>
-                        <div class="product__rating">
-                          5.00
-                          <svg width="17" height="15">
-                            <use xlink:href="#icon-star"></use>
-                          </svg>
-                        </div>
-                        <ul class="product__features">
-                          <li>
-                            <svg width="12" height="15">
-                              <use xlink:href="#icon-medal"></use>
-                            </svg>
-                            Выдаеться сертификат
-                          </li>
-                          <li>
-                            <svg width="12" height="15">
-                              <use xlink:href="#icon-group"></use>
-                            </svg>
-                            Группой / Индивид.
-                          </li>
-                        </ul>
-                        <div class="product__price">
-                          <p class="product__label-price">
-                            занятие:
-                          </p>
-                          <p class="product__sum">
-                            1800
-                            <span>
-                              грн
-                            </span>
-                          </p>
-                        </div>
-                      </div>
-                      <div class="product__actions">
-                        <a href="#" class="like like-small" aria-label="Добавить в избранное">
-                          <svg width="17" height="16">
-                            <use xlink:href="#icon-like"></use>
-                          </svg>
-                        </a>
-                        <a href="#" class="button product__buy">
-                          Подробнее
-                          <svg width="7" height="13">
-                            <use xlink:href="#icon-arrow-right"></use>
-                          </svg>
-                        </a>
-                      </div>
-                    </article>
-                  </li>
-                  <li class="catalog__item">
-                    <article class="product">
-                      <div class="product__picture">
-                        <a href="#" class="product__img">
-                          <picture>
-                            <source type="image/webp" srcset="img/product-1.webp">
-                            <img src="img/product-1.jpg" width="280" height="155" alt="Курс по маникюру">
-                          </picture>
-                        </a>
-                      </div>
-                      <div class="product__info-block">
-                        <h6 class="product__name">
-                          <a href="#">
-                            Курс по маникюру
-                          </a>
-                        </h6>
-                        <p class="product__organization">
-                          Makeup house school
-                        </p>
-                        <div class="product__cities">
-                          <svg width="11" height="16">
-                            <use xlink:href="#icon-location"></use>
-                          </svg>
-                          <p>
-                            Киев,
-                          </p>
-                          <p class="product__cities__more">
-                            <a href="#">
-                              еще 3 города
-                            </a>
-                          </p>
-                        </div>
-                        <div class="product__rating">
-                          5.00
-                          <svg width="17" height="15">
-                            <use xlink:href="#icon-star"></use>
-                          </svg>
-                        </div>
-                        <ul class="product__features">
-                          <li>
-                            <svg width="12" height="15">
-                              <use xlink:href="#icon-medal"></use>
-                            </svg>
-                            Выдаеться сертификат
-                          </li>
-                          <li>
-                            <svg width="12" height="15">
-                              <use xlink:href="#icon-group"></use>
-                            </svg>
-                            Группой / Индивид.
-                          </li>
-                        </ul>
-                        <div class="product__price">
-                          <p class="product__label-price">
-                            занятие:
-                          </p>
-                          <p class="product__sum">
-                            1800
-                            <span>
-                              грн
-                            </span>
-                          </p>
-                        </div>
-                      </div>
-                      <div class="product__actions">
-                        <a href="#" class="like like-small" aria-label="Добавить в избранное">
-                          <svg width="17" height="16">
-                            <use xlink:href="#icon-like"></use>
-                          </svg>
-                        </a>
-                        <a href="#" class="button product__buy">
-                          Подробнее
-                          <svg width="7" height="13">
-                            <use xlink:href="#icon-arrow-right"></use>
-                          </svg>
-                        </a>
-                      </div>
-                    </article>
-                  </li>
-                  <li class="catalog__item">
-                    <article class="product">
-                      <div class="product__picture">
-                        <a href="#" class="product__img">
-                          <picture>
-                            <source type="image/webp" srcset="img/product-1.webp">
-                            <img src="img/product-1.jpg" width="280" height="155" alt="Курс по маникюру">
-                          </picture>
-                        </a>
-                      </div>
-                      <div class="product__info-block">
-                        <h6 class="product__name">
-                          <a href="#">
-                            Курс по маникюру
-                          </a>
-                        </h6>
-                        <p class="product__organization">
-                          Makeup house school
-                        </p>
-                        <div class="product__cities">
-                          <svg width="11" height="16">
-                            <use xlink:href="#icon-location"></use>
-                          </svg>
-                          <p>
-                            Киев,
-                          </p>
-                          <p class="product__cities__more">
-                            <a href="#">
-                              еще 3 города
-                            </a>
-                          </p>
-                        </div>
-                        <div class="product__rating">
-                          5.00
-                          <svg width="17" height="15">
-                            <use xlink:href="#icon-star"></use>
-                          </svg>
-                        </div>
-                        <ul class="product__features">
-                          <li>
-                            <svg width="12" height="15">
-                              <use xlink:href="#icon-medal"></use>
-                            </svg>
-                            Выдаеться сертификат
-                          </li>
-                          <li>
-                            <svg width="12" height="15">
-                              <use xlink:href="#icon-group"></use>
-                            </svg>
-                            Группой / Индивид.
-                          </li>
-                        </ul>
-                        <div class="product__price">
-                          <p class="product__label-price">
-                            занятие:
-                          </p>
-                          <p class="product__sum">
-                            1800
-                            <span>
-                              грн
-                            </span>
-                          </p>
-                        </div>
-                      </div>
-                      <div class="product__actions">
-                        <a href="#" class="like like-small" aria-label="Добавить в избранное">
-                          <svg width="17" height="16">
-                            <use xlink:href="#icon-like"></use>
-                          </svg>
-                        </a>
-                        <a href="#" class="button product__buy">
-                          Подробнее
-                          <svg width="7" height="13">
-                            <use xlink:href="#icon-arrow-right"></use>
-                          </svg>
-                        </a>
-                      </div>
-                    </article>
-                  </li>
-                  <li class="catalog__item">
-                    <article class="product">
-                      <div class="product__picture">
-                        <a href="#" class="product__img">
-                          <picture>
-                            <source type="image/webp" srcset="img/product-1.webp">
-                            <img src="img/product-1.jpg" width="280" height="155" alt="Курс по маникюру">
-                          </picture>
-                        </a>
-                      </div>
-                      <div class="product__info-block">
-                        <h6 class="product__name">
-                          <a href="#">
-                            Курс по маникюру
-                          </a>
-                        </h6>
-                        <p class="product__organization">
-                          Makeup house school
-                        </p>
-                        <div class="product__cities">
-                          <svg width="11" height="16">
-                            <use xlink:href="#icon-location"></use>
-                          </svg>
-                          <p>
-                            Киев,
-                          </p>
-                          <p class="product__cities__more">
-                            <a href="#">
-                              еще 3 города
-                            </a>
-                          </p>
-                        </div>
-                        <div class="product__rating">
-                          5.00
-                          <svg width="17" height="15">
-                            <use xlink:href="#icon-star"></use>
-                          </svg>
-                        </div>
-                        <ul class="product__features">
-                          <li>
-                            <svg width="12" height="15">
-                              <use xlink:href="#icon-medal"></use>
-                            </svg>
-                            Выдаеться сертификат
-                          </li>
-                          <li>
-                            <svg width="12" height="15">
-                              <use xlink:href="#icon-group"></use>
-                            </svg>
-                            Группой / Индивид.
-                          </li>
-                        </ul>
-                        <div class="product__price">
-                          <p class="product__label-price">
-                            занятие:
-                          </p>
-                          <p class="product__sum">
-                            1800
-                            <span>
-                              грн
-                            </span>
-                          </p>
-                        </div>
-                      </div>
-                      <div class="product__actions">
-                        <a href="#" class="like like-small" aria-label="Добавить в избранное">
-                          <svg width="17" height="16">
-                            <use xlink:href="#icon-like"></use>
-                          </svg>
-                        </a>
-                        <a href="#" class="button product__buy">
-                          Подробнее
-                          <svg width="7" height="13">
-                            <use xlink:href="#icon-arrow-right"></use>
-                          </svg>
-                        </a>
-                      </div>
-                    </article>
-                  </li>
-                </ul>
-                <button type="button" class="button catalog__load-more">
-                  Показать еще
-                </button>
-                <ul class="pagination catalog__pagination">
-                  <li class="pagination__item pagination__item--prev">
-                    <a href="#" class="pagination__link">
-                      <svg width="7" height="13">
-                        <use xlink:href="#icon-arrow-left"></use>
+                    </p>
+                  </div>
+                </div>
+                <div class="product__actions">
+                  <a href="#" class="like like--active like-small" aria-label="Добавить в избранное">
+                    <svg width="17" height="16">
+                      <use xlink:href="#icon-like"></use>
+                    </svg>
+                  </a>
+                  <a href="#" class="button product__buy">
+                    Подробнее
+                    <svg width="7" height="13">
+                      <use xlink:href="#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li class="catalog__item">
+              <article class="product product--top">
+                <div class="product__picture">
+                  <a href="#" class="product__img">
+                    <picture>
+                      <source type="image/webp" srcset="img/product-1.webp">
+                      <img src="img/product-1.jpg" width="280" height="155" alt="Курс по маникюру">
+                    </picture>
+                  </a>
+                </div>
+                <div class="product__info-block">
+                  <h6 class="product__name">
+                    <a href="#">
+                      Курс по маникюру
+                    </a>
+                  </h6>
+                  <p class="product__organization">
+                    Makeup house school
+                  </p>
+                  <div class="product__cities">
+                    <svg width="11" height="16">
+                      <use xlink:href="#icon-location"></use>
+                    </svg>
+                    <p>
+                      Киев,
+                    </p>
+                    <p class="product__cities__more">
+                      <a href="#">
+                        еще 3 города
+                      </a>
+                    </p>
+                  </div>
+                  <div class="product__rating">
+                    5.00
+                    <svg width="17" height="15">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </div>
+                  <ul class="product__features">
+                    <li>
+                      <svg width="12" height="15">
+                        <use xlink:href="#icon-medal"></use>
                       </svg>
-                      Назад
-                    </a>
-                  </li>
-                  <li class="pagination__item">
-                    <a href="#" class="pagination__link">
-                      1
-                    </a>
-                  </li>
-                  <li class="pagination__item pagination__item--active">
-                    <a class="pagination__link">
-                      2
-                    </a>
-                  </li>
-                  <li class="pagination__item pagination__item--next">
-                    <a href="#" class="pagination__link">
-                      Вперед
-                      <svg width="7" height="13">
-                        <use xlink:href="#icon-arrow-right"></use>
+                      Выдаеться сертификат
+                    </li>
+                    <li>
+                      <svg width="12" height="15">
+                        <use xlink:href="#icon-group"></use>
                       </svg>
+                      Группой / Индивид.
+                    </li>
+                  </ul>
+                  <div class="product__price">
+                    <p class="product__label-price">
+                      занятие:
+                    </p>
+                    <p class="product__sum">
+                      1800
+                      <span>
+                              грн
+                            </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="product__actions">
+                  <a href="#" class="like like--active like-small" aria-label="Добавить в избранное">
+                    <svg width="17" height="16">
+                      <use xlink:href="#icon-like"></use>
+                    </svg>
+                  </a>
+                  <a href="#" class="button product__buy">
+                    Подробнее
+                    <svg width="7" height="13">
+                      <use xlink:href="#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li class="catalog__item">
+              <article class="product product--top">
+                <div class="product__picture">
+                  <a href="#" class="product__img">
+                    <picture>
+                      <source type="image/webp" srcset="img/product-1.webp">
+                      <img src="img/product-1.jpg" width="280" height="155" alt="Курс по маникюру">
+                    </picture>
+                  </a>
+                </div>
+                <div class="product__info-block">
+                  <h6 class="product__name">
+                    <a href="#">
+                      Курс по маникюру
                     </a>
-                  </li>
-                </ul>
-              </section>
-            </div>
-          </form>
-        </div>
+                  </h6>
+                  <p class="product__organization">
+                    Makeup house school
+                  </p>
+                  <div class="product__cities">
+                    <svg width="11" height="16">
+                      <use xlink:href="#icon-location"></use>
+                    </svg>
+                    <p>
+                      Киев,
+                    </p>
+                    <p class="product__cities__more">
+                      <a href="#">
+                        еще 3 города
+                      </a>
+                    </p>
+                  </div>
+                  <div class="product__rating">
+                    5.00
+                    <svg width="17" height="15">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </div>
+                  <ul class="product__features">
+                    <li>
+                      <svg width="12" height="15">
+                        <use xlink:href="#icon-medal"></use>
+                      </svg>
+                      Выдаеться сертификат
+                    </li>
+                    <li>
+                      <svg width="12" height="15">
+                        <use xlink:href="#icon-group"></use>
+                      </svg>
+                      Группой / Индивид.
+                    </li>
+                  </ul>
+                  <div class="product__price">
+                    <p class="product__label-price">
+                      занятие:
+                    </p>
+                    <p class="product__sum">
+                      1800
+                      <span>
+                              грн
+                            </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="product__actions">
+                  <a href="#" class="like like--active like-small" aria-label="Добавить в избранное">
+                    <svg width="17" height="16">
+                      <use xlink:href="#icon-like"></use>
+                    </svg>
+                  </a>
+                  <a href="#" class="button product__buy">
+                    Подробнее
+                    <svg width="7" height="13">
+                      <use xlink:href="#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li class="catalog__item">
+              <article class="product">
+                <div class="product__picture">
+                  <a href="#" class="product__img">
+                    <picture>
+                      <source type="image/webp" srcset="img/product-1.webp">
+                      <img src="img/product-1.jpg" width="280" height="155" alt="Курс по маникюру">
+                    </picture>
+                  </a>
+                </div>
+                <div class="product__info-block">
+                  <h6 class="product__name">
+                    <a href="#">
+                      Курс по маникюру
+                    </a>
+                  </h6>
+                  <p class="product__organization">
+                    Makeup house school
+                  </p>
+                  <div class="product__cities">
+                    <svg width="11" height="16">
+                      <use xlink:href="#icon-location"></use>
+                    </svg>
+                    <p>
+                      Киев,
+                    </p>
+                    <p class="product__cities__more">
+                      <a href="#">
+                        еще 3 города
+                      </a>
+                    </p>
+                  </div>
+                  <div class="product__rating">
+                    5.00
+                    <svg width="17" height="15">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </div>
+                  <ul class="product__features">
+                    <li>
+                      <svg width="12" height="15">
+                        <use xlink:href="#icon-medal"></use>
+                      </svg>
+                      Выдаеться сертификат
+                    </li>
+                    <li>
+                      <svg width="12" height="15">
+                        <use xlink:href="#icon-group"></use>
+                      </svg>
+                      Группой / Индивид.
+                    </li>
+                  </ul>
+                  <div class="product__price">
+                    <p class="product__label-price">
+                      занятие:
+                    </p>
+                    <p class="product__sum">
+                      1800
+                      <span>
+                              грн
+                            </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="product__actions">
+                  <a href="#" class="like like-small" aria-label="Добавить в избранное">
+                    <svg width="17" height="16">
+                      <use xlink:href="#icon-like"></use>
+                    </svg>
+                  </a>
+                  <a href="#" class="button product__buy">
+                    Подробнее
+                    <svg width="7" height="13">
+                      <use xlink:href="#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li class="catalog__item">
+              <article class="product">
+                <div class="product__picture">
+                  <a href="#" class="product__img">
+                    <picture>
+                      <source type="image/webp" srcset="img/product-1.webp">
+                      <img src="img/product-1.jpg" width="280" height="155" alt="Курс по маникюру">
+                    </picture>
+                  </a>
+                </div>
+                <div class="product__info-block">
+                  <h6 class="product__name">
+                    <a href="#">
+                      Курс по маникюру
+                    </a>
+                  </h6>
+                  <p class="product__organization">
+                    Makeup house school
+                  </p>
+                  <div class="product__cities">
+                    <svg width="11" height="16">
+                      <use xlink:href="#icon-location"></use>
+                    </svg>
+                    <p>
+                      Киев,
+                    </p>
+                    <p class="product__cities__more">
+                      <a href="#">
+                        еще 3 города
+                      </a>
+                    </p>
+                  </div>
+                  <div class="product__rating">
+                    5.00
+                    <svg width="17" height="15">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </div>
+                  <ul class="product__features">
+                    <li>
+                      <svg width="12" height="15">
+                        <use xlink:href="#icon-medal"></use>
+                      </svg>
+                      Выдаеться сертификат
+                    </li>
+                    <li>
+                      <svg width="12" height="15">
+                        <use xlink:href="#icon-group"></use>
+                      </svg>
+                      Группой / Индивид.
+                    </li>
+                  </ul>
+                  <div class="product__price">
+                    <p class="product__label-price">
+                      занятие:
+                    </p>
+                    <p class="product__sum">
+                      1800
+                      <span>
+                              грн
+                            </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="product__actions">
+                  <a href="#" class="like like-small" aria-label="Добавить в избранное">
+                    <svg width="17" height="16">
+                      <use xlink:href="#icon-like"></use>
+                    </svg>
+                  </a>
+                  <a href="#" class="button product__buy">
+                    Подробнее
+                    <svg width="7" height="13">
+                      <use xlink:href="#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li class="catalog__item">
+              <article class="product">
+                <div class="product__picture">
+                  <a href="#" class="product__img">
+                    <picture>
+                      <source type="image/webp" srcset="img/product-1.webp">
+                      <img src="img/product-1.jpg" width="280" height="155" alt="Курс по маникюру">
+                    </picture>
+                  </a>
+                </div>
+                <div class="product__info-block">
+                  <h6 class="product__name">
+                    <a href="#">
+                      Курс по маникюру
+                    </a>
+                  </h6>
+                  <p class="product__organization">
+                    Makeup house school
+                  </p>
+                  <div class="product__cities">
+                    <svg width="11" height="16">
+                      <use xlink:href="#icon-location"></use>
+                    </svg>
+                    <p>
+                      Киев,
+                    </p>
+                    <p class="product__cities__more">
+                      <a href="#">
+                        еще 3 города
+                      </a>
+                    </p>
+                  </div>
+                  <div class="product__rating">
+                    5.00
+                    <svg width="17" height="15">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </div>
+                  <ul class="product__features">
+                    <li>
+                      <svg width="12" height="15">
+                        <use xlink:href="#icon-medal"></use>
+                      </svg>
+                      Выдаеться сертификат
+                    </li>
+                    <li>
+                      <svg width="12" height="15">
+                        <use xlink:href="#icon-group"></use>
+                      </svg>
+                      Группой / Индивид.
+                    </li>
+                  </ul>
+                  <div class="product__price">
+                    <p class="product__label-price">
+                      занятие:
+                    </p>
+                    <p class="product__sum">
+                      1800
+                      <span>
+                              грн
+                            </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="product__actions">
+                  <a href="#" class="like like-small" aria-label="Добавить в избранное">
+                    <svg width="17" height="16">
+                      <use xlink:href="#icon-like"></use>
+                    </svg>
+                  </a>
+                  <a href="#" class="button product__buy">
+                    Подробнее
+                    <svg width="7" height="13">
+                      <use xlink:href="#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li class="catalog__item">
+              <article class="product">
+                <div class="product__picture">
+                  <a href="#" class="product__img">
+                    <picture>
+                      <source type="image/webp" srcset="img/product-1.webp">
+                      <img src="img/product-1.jpg" width="280" height="155" alt="Курс по маникюру">
+                    </picture>
+                  </a>
+                </div>
+                <div class="product__info-block">
+                  <h6 class="product__name">
+                    <a href="#">
+                      Курс по маникюру
+                    </a>
+                  </h6>
+                  <p class="product__organization">
+                    Makeup house school
+                  </p>
+                  <div class="product__cities">
+                    <svg width="11" height="16">
+                      <use xlink:href="#icon-location"></use>
+                    </svg>
+                    <p>
+                      Киев,
+                    </p>
+                    <p class="product__cities__more">
+                      <a href="#">
+                        еще 3 города
+                      </a>
+                    </p>
+                  </div>
+                  <div class="product__rating">
+                    5.00
+                    <svg width="17" height="15">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </div>
+                  <ul class="product__features">
+                    <li>
+                      <svg width="12" height="15">
+                        <use xlink:href="#icon-medal"></use>
+                      </svg>
+                      Выдаеться сертификат
+                    </li>
+                    <li>
+                      <svg width="12" height="15">
+                        <use xlink:href="#icon-group"></use>
+                      </svg>
+                      Группой / Индивид.
+                    </li>
+                  </ul>
+                  <div class="product__price">
+                    <p class="product__label-price">
+                      занятие:
+                    </p>
+                    <p class="product__sum">
+                      1800
+                      <span>
+                              грн
+                            </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="product__actions">
+                  <a href="#" class="like like-small" aria-label="Добавить в избранное">
+                    <svg width="17" height="16">
+                      <use xlink:href="#icon-like"></use>
+                    </svg>
+                  </a>
+                  <a href="#" class="button product__buy">
+                    Подробнее
+                    <svg width="7" height="13">
+                      <use xlink:href="#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li class="catalog__item">
+              <article class="product">
+                <div class="product__picture">
+                  <a href="#" class="product__img">
+                    <picture>
+                      <source type="image/webp" srcset="img/product-1.webp">
+                      <img src="img/product-1.jpg" width="280" height="155" alt="Курс по маникюру">
+                    </picture>
+                  </a>
+                </div>
+                <div class="product__info-block">
+                  <h6 class="product__name">
+                    <a href="#">
+                      Курс по маникюру
+                    </a>
+                  </h6>
+                  <p class="product__organization">
+                    Makeup house school
+                  </p>
+                  <div class="product__cities">
+                    <svg width="11" height="16">
+                      <use xlink:href="#icon-location"></use>
+                    </svg>
+                    <p>
+                      Киев,
+                    </p>
+                    <p class="product__cities__more">
+                      <a href="#">
+                        еще 3 города
+                      </a>
+                    </p>
+                  </div>
+                  <div class="product__rating">
+                    5.00
+                    <svg width="17" height="15">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </div>
+                  <ul class="product__features">
+                    <li>
+                      <svg width="12" height="15">
+                        <use xlink:href="#icon-medal"></use>
+                      </svg>
+                      Выдаеться сертификат
+                    </li>
+                    <li>
+                      <svg width="12" height="15">
+                        <use xlink:href="#icon-group"></use>
+                      </svg>
+                      Группой / Индивид.
+                    </li>
+                  </ul>
+                  <div class="product__price">
+                    <p class="product__label-price">
+                      занятие:
+                    </p>
+                    <p class="product__sum">
+                      1800
+                      <span>
+                              грн
+                            </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="product__actions">
+                  <a href="#" class="like like-small" aria-label="Добавить в избранное">
+                    <svg width="17" height="16">
+                      <use xlink:href="#icon-like"></use>
+                    </svg>
+                  </a>
+                  <a href="#" class="button product__buy">
+                    Подробнее
+                    <svg width="7" height="13">
+                      <use xlink:href="#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li class="catalog__item">
+              <article class="product">
+                <div class="product__picture">
+                  <a href="#" class="product__img">
+                    <picture>
+                      <source type="image/webp" srcset="img/product-1.webp">
+                      <img src="img/product-1.jpg" width="280" height="155" alt="Курс по маникюру">
+                    </picture>
+                  </a>
+                </div>
+                <div class="product__info-block">
+                  <h6 class="product__name">
+                    <a href="#">
+                      Курс по маникюру
+                    </a>
+                  </h6>
+                  <p class="product__organization">
+                    Makeup house school
+                  </p>
+                  <div class="product__cities">
+                    <svg width="11" height="16">
+                      <use xlink:href="#icon-location"></use>
+                    </svg>
+                    <p>
+                      Киев,
+                    </p>
+                    <p class="product__cities__more">
+                      <a href="#">
+                        еще 3 города
+                      </a>
+                    </p>
+                  </div>
+                  <div class="product__rating">
+                    5.00
+                    <svg width="17" height="15">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </div>
+                  <ul class="product__features">
+                    <li>
+                      <svg width="12" height="15">
+                        <use xlink:href="#icon-medal"></use>
+                      </svg>
+                      Выдаеться сертификат
+                    </li>
+                    <li>
+                      <svg width="12" height="15">
+                        <use xlink:href="#icon-group"></use>
+                      </svg>
+                      Группой / Индивид.
+                    </li>
+                  </ul>
+                  <div class="product__price">
+                    <p class="product__label-price">
+                      занятие:
+                    </p>
+                    <p class="product__sum">
+                      1800
+                      <span>
+                              грн
+                            </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="product__actions">
+                  <a href="#" class="like like-small" aria-label="Добавить в избранное">
+                    <svg width="17" height="16">
+                      <use xlink:href="#icon-like"></use>
+                    </svg>
+                  </a>
+                  <a href="#" class="button product__buy">
+                    Подробнее
+                    <svg width="7" height="13">
+                      <use xlink:href="#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li class="catalog__item">
+              <article class="product">
+                <div class="product__picture">
+                  <a href="#" class="product__img">
+                    <picture>
+                      <source type="image/webp" srcset="img/product-1.webp">
+                      <img src="img/product-1.jpg" width="280" height="155" alt="Курс по маникюру">
+                    </picture>
+                  </a>
+                </div>
+                <div class="product__info-block">
+                  <h6 class="product__name">
+                    <a href="#">
+                      Курс по маникюру
+                    </a>
+                  </h6>
+                  <p class="product__organization">
+                    Makeup house school
+                  </p>
+                  <div class="product__cities">
+                    <svg width="11" height="16">
+                      <use xlink:href="#icon-location"></use>
+                    </svg>
+                    <p>
+                      Киев,
+                    </p>
+                    <p class="product__cities__more">
+                      <a href="#">
+                        еще 3 города
+                      </a>
+                    </p>
+                  </div>
+                  <div class="product__rating">
+                    5.00
+                    <svg width="17" height="15">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </div>
+                  <ul class="product__features">
+                    <li>
+                      <svg width="12" height="15">
+                        <use xlink:href="#icon-medal"></use>
+                      </svg>
+                      Выдаеться сертификат
+                    </li>
+                    <li>
+                      <svg width="12" height="15">
+                        <use xlink:href="#icon-group"></use>
+                      </svg>
+                      Группой / Индивид.
+                    </li>
+                  </ul>
+                  <div class="product__price">
+                    <p class="product__label-price">
+                      занятие:
+                    </p>
+                    <p class="product__sum">
+                      1800
+                      <span>
+                              грн
+                            </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="product__actions">
+                  <a href="#" class="like like-small" aria-label="Добавить в избранное">
+                    <svg width="17" height="16">
+                      <use xlink:href="#icon-like"></use>
+                    </svg>
+                  </a>
+                  <a href="#" class="button product__buy">
+                    Подробнее
+                    <svg width="7" height="13">
+                      <use xlink:href="#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li class="catalog__item">
+              <article class="product">
+                <div class="product__picture">
+                  <a href="#" class="product__img">
+                    <picture>
+                      <source type="image/webp" srcset="img/product-1.webp">
+                      <img src="img/product-1.jpg" width="280" height="155" alt="Курс по маникюру">
+                    </picture>
+                  </a>
+                </div>
+                <div class="product__info-block">
+                  <h6 class="product__name">
+                    <a href="#">
+                      Курс по маникюру
+                    </a>
+                  </h6>
+                  <p class="product__organization">
+                    Makeup house school
+                  </p>
+                  <div class="product__cities">
+                    <svg width="11" height="16">
+                      <use xlink:href="#icon-location"></use>
+                    </svg>
+                    <p>
+                      Киев,
+                    </p>
+                    <p class="product__cities__more">
+                      <a href="#">
+                        еще 3 города
+                      </a>
+                    </p>
+                  </div>
+                  <div class="product__rating">
+                    5.00
+                    <svg width="17" height="15">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </div>
+                  <ul class="product__features">
+                    <li>
+                      <svg width="12" height="15">
+                        <use xlink:href="#icon-medal"></use>
+                      </svg>
+                      Выдаеться сертификат
+                    </li>
+                    <li>
+                      <svg width="12" height="15">
+                        <use xlink:href="#icon-group"></use>
+                      </svg>
+                      Группой / Индивид.
+                    </li>
+                  </ul>
+                  <div class="product__price">
+                    <p class="product__label-price">
+                      занятие:
+                    </p>
+                    <p class="product__sum">
+                      1800
+                      <span>
+                              грн
+                            </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="product__actions">
+                  <a href="#" class="like like-small" aria-label="Добавить в избранное">
+                    <svg width="17" height="16">
+                      <use xlink:href="#icon-like"></use>
+                    </svg>
+                  </a>
+                  <a href="#" class="button product__buy">
+                    Подробнее
+                    <svg width="7" height="13">
+                      <use xlink:href="#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li class="catalog__item">
+              <article class="product">
+                <div class="product__picture">
+                  <a href="#" class="product__img">
+                    <picture>
+                      <source type="image/webp" srcset="img/product-1.webp">
+                      <img src="img/product-1.jpg" width="280" height="155" alt="Курс по маникюру">
+                    </picture>
+                  </a>
+                </div>
+                <div class="product__info-block">
+                  <h6 class="product__name">
+                    <a href="#">
+                      Курс по маникюру
+                    </a>
+                  </h6>
+                  <p class="product__organization">
+                    Makeup house school
+                  </p>
+                  <div class="product__cities">
+                    <svg width="11" height="16">
+                      <use xlink:href="#icon-location"></use>
+                    </svg>
+                    <p>
+                      Киев,
+                    </p>
+                    <p class="product__cities__more">
+                      <a href="#">
+                        еще 3 города
+                      </a>
+                    </p>
+                  </div>
+                  <div class="product__rating">
+                    5.00
+                    <svg width="17" height="15">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </div>
+                  <ul class="product__features">
+                    <li>
+                      <svg width="12" height="15">
+                        <use xlink:href="#icon-medal"></use>
+                      </svg>
+                      Выдаеться сертификат
+                    </li>
+                    <li>
+                      <svg width="12" height="15">
+                        <use xlink:href="#icon-group"></use>
+                      </svg>
+                      Группой / Индивид.
+                    </li>
+                  </ul>
+                  <div class="product__price">
+                    <p class="product__label-price">
+                      занятие:
+                    </p>
+                    <p class="product__sum">
+                      1800
+                      <span>
+                              грн
+                            </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="product__actions">
+                  <a href="#" class="like like-small" aria-label="Добавить в избранное">
+                    <svg width="17" height="16">
+                      <use xlink:href="#icon-like"></use>
+                    </svg>
+                  </a>
+                  <a href="#" class="button product__buy">
+                    Подробнее
+                    <svg width="7" height="13">
+                      <use xlink:href="#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li class="catalog__item">
+              <article class="product">
+                <div class="product__picture">
+                  <a href="#" class="product__img">
+                    <picture>
+                      <source type="image/webp" srcset="img/product-1.webp">
+                      <img src="img/product-1.jpg" width="280" height="155" alt="Курс по маникюру">
+                    </picture>
+                  </a>
+                </div>
+                <div class="product__info-block">
+                  <h6 class="product__name">
+                    <a href="#">
+                      Курс по маникюру
+                    </a>
+                  </h6>
+                  <p class="product__organization">
+                    Makeup house school
+                  </p>
+                  <div class="product__cities">
+                    <svg width="11" height="16">
+                      <use xlink:href="#icon-location"></use>
+                    </svg>
+                    <p>
+                      Киев,
+                    </p>
+                    <p class="product__cities__more">
+                      <a href="#">
+                        еще 3 города
+                      </a>
+                    </p>
+                  </div>
+                  <div class="product__rating">
+                    5.00
+                    <svg width="17" height="15">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </div>
+                  <ul class="product__features">
+                    <li>
+                      <svg width="12" height="15">
+                        <use xlink:href="#icon-medal"></use>
+                      </svg>
+                      Выдаеться сертификат
+                    </li>
+                    <li>
+                      <svg width="12" height="15">
+                        <use xlink:href="#icon-group"></use>
+                      </svg>
+                      Группой / Индивид.
+                    </li>
+                  </ul>
+                  <div class="product__price">
+                    <p class="product__label-price">
+                      занятие:
+                    </p>
+                    <p class="product__sum">
+                      1800
+                      <span>
+                              грн
+                            </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="product__actions">
+                  <a href="#" class="like like-small" aria-label="Добавить в избранное">
+                    <svg width="17" height="16">
+                      <use xlink:href="#icon-like"></use>
+                    </svg>
+                  </a>
+                  <a href="#" class="button product__buy">
+                    Подробнее
+                    <svg width="7" height="13">
+                      <use xlink:href="#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li class="catalog__item">
+              <article class="product">
+                <div class="product__picture">
+                  <a href="#" class="product__img">
+                    <picture>
+                      <source type="image/webp" srcset="img/product-1.webp">
+                      <img src="img/product-1.jpg" width="280" height="155" alt="Курс по маникюру">
+                    </picture>
+                  </a>
+                </div>
+                <div class="product__info-block">
+                  <h6 class="product__name">
+                    <a href="#">
+                      Курс по маникюру
+                    </a>
+                  </h6>
+                  <p class="product__organization">
+                    Makeup house school
+                  </p>
+                  <div class="product__cities">
+                    <svg width="11" height="16">
+                      <use xlink:href="#icon-location"></use>
+                    </svg>
+                    <p>
+                      Киев,
+                    </p>
+                    <p class="product__cities__more">
+                      <a href="#">
+                        еще 3 города
+                      </a>
+                    </p>
+                  </div>
+                  <div class="product__rating">
+                    5.00
+                    <svg width="17" height="15">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </div>
+                  <ul class="product__features">
+                    <li>
+                      <svg width="12" height="15">
+                        <use xlink:href="#icon-medal"></use>
+                      </svg>
+                      Выдаеться сертификат
+                    </li>
+                    <li>
+                      <svg width="12" height="15">
+                        <use xlink:href="#icon-group"></use>
+                      </svg>
+                      Группой / Индивид.
+                    </li>
+                  </ul>
+                  <div class="product__price">
+                    <p class="product__label-price">
+                      занятие:
+                    </p>
+                    <p class="product__sum">
+                      1800
+                      <span>
+                              грн
+                            </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="product__actions">
+                  <a href="#" class="like like-small" aria-label="Добавить в избранное">
+                    <svg width="17" height="16">
+                      <use xlink:href="#icon-like"></use>
+                    </svg>
+                  </a>
+                  <a href="#" class="button product__buy">
+                    Подробнее
+                    <svg width="7" height="13">
+                      <use xlink:href="#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li class="catalog__item">
+              <article class="product">
+                <div class="product__picture">
+                  <a href="#" class="product__img">
+                    <picture>
+                      <source type="image/webp" srcset="img/product-1.webp">
+                      <img src="img/product-1.jpg" width="280" height="155" alt="Курс по маникюру">
+                    </picture>
+                  </a>
+                </div>
+                <div class="product__info-block">
+                  <h6 class="product__name">
+                    <a href="#">
+                      Курс по маникюру
+                    </a>
+                  </h6>
+                  <p class="product__organization">
+                    Makeup house school
+                  </p>
+                  <div class="product__cities">
+                    <svg width="11" height="16">
+                      <use xlink:href="#icon-location"></use>
+                    </svg>
+                    <p>
+                      Киев,
+                    </p>
+                    <p class="product__cities__more">
+                      <a href="#">
+                        еще 3 города
+                      </a>
+                    </p>
+                  </div>
+                  <div class="product__rating">
+                    5.00
+                    <svg width="17" height="15">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </div>
+                  <ul class="product__features">
+                    <li>
+                      <svg width="12" height="15">
+                        <use xlink:href="#icon-medal"></use>
+                      </svg>
+                      Выдаеться сертификат
+                    </li>
+                    <li>
+                      <svg width="12" height="15">
+                        <use xlink:href="#icon-group"></use>
+                      </svg>
+                      Группой / Индивид.
+                    </li>
+                  </ul>
+                  <div class="product__price">
+                    <p class="product__label-price">
+                      занятие:
+                    </p>
+                    <p class="product__sum">
+                      1800
+                      <span>
+                              грн
+                            </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="product__actions">
+                  <a href="#" class="like like-small" aria-label="Добавить в избранное">
+                    <svg width="17" height="16">
+                      <use xlink:href="#icon-like"></use>
+                    </svg>
+                  </a>
+                  <a href="#" class="button product__buy">
+                    Подробнее
+                    <svg width="7" height="13">
+                      <use xlink:href="#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </li>
+            <li class="catalog__item">
+              <article class="product">
+                <div class="product__picture">
+                  <a href="#" class="product__img">
+                    <picture>
+                      <source type="image/webp" srcset="img/product-1.webp">
+                      <img src="img/product-1.jpg" width="280" height="155" alt="Курс по маникюру">
+                    </picture>
+                  </a>
+                </div>
+                <div class="product__info-block">
+                  <h6 class="product__name">
+                    <a href="#">
+                      Курс по маникюру
+                    </a>
+                  </h6>
+                  <p class="product__organization">
+                    Makeup house school
+                  </p>
+                  <div class="product__cities">
+                    <svg width="11" height="16">
+                      <use xlink:href="#icon-location"></use>
+                    </svg>
+                    <p>
+                      Киев,
+                    </p>
+                    <p class="product__cities__more">
+                      <a href="#">
+                        еще 3 города
+                      </a>
+                    </p>
+                  </div>
+                  <div class="product__rating">
+                    5.00
+                    <svg width="17" height="15">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </div>
+                  <ul class="product__features">
+                    <li>
+                      <svg width="12" height="15">
+                        <use xlink:href="#icon-medal"></use>
+                      </svg>
+                      Выдаеться сертификат
+                    </li>
+                    <li>
+                      <svg width="12" height="15">
+                        <use xlink:href="#icon-group"></use>
+                      </svg>
+                      Группой / Индивид.
+                    </li>
+                  </ul>
+                  <div class="product__price">
+                    <p class="product__label-price">
+                      занятие:
+                    </p>
+                    <p class="product__sum">
+                      1800
+                      <span>
+                              грн
+                            </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="product__actions">
+                  <a href="#" class="like like-small" aria-label="Добавить в избранное">
+                    <svg width="17" height="16">
+                      <use xlink:href="#icon-like"></use>
+                    </svg>
+                  </a>
+                  <a href="#" class="button product__buy">
+                    Подробнее
+                    <svg width="7" height="13">
+                      <use xlink:href="#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <button type="button" class="button catalog__load-more">
+            Показать еще
+          </button>
+          <ul class="pagination catalog__pagination">
+            <li class="pagination__item pagination__item--prev">
+              <a href="#" class="pagination__link">
+                <svg width="7" height="13">
+                  <use xlink:href="#icon-arrow-left"></use>
+                </svg>
+                Назад
+              </a>
+            </li>
+            <li class="pagination__item">
+              <a href="#" class="pagination__link">
+                1
+              </a>
+            </li>
+            <li class="pagination__item pagination__item--active">
+              <a class="pagination__link">
+                2
+              </a>
+            </li>
+            <li class="pagination__item pagination__item--next">
+              <a href="#" class="pagination__link">
+                Вперед
+                <svg width="7" height="13">
+                  <use xlink:href="#icon-arrow-right"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </section>
       </div>
-    </section>
+    </div>
   </main>
   <footer class="site-footer">
     <div class="container site-footer__inner-top">
