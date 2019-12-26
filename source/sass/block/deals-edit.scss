@@ -1,0 +1,348 @@
+.deals-edit__name {
+  position: relative;
+  max-width: 254px;
+  width: 100%;
+}
+
+.deals-edit__title a {
+  position: relative;
+  padding-left: 27px;
+  padding-right: 35px;
+  display: block;
+  color: $black-color;
+  text-decoration: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  &:focus {
+    color: rgba($black-color, 0.3);
+  }
+}
+
+.deals-edit__title a svg {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.deals-edit__item-input {
+  width: 100%;
+  height: 22px;
+  border: none;
+  border-bottom: 1px solid $gray-color;
+
+  &:focus {
+    outline: none;
+    border-color: $violet-dark-color;
+  }
+}
+
+.deals-edit__button-edit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background: transparent;
+  border: none;
+
+  &:focus {
+    outline: none;
+
+    svg {
+      fill: $black-clear-color;
+    }
+  }
+}
+
+.deals-edit__button-edit svg {
+  fill: $gray-lite-color;
+}
+
+.deals-edit__name .deals-edit__button-edit {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.deals-edit__item-label {
+  margin-bottom: 3px;
+  color: $gray-lite-color;
+  font-size: 14px;
+}
+
+.deals-edit__item .deals-edit__item-input-wrap {
+  display: none;
+}
+
+.deals-edit__name .deals-edit__item-label {
+  margin-top: 0;
+}
+
+.deals-edit__name  .deals-edit__item--open .deals-edit__item-input-wrap {
+  display: block;
+}
+
+.deals-edit__name .deals-edit__item--open .content-deals-edit {
+  display: none;
+}
+
+.deals-edit__select-info {
+  margin-top: 19px;
+}
+
+.deals-edit__select-status {
+  margin-top: 26px;
+}
+
+.deals-edit__edit-list .deals-edit__item-input-wrap {
+  display: block;
+}
+
+.deals-edit__item--date {
+  margin: 0;
+  line-height: 22px;
+  font-size: 16px;
+  font-weight: 300;
+  color: $black-clear-color;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.deals-edit__edit-list .deals-edit__item-input-wrap {
+  padding-right: 37px;
+}
+
+.deals-edit__item__input-content {
+  display: none;
+}
+
+.deals-edit__edit-list .deals-edit__button-edit {
+  position: absolute;
+  right: -9px;
+  top: 15px;
+}
+
+.deals-edit__edit-list .deals-edit__item {
+  position: relative;
+}
+
+.deals-edit__edit-list .deals-edit__item--open .deals-edit__item--date {
+  display: none;
+}
+
+.deals-edit__edit-list .deals-edit__item--open .deals-edit__button-edit {
+  display: none;
+}
+
+.deals-edit__edit-list .deals-edit__item--open .deals-edit__item__input-content {
+  display: block;
+}
+
+.deals-edit__edit-list .deals-edit__item--open .deals-edit__item-input-wrap {
+  padding-right: 0;
+}
+
+.deals-edit__edit-list .deals-edit__item-label {
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.deals-edit__edit-list {
+  margin-top: 31px;
+}
+
+.deals-edit__edit-right .deals-edit__item,
+.deals-edit__edit-left .deals-edit__item {
+  margin-top: 22px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.deals-edit__edit-right {
+  margin-top: 26px;
+}
+
+.deals-edit__comment {
+  margin-top: 34px;
+}
+
+@media (min-width: $tablet) {
+  .deals-edit__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .deals-edit__select-status {
+    max-width: 389px;
+  }
+
+  .deals-edit {
+    position: relative;
+  }
+
+  .deals-edit__edit-list {
+    display: flex;
+    padding: 30px;
+    border: 1px solid $gray-color;
+    border-radius: 3px;
+  }
+
+  .deals-edit__edit-right,
+  .deals-edit__edit-left {
+    width: 50%;
+  }
+
+  .deals-edit__edit-left {
+    padding-right: 40px;
+    border-right: 1px solid $gray-color;
+  }
+
+  .deals-edit__edit-right {
+    margin-top: 0;
+    padding-left: 40px;
+  }
+
+  .deals-edit__buttons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 293px;
+    width: 100%;
+  }
+}
+
+@media (min-width: $tablet-large) {
+  .deals-edit {
+    position: relative;
+  }
+
+  .deals-edit__select-info {
+    position: absolute;
+    left: 270px;
+    top: 5px;
+    margin-top: 0;
+  }
+
+  .deals-edit__edit-left {
+    padding-right: 76px;
+  }
+
+  .deals-edit__edit-right {
+    padding-left: 76px;
+  }
+
+  .deals-edit__edit-list .deals-edit__item-input-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .deals-edit__edit-list .deals-edit__item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .deals-edit__edit-list .deals-edit__item-label {
+    width: 100%;
+  }
+
+  .deals-edit__edit-list .deals-edit__button-edit {
+    top: -10px;
+  }
+}
+
+@media (min-width: $laptop) {
+  .deals-edit__title a {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:focus {
+      opacity: 0.3;
+    }
+  }
+
+  .deals-edit__edit-list .deals-edit__item-input-wrap {
+    position: relative;
+    padding-right: 37px;
+    padding-left: 40px;
+    max-width: calc(100% - 120px);
+  }
+
+  .deals-edit__edit-list .deals-edit__button-edit {
+    top: -10px;
+    right: 0;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .deals-edit__edit-list .deals-edit__item-label {
+    width: 100%;
+    margin: 0;
+    max-width: 120px;
+  }
+
+  .deals-edit__edit-list .deals-edit__item--date {
+    max-width: 223px;
+  }
+
+  .deals-edit__edit-list .deals-edit__item-input {
+    height: 14px;
+  }
+
+  .deals-edit__edit-list .deals-edit__item {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+
+  .deals-edit__edit-list .deals-edit__item-input-wrap:hover .deals-edit__button-edit {
+    opacity: 1;
+    pointer-events: initial;
+  }
+
+  .deals-edit__edit-list .deals-edit__item-input-wrap:focus-within .deals-edit__button-edit {
+    opacity: 1;
+    pointer-events: initial;
+  }
+
+  .deals-edit__edit-left {
+    padding-right: 30px;
+  }
+
+  .deals-edit__edit-right {
+    padding-left: 30px;
+  }
+
+  .deals-edit__button-edit {
+    &:hover {
+      svg {
+        fill: $gray-hover-color;
+      }
+    }
+
+    &:focus {
+      svg {
+        fill: $black-color;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .deals-edit__edit-left {
+    padding-right: 100px;
+  }
+
+  .deals-edit__edit-right {
+    padding-left: 100px;
+  }
+}

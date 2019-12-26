@@ -1,0 +1,75 @@
+.tag-select__toggle {
+  display: inline-block;
+  padding: 9px 12px;
+  font-size: 16px;
+  font-weight: 300;
+  border: 1px solid $gray-color;
+  background-color: transparent;
+  border-radius: 3px;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba($gray-hover-color, 0.25);
+  }
+}
+
+.tag-select__value {
+  display: block;
+  color: $gray-lite-color;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.tag-select__content {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  margin-top: 4px;
+  width: 280px;
+  background-color: $white-color;
+  box-shadow: 0 3px 6px rgba($black-clear-color, 0.16);
+  border-radius: 0 0 3px 3px;
+}
+
+.tag-select {
+  position: relative;
+}
+
+.tag-select__option {
+  position: relative;
+  width: 100%;
+  padding: 12px 18px 12px 71px;
+  color: $gray-lite-color;
+  text-align: left;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 300;
+  background-color: transparent;
+  border: none;
+
+  &::before {
+    content: attr(data-value);
+    position: absolute;
+    left: 20px;
+    top: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 31px;
+    height: 31px;
+    background-color: $white-color;
+    border-radius: 3px;
+  }
+
+  &:focus {
+    outline: none;
+    background-color: $gray-standard-color;
+  }
+}
+
+.tag-select--open .tag-select__content {
+  display: block;
+  z-index: 3;
+}
