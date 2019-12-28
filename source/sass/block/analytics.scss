@@ -1,0 +1,72 @@
+.analytic__title {
+  margin-bottom: 27px;
+}
+
+.analytics__top {
+  margin-bottom: 60px;
+}
+
+.analytic__select-filter .select-standard__toggle {
+  padding-left: 35px;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    width: 15px;
+    height: 15px;
+    background-image: url("../img/calendar.svg");
+    background-size: 15px 15px;
+    background-position: center;
+  }
+}
+
+.analytics__table-cabinet {
+  margin-top: 60px;
+}
+
+@media (min-width: $tablet) {
+  .analytics__slider {
+    display: flex;
+    margin: 0 -16px;
+  }
+
+  .analytics__item {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .analytic-card__view {
+    flex-grow: 1;
+  }
+
+  .analytic-card {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .analytics__top {
+    display: flex;
+  }
+
+  .analytic__title {
+    margin-bottom: 0;
+    max-width: 60%;
+    width: 100%;
+  }
+
+  .analytic__select-filter {
+    max-width: 200px;
+    width: 100%;
+    margin-left: auto;
+  }
+
+  .analytics__table-cabinet .table-cabinet__sort {
+    margin-bottom: 18px;
+  }
+}

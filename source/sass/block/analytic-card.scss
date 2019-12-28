@@ -1,0 +1,74 @@
+.analytic-card {
+  padding: 12px 10px 12px 10px;
+  box-shadow: 0 3px 6px rgba($black-color, 0.1);
+  border-bottom: 4px solid transparent;
+  border-radius: 3px;
+}
+
+.analytic-card--violet {
+  border-color: $violet-dark-color;
+}
+
+.analytic-card--yellow {
+  border-color: $yellow-color;
+}
+
+.analytic-card--red {
+  border-color: $red-color;
+}
+
+.analytic-card--green {
+  border-color: $green-color;
+}
+
+.analytic-card__view {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: $gray-lite-color;
+}
+
+.analytic-card__value {
+  margin: 0;
+  width: 70%;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.analytic-card__details {
+  display: flex;
+}
+
+.analytic-card__increase {
+  width: 30%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.analytic-card__increase p {
+  position: relative;
+  padding-right: 15px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.analytic-card__increase p svg {
+  position: absolute;
+  right: 0;
+  top: 1px;
+}
+
+.analytic-card__increase-fall p {
+  color: $red-color
+}
+
+.analytic-card__increase-fall p svg {
+  transform: rotate(180deg);
+}
+
+.analytic-card__increase--top p {
+  color: $green-color;
+}

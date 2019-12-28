@@ -1,0 +1,147 @@
+.table-cabinet__sort {
+  display: none;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.table-cabinet__list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.table-cabinet__list-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-top: 1px solid $gray-color;
+
+  &:last-child {
+    border-bottom: 1px solid $gray-color;
+  }
+}
+
+.table-cabinet__column p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.table-cabinet__column {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.table-cabinet__column--name {
+  margin-bottom: 20px;
+}
+
+.table-cabinet__column--name p {
+  width: 100%;
+  font-weight: 500;
+}
+
+@media (min-width: $tablet) {
+  .table-cabinet__mobile-description {
+    display: none;
+  }
+
+  .table-cabinet__column {
+    display: block;
+    width: 100%;
+    margin: 0;
+    text-align: right;
+  }
+
+  .table-cabinet__list-item {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+
+  .table-cabinet__sort-item {
+    width: 100%;
+  }
+
+  .table-cabinet__sort-item--title,
+  .table-cabinet__column--name {
+    max-width: 200px;
+    text-align: left;
+  }
+
+  .table-cabinet__column--name p {
+    font-weight: 300;
+  }
+
+  .table-cabinet__sort-item--view,
+  .table-cabinet__column--views {
+    max-width: 116px;
+  }
+
+  .table-cabinet__sort-item--open-phone,
+  .table-cabinet__column--phones {
+    max-width: 123px;
+  }
+
+  .table-cabinet__sort-item--like,
+  .table-cabinet__column--like {
+    max-width: 121px;
+  }
+
+  .table-cabinet__sort-item--request,
+  .table-cabinet__column--requests {
+    max-width: 77px;
+  }
+
+  .table-cabinet__sort {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+
+  .table-cabinet__sort-element {
+    position: relative;
+    display: inline-block;
+    padding-right: 22px;
+    color: $black-clear-color;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+
+    &:focus {
+      opacity: 0.3;
+    }
+  }
+
+  .table-cabinet__sort-element svg {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+@media (min-width: $tablet-large) {
+  .table-cabinet__sort-item--title,
+  .table-cabinet__column--name {
+    max-width: 223px;
+  }
+}
+
+@media (min-width: $laptop) {
+  .table-cabinet__sort-element {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:focus {
+      opacity: 0.3;
+    }
+  }
+}
