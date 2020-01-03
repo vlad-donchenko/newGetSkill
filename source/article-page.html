@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <title>Get Skill</title>
+  <link rel="preload" href="fonts/Roboto-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<div style="display: none">
+  <include src="build/img/sprite.svg"></include>
+</div>
+<div class="wrapper">
+  <header>
+    <nav class="navigation navigation--no-js">
+      <div class="mobile-menu">
+        <div class="mobile-menu__header">
+          <div class="logo logo--mobile-menu">
+            <a href="/" class="logo__link">
+              <picture>
+                <img src="img/logo-375.png" width="167" height="45" alt="Логотип сайта">
+              </picture>
+            </a>
+          </div>
+          <a href="#" class="button button--mobile-menu">
+            Мой кабинет
+          </a>
+        </div>
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-mobile-home"></use>
+              </svg>
+              Главная
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-mobile-curse"></use>
+              </svg>
+              Курсы
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-mobile-curse-online"></use>
+              </svg>
+              Онлайн-курсы
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <svg width="20" height="21">
+                <use xlink:href="#icon-mobile-master-class"></use>
+              </svg>
+              Мастер-классы
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-mobile-school"></use>
+              </svg>
+              Школы
+            </a>
+          </li>
+          <li class="mobile-menu__item mobile-menu__item--indicator">
+            <a href="#" class="mobile-menu__link">
+              <svg width="23" height="21">
+                <use xlink:href="#icon-mobile-like"></use>
+              </svg>
+              Избранные
+              <span class="mobile-menu__indicator">
+                1
+              </span>
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <svg width="23" height="21">
+                <use xlink:href="#icon-mobile-place"></use>
+              </svg>
+              Разместить огранизацию
+            </a>
+          </li>
+        </ul>
+        <div class="mobile-menu__footer">
+          <ul class="language">
+            <li class="language__item">
+              <a href="#" class="language__link">
+                українська
+              </a>
+            </li>
+            <li class="language__item language__item--active">
+              <a class="language__link">
+                русский
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="navigation__user-wrapper">
+        <div class="container navigation__user--inner">
+          <ul class="language language--header">
+            <li class="language__item">
+              <a href="#" class="language__link">
+                українська
+              </a>
+            </li>
+            <li class="language__item language__item--active">
+              <a class="language__link">
+                русский
+              </a>
+            </li>
+          </ul>
+          <ul class="user-features user-features--header">
+            <li class="user-features__item">
+              <a href="#" class="user-features__link">
+                Идеи по улучшению сайта
+              </a>
+            </li>
+            <li class="user-features__item">
+              <a href="#" class="user-features__link">
+                Войти
+              </a>
+            </li>
+            <li class="user-features__item user-features__item--registration">
+              <a href="#" class="user-features__link">
+                Зарегистрироваться
+                <svg width="13" height="7" class="user-features__drop-icon">
+                  <use xlink:href="#icon-arrow"></use>
+                </svg>
+              </a>
+              <ul class="user-features__dropdown">
+                <li>
+                  <a href="#" class="button">
+                    Пользователь
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="button">
+                    Организация
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container navigation__inner navigation__inner--middle">
+        <button type="button" class="navigation__open-menu" aria-label="Открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="logo logo--header">
+          <a href="/" class="logo__link">
+            <picture>
+              <img src="img/logo-375.png" width="167" height="45" alt="Логотип сайта">
+            </picture>
+          </a>
+        </div>
+        <div class="navigation__text">
+          <p class="navigation__curse">
+            6 544
+          </p>
+          <p class="navigation__count-curse">
+            Объявления
+            о курсах
+          </p>
+        </div>
+        <a href="#" class="like like--active like--header" aria-label="Понравившееся">
+          <svg width="23" height="21">
+            <use xlink:href="#icon-like"></use>
+          </svg>
+          <span class="like__count">
+            1
+          </span>
+        </a>
+        <div class="search">
+          <form method="get" action="search.php" autocomplete="off">
+            <label for="search" class="visually-hidden">
+              Поиск
+            </label>
+            <button class="search__button" aria-label="Искать">
+              <svg width="15" height="16" class="search__icon">
+                <use xlink:href="#icon-search"></use>
+              </svg>
+            </button>
+            <input type="search" name="search" class="input input--search" placeholder="Я ищу..." id="search">
+          </form>
+        </div>
+        <a href="#" class="button button--organization-header">
+          Разместить организацию
+        </a>
+      </div>
+      <div class="navigation__wrapper-menu">
+        <div class="container navigation__inner--menu">
+          <ul class="menu">
+            <li class="menu__list menu__list--active">
+              <a class="menu__link">
+                Курсы
+              </a>
+            </li>
+            <li class="menu__list">
+              <a href="#" class="menu__link">
+                Онлайн курсы
+              </a>
+            </li>
+            <li class="menu__list">
+              <a href="#" class="menu__link">
+                Мастер-классы
+              </a>
+            </li>
+            <li class="menu__list">
+              <a href="#" class="menu__link">
+                Школы
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </nav>
+  </header>
+  <main class="site-main">
+    <section class="breadcrumbs">
+      <div class="container">
+        <h2 class="visually-hidden">
+          Постраничная Навигация
+        </h2>
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a href="/">
+              Главная
+            </a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="#">
+              Статьи
+            </a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="#">
+              Профессиональные
+            </a>
+          </li>
+          <li>
+            Чего точно не стоит делать, если вы хотите прокачать личный бренд
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="article-page">
+      <div class="article-page__preview">
+        <img src="img/article-page-main.jpg" class="article-page__img" width="1920" height="661"
+             alt="Чего точно не стоит делать, если вы хотите прокачать личный бренд">
+        <div class="container article-page__inner article-page__inner--preview">
+          <div class="article-page__preview-text">
+            <h1 class="h1 article-page__name">
+              Чего точно не&nbsp;стоит делать, если вы&nbsp;хотите
+              прокачать личный бренд
+            </h1>
+          </div>
+          <div class="details-article details-article__in-page">
+            <div class="details-article__item">
+              <p class="details-article__date">
+                <svg width="15" height="16">
+                  <use xlink:href="#icon-calendar"></use>
+                </svg>
+                28.12.2019
+              </p>
+            </div>
+            <div class="details-article__item">
+              <p class="details-article__views-count">
+                <svg width="23" height="16">
+                  <use xlink:href="#icon-view"></use>
+                </svg>
+                331
+              </p>
+            </div>
+            <div class="details-article__item">
+              <p class="details-article__comments">
+                <svg width="19" height="16">
+                  <use xlink:href="#icon-comments"></use>
+                </svg>
+                331
+              </p>
+            </div>
+            <div class="details-article__item">
+              <p class="details-article__tag">
+                Иностранные языки
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container article-page__inner article-page__inner--main-content">
+        <div class="article-page__left">
+          <article class="article-page__only-text">
+            <h1>
+              H1 заголовок
+            </h1>
+            <h2>
+              H2 заголовок
+            </h2>
+            <h3>
+              H3 заголовок
+            </h3>
+            <h4>
+              H4 заголовок
+            </h4>
+            <h5>
+              H5 заголовок
+            </h5>
+            <h6>
+              H6 заголовок
+            </h6>
+            <p>
+              Мне часто задают вопрос, может&nbsp;ли простой человек создать и&nbsp;прокачать свой личный бренд? По&nbsp;своему
+              опыту скажу&nbsp;&mdash; да! Главное&nbsp;&mdash; не&nbsp;путать создание бренда с&nbsp;банальной показухой.
+              Бренд&nbsp;&mdash; проработанный образ, приносящий прибыль в&nbsp;бизнесе. Лично я&nbsp;ощущаю свой бренд
+              как вторую кожу. Мне принципиально важно, как будет воспринята моя профессиональная деятельность. Может, для
+              кого-то это тщеславие, для меня&nbsp;&mdash; необходимая
+              <a href="#">
+                обратная связь.
+              </a>
+            </p>
+            <p>
+              Бренд не&nbsp;создаётся ради самого себя, он&nbsp;продвигает реальную деятельность. Есть множество людей,
+              умеющих делать что-то хорошо, но&nbsp;об&nbsp;этом знают только &laquo;свои&raquo;. Дядя Миша&nbsp;&mdash;
+              жестянщик, тётя Света&nbsp;&mdash; репетитор, тот парень с&nbsp;этажа выше, который заправляет чернилами
+              картриджи для принтера. Эти люди рискуют навсегда остаться в&nbsp;неизвестности, если будут совершать
+              типичные ошибки.
+            </p>
+            <h2>
+              1. Молчать
+            </h2>
+            <p>
+              Не&nbsp;всем дано быть красноречивыми, но&nbsp;это не&nbsp;повод молчать о&nbsp;своём деле. Вы&nbsp;можете
+              придумать ёмкое коммерческое предложение для простых людей. В&nbsp;английском языке это называется elevator
+              speech (буквально &laquo;история для лифта&raquo;). Например, &laquo;Светлана Викторовна, репетитор с&nbsp;десятилетнем
+              стажем преподавания. Готовлю школьников к&nbsp;ЕГЭ&raquo;.
+            </p>
+            <p>
+              Свою elevator speech надо умело интегрировать в&nbsp;общение с&nbsp;новыми людьми. Трудно только первые
+              несколько раз, потом это будет звучать очень естественно. Вы&nbsp;не&nbsp;задумывались над тем, что многие
+              фамилии образованы от&nbsp;профессий, например Гончаров или Ковалёв? В&nbsp;давние времена человека в&nbsp;большей
+              степени определяло то&nbsp;дело, которым он&nbsp;занимался. И&nbsp;это правильно!
+            </p>
+            <h2>
+              2. Навязывать себя
+            </h2>
+            <p>
+              Этим очень часто грешат представители сетевого маркетинга. Если человек проявил лояльность, они тут&nbsp;же
+              норовят сделать продажу и&nbsp;допродажу. Потенциальный клиент ещё от&nbsp;первого цикла сделки не&nbsp;отошёл,
+              а&nbsp;ему тут&nbsp;же предлагают второй и&nbsp;третий. Рыбка срывается, а&nbsp;рыбак остаётся у&nbsp;разбитого
+              корыта.
+            </p>
+            <p>
+              У&nbsp;частного бизнеса нет развития, когда нет естественного движения клиентов. Вместо агрессивного &laquo;дожима&raquo;
+              старых вариантов сконцентрируйтесь на&nbsp;поиске новых. Если клиенты являются вашими приятелями, то&nbsp;совет
+              вдвойне актуален. Кого-то реально надо &laquo;дожимать&raquo;, но&nbsp;это не&nbsp;должно становиться
+              схемой. Имейте внутреннее чутье.
+            </p>
+            <h2>
+              3. Умножать пустоту
+            </h2>
+            <p>
+              Я&nbsp;сейчас говорю о&nbsp;запредельном количестве селфи, бесконечных однотипных объявлениях, бездумных
+              репостах и&nbsp;так далее. Социальные сети сейчас настроены так, что создатели бессмысленного контента очень
+              быстро исчезают из&nbsp;ленты. Поэтому задумайтесь над концепцией и&nbsp;сделайте оригинальную фотосессию.
+              По&nbsp;одной хорошей фотографии в&nbsp;день людям будет вполне достаточно. Если вдруг материала получилось
+              слишком много и&nbsp;он&nbsp;действительно качественный, распределите его равномерно, как масло на&nbsp;хлеб.
+            </p>
+            <h2>
+              4. Работать за «спасибо»
+            </h2>
+            <p>
+              Работать бесплатно можно только в&nbsp;режиме ООО (опыт, отзывы, ошибки). Если всё сделали без ошибок&nbsp;&mdash;
+              сразу просите отзыв; если нет, то&nbsp;набивайте шишки дальше. Если ничего, кроме шишек, на&nbsp;длинной
+              дистанции у&nbsp;вас нет, то&nbsp;имейте мужество отпустить тему.
+            </p>
+            <p>
+              Не&nbsp;все отзывы будут восторженными, но&nbsp;они подтверждают сам факт вашего взаимодействия с&nbsp;аудиторией.
+              Видела забавный твит: &laquo;Купила спиннер&nbsp;&mdash; ожидала большего&raquo;. До&nbsp;сих пор не&nbsp;пойму,
+              чего девушка ожидала, но&nbsp;усвоила, что спиннер у&nbsp;неё есть.
+            </p>
+            <h2>
+              5. Не верить в рекламу
+            </h2>
+            <p>
+              Есть возражение, которое я&nbsp;слышу довольно часто: &laquo;Пробовали самостоятельно&nbsp;&mdash; не&nbsp;работает&raquo;.
+            </p>
+            <p>
+              Парадоксально, но&nbsp;чтобы поставить замок на&nbsp;склад, зовут профессионалов, а&nbsp;рекламную стратегию
+              выстраивают сами. И&nbsp;решают, что реклама &laquo;не&nbsp;работает&raquo;. Объявление в&nbsp;газете
+              &laquo;Из&nbsp;рук в&nbsp;руки&raquo; и&nbsp;то&nbsp;не&nbsp;подают, так как стоимость размещения (о&nbsp;ужас!)
+              немного больше нуля.
+            </p>
+            <blockquote>
+              Запомните: если у&nbsp;вас пока слабо развитый бизнес, реклама&nbsp;&mdash; это основная инвестиция.
+            </blockquote>
+            <h2>
+              Вывод
+            </h2>
+            <p>
+              Развивать личный бренд необходимо. Многие современные бизнес-модели построены на&nbsp;харизматичном
+              лидерстве. Стране нужны свои герои даже в&nbsp;эпоху капитализма, поэтому бизнес сейчас становится более
+              прозрачным и&nbsp;публичным. Ощущая на&nbsp;себе взгляды людей, ты&nbsp;чувствуешь ещё больше
+              ответственности за&nbsp;сказанное, сделанное, написанное. Поэтому я&nbsp;делаю шаг вам навстречу и&nbsp;жду
+              обратной связи.
+            </p>
+            <table style="width: 100%">
+              <tbody>
+              <tr>
+                <td style="width: 40%;">
+                  1
+                </td>
+                <td style="width: 10%;">
+                  2
+                </td>
+                <td style="width: 10%;">
+                  3
+                </td>
+                <td style="width: 10%;">
+                  4
+                </td>
+                <td style="width: 10%;">
+                  5
+                </td>
+                <td style="width: 10%;">
+                  6
+                </td>
+                <td style="width: 10%;">
+                  7
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 40%;">
+                  1
+                </td>
+                <td style="width: 10%;">
+                  2
+                </td>
+                <td style="width: 10%;">
+                  3
+                </td>
+                <td style="width: 10%;">
+                  4
+                </td>
+                <td style="width: 10%;">
+                  5
+                </td>
+                <td style="width: 10%;">
+                  6
+                </td>
+                <td style="width: 10%;">
+                  7
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 40%;">
+                  1
+                </td>
+                <td style="width: 10%;">
+                  2
+                </td>
+                <td style="width: 10%;">
+                  3
+                </td>
+                <td style="width: 10%;">
+                  4
+                </td>
+                <td style="width: 10%;">
+                  5
+                </td>
+                <td style="width: 10%;">
+                  6
+                </td>
+                <td style="width: 10%;">
+                  7
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </article>
+          <section class="reviews article-page__reviews">
+            <div class="reviews__info">
+              <h2 class="h2">
+                Отзывы
+              </h2>
+              <p class="reviews__count">
+                76
+              </p>
+              <span class="button reviews__write-reviews">
+              Написать отзыв
+            </span>
+            </div>
+            <ul class="reviews__list" style="display: block;">
+              <li class="reviews__item">
+                <article class="reviews__review">
+                  <div class="reviews__top">
+                    <div class="reviews__img">
+                      <picture>
+                        <img src="img/user-rewiew-icon.jpg" width="50" height="51" alt="Екатерина Балтал">
+                      </picture>
+                    </div>
+                    <div class="reviews__details">
+                      <h6 class="reviews__author">
+                        Екатерина Балтал
+                      </h6>
+                      <div class="reviews__rating rating">
+                        <div class="rating__star rating__star--active">
+                          <svg width="13" height="13">
+                            <use xlink:href="#icon-rationg-star"></use>
+                          </svg>
+                        </div>
+                        <div class="rating__star rating__star--active">
+                          <svg width="13" height="13">
+                            <use xlink:href="#icon-rationg-star"></use>
+                          </svg>
+                        </div>
+                        <div class="rating__star rating__star--active">
+                          <svg width="13" height="13">
+                            <use xlink:href="#icon-rationg-star"></use>
+                          </svg>
+                        </div>
+                        <div class="rating__star rating__star--active">
+                          <svg width="13" height="13">
+                            <use xlink:href="#icon-rationg-star"></use>
+                          </svg>
+                        </div>
+                        <div class="rating__star rating__star--active">
+                          <svg width="13" height="13">
+                            <use xlink:href="#icon-rationg-star"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <span class="reviews__time">
+                          8 нояб. 2019 г.
+                        </span>
+                    </div>
+                    <!-- this div have extra classes "reviews__option-wrap--open"
+
+                        <div class="reviews__option-wrap reviews__option-wrap--open">
+                    -->
+                    <div class="reviews__option-wrap">
+                      <button type="button" class="reviews__options" aria-label="Дополнительние действия">
+                        <span class="reviews__options-circle"></span>
+                        <span class="reviews__options-circle"></span>
+                        <span class="reviews__options-circle"></span>
+                      </button>
+                      <div class="reviews__option-dropdown ">
+                          <span class="reviews__report">
+                            Пожаловаться
+                          </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews__main">
+                    <p>
+                      Прошла курс Подологии. Не смотря, на то что, имею высшее медицинское образование, открыла для себя
+                      много нового. Хочется сказать большое человеческое спасибо мастеру Ирине. Вы предали мне
+                      уверенности в собственных силах и помогли подкрепить знания реальными навыками. Теперь строю
+                      собственную карьеру.
+                    </p>
+                  </div>
+                  <div class="reviews__footer">
+                    <a href="#" class="button reviews__answer">
+                      <svg width="19" height="15">
+                        <use xlink:href="#icon-arrow-rewies"></use>
+                      </svg>
+                      Ответить
+                    </a>
+                  </div>
+                </article>
+              </li>
+              <li class="reviews__item">
+                <article class="reviews__review">
+                  <div class="reviews__top">
+                    <div class="reviews__img">
+                      <picture>
+                        <img src="img/user-rewiew-icon.jpg" width="50" height="51" alt="Екатерина Балтал">
+                      </picture>
+                    </div>
+                    <div class="reviews__details">
+                      <h6 class="reviews__author">
+                        Екатерина Балтал
+                      </h6>
+                      <div class="reviews__rating rating">
+                        <div class="rating__star rating__star--active">
+                          <svg width="13" height="13">
+                            <use xlink:href="#icon-rationg-star"></use>
+                          </svg>
+                        </div>
+                        <div class="rating__star rating__star--active">
+                          <svg width="13" height="13">
+                            <use xlink:href="#icon-rationg-star"></use>
+                          </svg>
+                        </div>
+                        <div class="rating__star rating__star--active">
+                          <svg width="13" height="13">
+                            <use xlink:href="#icon-rationg-star"></use>
+                          </svg>
+                        </div>
+                        <div class="rating__star rating__star--active">
+                          <svg width="13" height="13">
+                            <use xlink:href="#icon-rationg-star"></use>
+                          </svg>
+                        </div>
+                        <div class="rating__star rating__star--active">
+                          <svg width="13" height="13">
+                            <use xlink:href="#icon-rationg-star"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <span class="reviews__time">
+                          8 нояб. 2019 г.
+                        </span>
+                    </div>
+                    <div class="reviews__option-wrap">
+                      <button type="button" class="reviews__options" aria-label="Дополнительние действия">
+                        <span class="reviews__options-circle"></span>
+                        <span class="reviews__options-circle"></span>
+                        <span class="reviews__options-circle"></span>
+                      </button>
+                      <div class="reviews__option-dropdown">
+                          <span class="reviews__report">
+                            Пожаловаться
+                          </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews__main">
+                    <p>
+                      Прошла курс Подологии. Не смотря, на то что, имею высшее медицинское образование, открыла для себя
+                      много нового. Хочется сказать большое человеческое спасибо мастеру Ирине. Вы предали мне
+                      уверенности в собственных силах и помогли подкрепить знания реальными навыками. Теперь строю
+                      собственную карьеру.
+                    </p>
+                  </div>
+                  <div class="reviews__footer">
+                    <a href="#" class="button reviews__answer">
+                      <svg width="19" height="15">
+                        <use xlink:href="#icon-arrow-rewies"></use>
+                      </svg>
+                      Ответить
+                    </a>
+                  </div>
+                </article>
+              </li>
+              <li class="reviews__item">
+                <article class="reviews__review">
+                  <div class="reviews__top">
+                    <div class="reviews__img">
+                      <picture>
+                        <img src="img/user-rewiew-icon.jpg" width="50" height="51" alt="Екатерина Балтал">
+                      </picture>
+                    </div>
+                    <div class="reviews__details">
+                      <h6 class="reviews__author">
+                        Екатерина Балтал
+                      </h6>
+                      <div class="reviews__rating rating">
+                        <div class="rating__star rating__star--active">
+                          <svg width="13" height="13">
+                            <use xlink:href="#icon-rationg-star"></use>
+                          </svg>
+                        </div>
+                        <div class="rating__star rating__star--active">
+                          <svg width="13" height="13">
+                            <use xlink:href="#icon-rationg-star"></use>
+                          </svg>
+                        </div>
+                        <div class="rating__star rating__star--active">
+                          <svg width="13" height="13">
+                            <use xlink:href="#icon-rationg-star"></use>
+                          </svg>
+                        </div>
+                        <div class="rating__star rating__star--active">
+                          <svg width="13" height="13">
+                            <use xlink:href="#icon-rationg-star"></use>
+                          </svg>
+                        </div>
+                        <div class="rating__star rating__star--active">
+                          <svg width="13" height="13">
+                            <use xlink:href="#icon-rationg-star"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <span class="reviews__time">
+                          8 нояб. 2019 г.
+                        </span>
+                    </div>
+                    <div class="reviews__option-wrap">
+                      <button type="button" class="reviews__options" aria-label="Дополнительние действия">
+                        <span class="reviews__options-circle"></span>
+                        <span class="reviews__options-circle"></span>
+                        <span class="reviews__options-circle"></span>
+                      </button>
+                      <div class="reviews__option-dropdown">
+                          <span class="reviews__report">
+                            Пожаловаться
+                          </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews__main">
+                    <p>
+                      Прошла курс Подологии. Не смотря, на то что, имею высшее медицинское образование, открыла для себя
+                      много нового. Хочется сказать большое человеческое спасибо мастеру Ирине. Вы предали мне
+                      уверенности в собственных силах и помогли подкрепить знания реальными навыками. Теперь строю
+                      собственную карьеру.
+                    </p>
+                  </div>
+                  <div class="reviews__footer">
+                    <a href="#" class="button reviews__answer">
+                      <svg width="19" height="15">
+                        <use xlink:href="#icon-arrow-rewies"></use>
+                      </svg>
+                      Ответить
+                    </a>
+                  </div>
+                </article>
+              </li>
+              <li class="reviews__item reviews__item--answer">
+                <article class="reviews__review">
+                  <div class="reviews__top">
+                    <div class="reviews__img">
+                      <picture>
+                        <img src="img/user-rewiew-icon.jpg" width="50" height="51" alt="Екатерина Балтал">
+                      </picture>
+                    </div>
+                    <div class="reviews__details">
+                      <h6 class="reviews__author">
+                        Екатерина Балтал
+                      </h6>
+                      <div class="reviews__rating rating">
+                        <div class="rating__star rating__star--active">
+                          <svg width="13" height="13">
+                            <use xlink:href="#icon-rationg-star"></use>
+                          </svg>
+                        </div>
+                        <div class="rating__star rating__star--active">
+                          <svg width="13" height="13">
+                            <use xlink:href="#icon-rationg-star"></use>
+                          </svg>
+                        </div>
+                        <div class="rating__star rating__star--active">
+                          <svg width="13" height="13">
+                            <use xlink:href="#icon-rationg-star"></use>
+                          </svg>
+                        </div>
+                        <div class="rating__star rating__star--active">
+                          <svg width="13" height="13">
+                            <use xlink:href="#icon-rationg-star"></use>
+                          </svg>
+                        </div>
+                        <div class="rating__star rating__star--active">
+                          <svg width="13" height="13">
+                            <use xlink:href="#icon-rationg-star"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <span class="reviews__time">
+                          8 нояб. 2019 г.
+                        </span>
+                    </div>
+                    <div class="reviews__option-wrap">
+                      <button type="button" class="reviews__options" aria-label="Дополнительние действия">
+                        <span class="reviews__options-circle"></span>
+                        <span class="reviews__options-circle"></span>
+                        <span class="reviews__options-circle"></span>
+                      </button>
+                      <div class="reviews__option-dropdown">
+                          <span class="reviews__report">
+                            Пожаловаться
+                          </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews__main">
+                    <p>
+                      Прошла курс Подологии. Не смотря, на то что, имею высшее медицинское образование, открыла для себя
+                      много нового. Хочется сказать большое человеческое спасибо мастеру Ирине. Вы предали мне
+                      уверенности в собственных силах и помогли подкрепить знания реальными навыками. Теперь строю
+                      собственную карьеру.
+                    </p>
+                  </div>
+                  <div class="reviews__footer">
+                    <a href="#" class="button reviews__answer">
+                      <svg width="19" height="15">
+                        <use xlink:href="#icon-arrow-rewies"></use>
+                      </svg>
+                      Ответить
+                    </a>
+                  </div>
+                </article>
+                <article class="reviews__review reviews__review--answer">
+                  <div class="reviews__top">
+                    <div class="reviews__img">
+                      <picture>
+                        <img src="img/commniter-avatar.png" width="50" height="51" alt="владелец">
+                      </picture>
+                    </div>
+                    <div class="reviews__details">
+                      <h6 class="reviews__author">
+                        (владелец)
+                      </h6>
+                      <span class="reviews__time">
+                          8 нояб. 2019 г.
+                        </span>
+                    </div>
+                  </div>
+                  <div class="reviews__main">
+                    <p>
+                      Прошла курс Подологии. Не смотря, на то что, имею высшее медицинское образование, открыла для себя
+                      много нового. Хочется сказать большое человеческое спасибо мастеру Ирине. Вы предали мне
+                      уверенности в собственных силах и помогли подкрепить знания реальными навыками. Теперь строю
+                      собственную карьеру.
+                    </p>
+                  </div>
+                  <div class="reviews__footer">
+                    <a href="#" class="button reviews__answer">
+                      <svg width="19" height="15">
+                        <use xlink:href="#icon-arrow-rewies"></use>
+                      </svg>
+                      Ответить
+                    </a>
+                  </div>
+                </article>
+              </li>
+              <li class="reviews__item">
+                <article class="reviews__review">
+                  <div class="reviews__top">
+                    <div class="reviews__img">
+                      <picture>
+                        <img src="img/user-rewiew-icon.jpg" width="50" height="51" alt="Екатерина Балтал">
+                      </picture>
+                    </div>
+                    <div class="reviews__details">
+                      <h6 class="reviews__author">
+                        Екатерина Балтал
+                      </h6>
+                      <div class="reviews__rating rating">
+                        <div class="rating__star rating__star--active">
+                          <svg width="13" height="13">
+                            <use xlink:href="#icon-rationg-star"></use>
+                          </svg>
+                        </div>
+                        <div class="rating__star rating__star--active">
+                          <svg width="13" height="13">
+                            <use xlink:href="#icon-rationg-star"></use>
+                          </svg>
+                        </div>
+                        <div class="rating__star rating__star--active">
+                          <svg width="13" height="13">
+                            <use xlink:href="#icon-rationg-star"></use>
+                          </svg>
+                        </div>
+                        <div class="rating__star rating__star--active">
+                          <svg width="13" height="13">
+                            <use xlink:href="#icon-rationg-star"></use>
+                          </svg>
+                        </div>
+                        <div class="rating__star">
+                          <svg width="13" height="13">
+                            <use xlink:href="#icon-rationg-star"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <span class="reviews__time">
+                          8 нояб. 2019 г.
+                        </span>
+                    </div>
+                    <div class="reviews__option-wrap">
+                      <button type="button" class="reviews__options" aria-label="Дополнительние действия">
+                        <span class="reviews__options-circle"></span>
+                        <span class="reviews__options-circle"></span>
+                        <span class="reviews__options-circle"></span>
+                      </button>
+                      <div class="reviews__option-dropdown">
+                          <span class="reviews__report">
+                            Пожаловаться
+                          </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews__main">
+                    <p>
+                      Прошла курс Подологии. Не смотря, на то что, имею высшее медицинское образование, открыла для себя
+                      много нового. Хочется сказать большое человеческое спасибо мастеру Ирине. Вы предали мне
+                      уверенности в собственных силах и помогли подкрепить знания реальными навыками. Теперь строю
+                      собственную карьеру.
+                    </p>
+                  </div>
+                  <div class="reviews__footer reviews__footer--answered">
+                    <a href="#" class="button reviews__answer">
+                      <svg width="19" height="15">
+                        <use xlink:href="#icon-arrow-rewies"></use>
+                      </svg>
+                      Ответить
+                    </a>
+                    <div class="reviews__footer-form">
+                      <form action="answer.php">
+                        <label for="reviews_answer_text" class="visually-hidden">
+                          Ответить
+                        </label>
+                        <textarea name="reviews_answer_text" class="reviews__footer-form-textarea" placeholder="Ваш ответ"
+                                  id="reviews_answer_text"></textarea>
+                        <p class="reviews__footer-text">
+                          Обратите внимание, что ваш ответ будет виден всем пользователям, поэтому он должен
+                          соответствовать нашим правилам в отношении контента.
+                          <a href="#">
+                            Условия обслуживания
+                          </a>
+                        </p>
+                        <button type="submit" class="button reviews__footer-form-textarea-submit">
+                          <svg width="19" height="15">
+                            <use xlink:href="#icon-arrow-rewies"></use>
+                          </svg>
+                          Опубликовать ответ
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <p class="reviews__all" style="display: block;">
+              <a href="#">
+                Смотреть все отзывы
+              </a>
+            </p>
+
+            <div class="reviews__new-write" style="display: none;">
+
+              <div class="reviews__rating rating">
+                <p class="rating__title">Поставьте рейтинг курсу</p>
+                <div class="rating__star rating__star--active">
+                  <svg width="16.5" height="15">
+                    <use xlink:href="#icon-rationg-star"></use>
+                  </svg>
+                </div>
+                <div class="rating__star rating__star">
+                  <svg width="16.5" height="15">
+                    <use xlink:href="#icon-rationg-star"></use>
+                  </svg>
+                </div>
+                <div class="rating__star rating__star">
+                  <svg width="16.5" height="15">
+                    <use xlink:href="#icon-rationg-star"></use>
+                  </svg>
+                </div>
+                <div class="rating__star rating__star">
+                  <svg width="16.5" height="15">
+                    <use xlink:href="#icon-rationg-star"></use>
+                  </svg>
+                </div>
+                <div class="rating__star rating__star">
+                  <svg width="16.5" height="15">
+                    <use xlink:href="#icon-rationg-star"></use>
+                  </svg>
+                </div>
+
+              </div>
+
+              <div class="new-write__text">
+                <label class="new-write__text__title">Комментарий</label>
+                <textarea name="new-write-reviews" id="new-write-reviews"
+                          class="input input--full-width input--textarea"></textarea>
+              </div>
+              <div class="new-write__text__button">
+                  <span class="button button--cancel">
+                    Отменить
+                  </span>
+                <button type="submit" class="button button--feedback">
+                  Оставить отзыв
+                </button>
+              </div>
+
+            </div>
+
+          </section>
+        </div>
+        <div class="article-page__right">
+          <p class="article-page__right-title">
+            Курсы английского языка
+          </p>
+          <section class="catalog">
+            <h2 class="visually-hidden">
+              Популярные курсы
+            </h2>
+            <ul class="catalog__list catalog__list--vertical">
+              <li class="catalog__item">
+                <article class="product">
+                  <div class="product__picture">
+                    <a href="#" class="product__img">
+                      <picture>
+                        <source type="image/webp" srcset="img/product-1.webp">
+                        <img src="img/product-1.jpg" width="280" height="155" alt="Курс по маникюру">
+                      </picture>
+                    </a>
+                  </div>
+                  <div class="product__info-block">
+                    <h6 class="product__name">
+                      <a href="#">
+                        Курс по маникюру
+                      </a>
+                    </h6>
+                    <p class="product__organization">
+                      Makeup house school
+                    </p>
+                    <div class="product__cities">
+                      <svg width="11" height="16">
+                        <use xlink:href="#icon-location"></use>
+                      </svg>
+                      <p>
+                        Киев,
+                      </p>
+                      <p class="product__cities__more">
+                        <a href="#">
+                          еще 3 города
+                        </a>
+                      </p>
+                    </div>
+                    <div class="product__rating">
+                      5.00
+                      <svg width="17" height="15">
+                        <use xlink:href="#icon-star"></use>
+                      </svg>
+                    </div>
+                    <ul class="product__features">
+                      <li>
+                        <svg width="12" height="15">
+                          <use xlink:href="#icon-medal"></use>
+                        </svg>
+                        Выдаеться сертификат
+                      </li>
+                      <li>
+                        <svg width="12" height="15">
+                          <use xlink:href="#icon-group"></use>
+                        </svg>
+                        Группой / Индивид.
+                      </li>
+                    </ul>
+                    <div class="product__price">
+                      <p class="product__label-price">
+                        занятие:
+                      </p>
+                      <p class="product__sum">
+                        1800
+                        <span>
+                          грн
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="product__actions">
+                    <a href="#" class="like like-small" aria-label="Добавить в избранное">
+                      <svg width="17" height="16">
+                        <use xlink:href="#icon-like"></use>
+                      </svg>
+                    </a>
+                    <a href="#" class="button product__buy">
+                      Подробнее
+                      <svg width="7" height="13">
+                        <use xlink:href="#icon-arrow-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="product">
+                  <div class="product__picture">
+                    <a href="#" class="product__img">
+                      <picture>
+                        <source type="image/webp" srcset="img/product-1.webp">
+                        <img src="img/product-1.jpg" width="280" height="155" alt="Курс по маникюру">
+                      </picture>
+                    </a>
+                  </div>
+                  <div class="product__info-block">
+                    <h6 class="product__name">
+                      <a href="#">
+                        Курс по маникюру
+                      </a>
+                    </h6>
+                    <p class="product__organization">
+                      Makeup house school
+                    </p>
+                    <div class="product__cities">
+                      <svg width="11" height="16">
+                        <use xlink:href="#icon-location"></use>
+                      </svg>
+                      <p>
+                        Киев,
+                      </p>
+                      <p class="product__cities__more">
+                        <a href="#">
+                          еще 3 города
+                        </a>
+                      </p>
+                    </div>
+                    <div class="product__rating">
+                      5.00
+                      <svg width="17" height="15">
+                        <use xlink:href="#icon-star"></use>
+                      </svg>
+                    </div>
+                    <ul class="product__features">
+                      <li>
+                        <svg width="12" height="15">
+                          <use xlink:href="#icon-medal"></use>
+                        </svg>
+                        Выдаеться сертификат
+                      </li>
+                      <li>
+                        <svg width="12" height="15">
+                          <use xlink:href="#icon-group"></use>
+                        </svg>
+                        Группой / Индивид.
+                      </li>
+                    </ul>
+                    <div class="product__price">
+                      <p class="product__label-price">
+                        занятие:
+                      </p>
+                      <p class="product__sum">
+                        1800
+                        <span>
+                          грн
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="product__actions">
+                    <a href="#" class="like like-small" aria-label="Добавить в избранное">
+                      <svg width="17" height="16">
+                        <use xlink:href="#icon-like"></use>
+                      </svg>
+                    </a>
+                    <a href="#" class="button product__buy">
+                      Подробнее
+                      <svg width="7" height="13">
+                        <use xlink:href="#icon-arrow-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="product">
+                  <div class="product__picture">
+                    <a href="#" class="product__img">
+                      <picture>
+                        <source type="image/webp" srcset="img/product-1.webp">
+                        <img src="img/product-1.jpg" width="280" height="155" alt="Курс по маникюру">
+                      </picture>
+                    </a>
+                  </div>
+                  <div class="product__info-block">
+                    <h6 class="product__name">
+                      <a href="#">
+                        Курс по маникюру
+                      </a>
+                    </h6>
+                    <p class="product__organization">
+                      Makeup house school
+                    </p>
+                    <div class="product__cities">
+                      <svg width="11" height="16">
+                        <use xlink:href="#icon-location"></use>
+                      </svg>
+                      <p>
+                        Киев,
+                      </p>
+                      <p class="product__cities__more">
+                        <a href="#">
+                          еще 3 города
+                        </a>
+                      </p>
+                    </div>
+                    <div class="product__rating">
+                      5.00
+                      <svg width="17" height="15">
+                        <use xlink:href="#icon-star"></use>
+                      </svg>
+                    </div>
+                    <ul class="product__features">
+                      <li>
+                        <svg width="12" height="15">
+                          <use xlink:href="#icon-medal"></use>
+                        </svg>
+                        Выдаеться сертификат
+                      </li>
+                      <li>
+                        <svg width="12" height="15">
+                          <use xlink:href="#icon-group"></use>
+                        </svg>
+                        Группой / Индивид.
+                      </li>
+                    </ul>
+                    <div class="product__price">
+                      <p class="product__label-price">
+                        занятие:
+                      </p>
+                      <p class="product__sum">
+                        1800
+                        <span>
+                          грн
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="product__actions">
+                    <a href="#" class="like like-small" aria-label="Добавить в избранное">
+                      <svg width="17" height="16">
+                        <use xlink:href="#icon-like"></use>
+                      </svg>
+                    </a>
+                    <a href="#" class="button product__buy">
+                      Подробнее
+                      <svg width="7" height="13">
+                        <use xlink:href="#icon-arrow-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container site-footer__inner-top">
+      <div class="site-footer__social">
+        <div class="logo logo--footer">
+          <a href="/" class="logo__link">
+            <picture>
+              <img src="img/logo-375.png" width="167" height="45" alt="Логотип сайта">
+            </picture>
+          </a>
+        </div>
+        <div class="social social--footer">
+          <p class="social__title">
+            Присойденяйтесь к нам
+          </p>
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#" class="social__link" aria-label="Мы в инстаграм">
+                <svg width="20" height="19">
+                  <use xlink:href="#icon-instargam"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link" aria-label="Мы в ютуб">
+                <svg width="27" height="19">
+                  <use xlink:href="#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link" aria-label="Мы в телеграм">
+                <svg width="20" height="19">
+                  <use xlink:href="#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__navigation">
+        <div class="site-footer__column">
+          <div class="site-footer__title-wrapper">
+            <h6 class="h6">
+              Пользователям
+            </h6>
+            <button type="button" class="site-footer__toggle" aria-label="Открыть меню">
+              <svg width="13" height="7">
+                <use xlink:href="#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="site-footer__menu site-footer__menu--no-js">
+            <li>
+              <a href="#">
+                Офлайн курсы
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Онлайн курсы
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Мастер-классы
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Школы
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Статьи
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="site-footer__column">
+          <div class="site-footer__title-wrapper">
+            <h6 class="h6">
+              Организациям
+            </h6>
+            <button type="button" class="site-footer__toggle" aria-label="Открыть меню">
+              <svg width="13" height="7">
+                <use xlink:href="#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="site-footer__menu site-footer__menu--no-js">
+            <li>
+              <a href="#">
+                О проекте
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Услуги и тарифы
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                База знаний
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="site-footer__column">
+          <div class="site-footer__title-wrapper">
+            <h6 class="h6">
+              Общее
+            </h6>
+            <button type="button" class="site-footer__toggle" aria-label="Открыть меню">
+              <svg width="13" height="7">
+                <use xlink:href="#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="site-footer__menu site-footer__menu--no-js">
+            <li>
+              <a href="#">
+                Улучшения сайта
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Правила сайта
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Оферта
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer__background">
+      <div class="container site-footer__inner site-footer__inner--bottom">
+        <p class="site-footer__copyright">
+          © 2019 Get Skill
+        </p>
+        <ul class="site-footer__pay">
+          <li>
+            <picture>
+              <source media="(min-width: 992px)" srcset="img/visa-tablet.png">
+              <img src="img/visa.png" width="45" height="14" alt="Visa">
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <source media="(min-width: 992px)" srcset="img/mastercard-tablet.png">
+              <img src="img/mastercard.png" width="32" height="19" alt="MasterCard">
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <source media="(min-width: 992px)" srcset="img/liqpay-tablet.png">
+              <img src="img/liqpay.png" width="64" height="14" alt="Liqpay">
+            </picture>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</div>
+<script src="js/scripts.min.js"></script>
+</body>
+</html>
