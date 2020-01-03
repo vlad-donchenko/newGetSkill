@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <title>Get Skill</title>
+  <link rel="preload" href="fonts/Roboto-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<div style="display: none">
+  <include src="build/img/sprite.svg"></include>
+</div>
+<div class="wrapper">
+  <header>
+    <nav class="navigation navigation--no-js">
+      <div class="mobile-menu">
+        <div class="mobile-menu__header">
+          <div class="logo logo--mobile-menu">
+            <a href="/" class="logo__link">
+              <picture>
+                <img src="img/logo-375.png" width="167" height="45" alt="Логотип сайта">
+              </picture>
+            </a>
+          </div>
+          <a href="#" class="button button--mobile-menu">
+            Мой кабинет
+          </a>
+        </div>
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-mobile-home"></use>
+              </svg>
+              Главная
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-mobile-curse"></use>
+              </svg>
+              Курсы
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-mobile-curse-online"></use>
+              </svg>
+              Онлайн-курсы
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <svg width="20" height="21">
+                <use xlink:href="#icon-mobile-master-class"></use>
+              </svg>
+              Мастер-классы
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-mobile-school"></use>
+              </svg>
+              Школы
+            </a>
+          </li>
+          <li class="mobile-menu__item mobile-menu__item--indicator">
+            <a href="#" class="mobile-menu__link">
+              <svg width="23" height="21">
+                <use xlink:href="#icon-mobile-like"></use>
+              </svg>
+              Избранные
+              <span class="mobile-menu__indicator">
+                1
+              </span>
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <svg width="23" height="21">
+                <use xlink:href="#icon-mobile-place"></use>
+              </svg>
+              Разместить огранизацию
+            </a>
+          </li>
+        </ul>
+        <div class="mobile-menu__footer">
+          <ul class="language">
+            <li class="language__item">
+              <a href="#" class="language__link">
+                українська
+              </a>
+            </li>
+            <li class="language__item language__item--active">
+              <a class="language__link">
+                русский
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="navigation__user-wrapper">
+        <div class="container navigation__user--inner">
+          <ul class="language language--header">
+            <li class="language__item">
+              <a href="#" class="language__link">
+                українська
+              </a>
+            </li>
+            <li class="language__item language__item--active">
+              <a class="language__link">
+                русский
+              </a>
+            </li>
+          </ul>
+          <ul class="user-features user-features--header">
+            <li class="user-features__item">
+              <a href="#" class="user-features__link">
+                Идеи по улучшению сайта
+              </a>
+            </li>
+            <li class="user-features__item">
+              <a href="#" class="user-features__link">
+                Войти
+              </a>
+            </li>
+            <li class="user-features__item user-features__item--registration">
+              <a href="#" class="user-features__link">
+                Зарегистрироваться
+                <svg width="13" height="7" class="user-features__drop-icon">
+                  <use xlink:href="#icon-arrow"></use>
+                </svg>
+              </a>
+              <ul class="user-features__dropdown">
+                <li>
+                  <a href="#" class="button">
+                    Пользователь
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="button">
+                    Организация
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container navigation__inner navigation__inner--middle">
+        <button type="button" class="navigation__open-menu" aria-label="Открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="logo logo--header">
+          <a href="/" class="logo__link">
+            <picture>
+              <img src="img/logo-375.png" width="167" height="45" alt="Логотип сайта">
+            </picture>
+          </a>
+        </div>
+        <div class="navigation__text">
+          <p class="navigation__curse">
+            6 544
+          </p>
+          <p class="navigation__count-curse">
+            Объявления
+            о курсах
+          </p>
+        </div>
+        <a href="#" class="like like--active like--header" aria-label="Понравившееся">
+          <svg width="23" height="21">
+            <use xlink:href="#icon-like"></use>
+          </svg>
+          <span class="like__count">
+            1
+          </span>
+        </a>
+        <div class="search">
+          <form method="get" action="search.php" autocomplete="off">
+            <label for="search" class="visually-hidden">
+              Поиск
+            </label>
+            <button class="search__button" aria-label="Искать">
+              <svg width="15" height="16" class="search__icon">
+                <use xlink:href="#icon-search"></use>
+              </svg>
+            </button>
+            <input type="search" name="search" class="input input--search" placeholder="Я ищу..." id="search">
+          </form>
+        </div>
+        <a href="#" class="button button--organization-header">
+          Разместить организацию
+        </a>
+      </div>
+      <div class="navigation__wrapper-menu">
+        <div class="container navigation__inner--menu">
+          <ul class="menu">
+            <li class="menu__list menu__list--active">
+              <a class="menu__link">
+                Курсы
+              </a>
+            </li>
+            <li class="menu__list">
+              <a href="#" class="menu__link">
+                Онлайн курсы
+              </a>
+            </li>
+            <li class="menu__list">
+              <a href="#" class="menu__link">
+                Мастер-классы
+              </a>
+            </li>
+            <li class="menu__list">
+              <a href="#" class="menu__link">
+                Школы
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </nav>
+  </header>
+  <main class="site-main">
+    <section class="breadcrumbs">
+      <div class="container">
+        <h2 class="visually-hidden">
+          Постраничная Навигация
+        </h2>
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a href="/">
+              Главная
+            </a>
+          </li>
+          <li>
+            Поиск
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="all-articles">
+      <div class="all-articles__inner container">
+        <div class="all-articles__header">
+          <h2 class="h2 all-articles__title">
+            Статьи от Get Skill
+          </h2>
+          <ul class="all-articles__menu">
+            <li class="all-articles__menu-item">
+              <a href="#" class="button button--gray all-articles__menu-button">
+                Красота и стиль
+              </a>
+            </li>
+            <li class="all-articles__menu-item all-articles__menu-item--active">
+              <a href="#" class="button button--gray all-articles__menu-button">
+                Программирование
+              </a>
+            </li>
+            <li class="all-articles__menu-item">
+              <a href="#" class="button button--gray all-articles__menu-button">
+                Иностранные языки
+              </a>
+            </li>
+            <li class="all-articles__menu-item">
+              <a href="#" class="button button--gray all-articles__menu-button">
+                Вождение
+              </a>
+            </li>
+            <li class="all-articles__menu-item">
+              <a href="#" class="button button--gray all-articles__menu-button">
+                Дизайн
+              </a>
+            </li>
+            <li class="all-articles__menu-item">
+              <a href="#" class="button button--gray all-articles__menu-button">
+                Спорт и здоровья
+              </a>
+            </li>
+            <li class="all-articles__menu-item">
+              <a href="#" class="button button--gray all-articles__menu-button">
+                Творчество
+              </a>
+            </li>
+            <li class="all-articles__menu-item">
+              <a href="#" class="button button--gray all-articles__menu-button">
+                Бизнес
+              </a>
+            </li>
+          </ul>
+        </div>
+        <section class="articles all-articles__articles">
+          <ul class="articles__list">
+            <li class="articles__item">
+              <div class="articles__content">
+                <a href="#" class="articles__img">
+                  <img src="img/articles-1.jpg" width="295" height="167" alt="27 кулинарных лайфхаков от повара-любителя">
+                </a>
+                <div class="articles__info-block">
+                  <p class="articles__name">
+                    <a href="#">
+                      27 кулинарных лайфхаков от
+                      <br>
+                      повара-любителя
+                    </a>
+                  </p>
+                  <p class="articles__text">
+                    Как взбить молоко для капучино в домашних условиях, приготовить натуральный
+                    усилитель вкуса и не получить кипящим маслом в глаз.
+                  </p>
+                  <div class="articles__details">
+                    <div class="articles__details__item">
+                      <p class="articles__date">
+                        <svg width="15" height="16">
+                          <use xlink:href="#icon-calendar"></use>
+                        </svg>
+                        28.12.2019
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__views-count">
+                        <svg width="23" height="16">
+                          <use xlink:href="#icon-view"></use>
+                        </svg>
+                        120
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__comments">
+                        <svg width="19" height="16">
+                          <use xlink:href="#icon-comments"></use>
+                        </svg>
+                        5
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__tag">
+                        Иностранные языки
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="articles__item">
+              <div class="articles__content">
+                <a href="#" class="articles__img">
+                  <img src="img/articles-2.jpg" width="295" height="167" alt="Что изменилось в законах в 2020 году">
+                </a>
+                <div class="articles__info-block">
+                  <p class="articles__name">
+                    <a href="#">
+                      Что изменилось в
+                      законах в 2020 году
+                    </a>
+                  </p>
+                  <p class="articles__text">
+                    Новые лимиты на посылки, курилки
+                    в аэропортах и льготная ипотека для
+                    сельчан.
+                  </p>
+                  <div class="articles__details">
+                    <div class="articles__details__item">
+                      <p class="articles__date">
+                        <svg width="15" height="16">
+                          <use xlink:href="#icon-calendar"></use>
+                        </svg>
+                        20.12.2019
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__views-count">
+                        <svg width="23" height="16">
+                          <use xlink:href="#icon-view"></use>
+                        </svg>
+                        331
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__comments">
+                        <svg width="19" height="16">
+                          <use xlink:href="#icon-comments"></use>
+                        </svg>
+                        12
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__tag">
+                        Иностранные языки
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="articles__item">
+              <div class="articles__content">
+                <a href="#" class="articles__img">
+                  <img src="img/articles-3.jpg" width="295" height="167" alt="15 увлечений, которые могу приносить доход">
+                </a>
+                <div class="articles__info-block">
+                  <p class="articles__name">
+                    <a href="#">
+                      15 увлечений, которые
+                      могу приносить доход
+                    </a>
+                  </p>
+                  <p class="articles__text">
+                    Прежде чем брать подработку в
+                    ущерб хобби, подумайте. Возможно,
+                    именно любимое занятие подарит
+                    вам не только радость, но и деньги.
+                  </p>
+                  <div class="articles__details">
+                    <div class="articles__details__item">
+                      <p class="articles__date">
+                        <svg width="15" height="16">
+                          <use xlink:href="#icon-calendar"></use>
+                        </svg>
+                        18.12.2019
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__views-count">
+                        <svg width="23" height="16">
+                          <use xlink:href="#icon-view"></use>
+                        </svg>
+                        640
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__comments">
+                        <svg width="19" height="16">
+                          <use xlink:href="#icon-comments"></use>
+                        </svg>
+                        23
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__tag">
+                        Иностранные языки
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="articles__item">
+              <div class="articles__content">
+                <a href="#" class="articles__img">
+                  <img src="img/articles-4.jpg" width="295" height="167" alt="20 навыков, которыми можно овладеть за сутки">
+                </a>
+                <div class="articles__info-block">
+                  <p class="articles__name">
+                    <a href="#">
+                      20 навыков, которыми
+                      можно овладеть за
+                      сутки
+                    </a>
+                  </p>
+                  <p class="articles__text">
+                    И совсем не обязательно
+                    записываться на многомесячные
+                    курсы.
+                  </p>
+                  <div class="articles__details">
+                    <div class="articles__details__item">
+                      <p class="articles__date">
+                        <svg width="15" height="16">
+                          <use xlink:href="#icon-calendar"></use>
+                        </svg>
+                        15.12.2019
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__views-count">
+                        <svg width="23" height="16">
+                          <use xlink:href="#icon-view"></use>
+                        </svg>
+                        743
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__comments">
+                        <svg width="19" height="16">
+                          <use xlink:href="#icon-comments"></use>
+                        </svg>
+                        13
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__tag">
+                        Иностранные языки
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="articles__item">
+              <div class="articles__content">
+                <a href="#" class="articles__img">
+                  <img src="img/articles-5.jpg" width="295" height="167" alt="Как стать лучше в 2020 году">
+                </a>
+                <div class="articles__info-block">
+                  <p class="articles__name">
+                    <a href="#">
+                      Как стать лучше в 2020
+                      году
+                    </a>
+                  </p>
+                  <p class="articles__text">
+                    Наши самые интересные статьи о
+                    том, как поверить в себя, справиться
+                    с хандрой и достичь наконец своих
+                    целей.
+                  </p>
+                  <div class="articles__details">
+                    <div class="articles__details__item">
+                      <p class="articles__date">
+                        <svg width="15" height="16">
+                          <use xlink:href="#icon-calendar"></use>
+                        </svg>
+                        01.12.2019
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__views-count">
+                        <svg width="23" height="16">
+                          <use xlink:href="#icon-view"></use>
+                        </svg>
+                        782
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__comments">
+                        <svg width="19" height="16">
+                          <use xlink:href="#icon-comments"></use>
+                        </svg>
+                        33
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__tag">
+                        Иностранные языки
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="articles__item">
+              <div class="articles__content">
+                <a href="#" class="articles__img">
+                  <img src="img/articles-1.jpg" width="295" height="167" alt="27 кулинарных лайфхаков от повара-любителя">
+                </a>
+                <div class="articles__info-block">
+                  <p class="articles__name">
+                    <a href="#">
+                      27 кулинарных лайфхаков от
+                      <br>
+                      повара-любителя
+                    </a>
+                  </p>
+                  <p class="articles__text">
+                    Как взбить молоко для капучино в домашних условиях, приготовить натуральный
+                    усилитель вкуса и не получить кипящим маслом в глаз.
+                  </p>
+                  <div class="articles__details">
+                    <div class="articles__details__item">
+                      <p class="articles__date">
+                        <svg width="15" height="16">
+                          <use xlink:href="#icon-calendar"></use>
+                        </svg>
+                        28.12.2019
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__views-count">
+                        <svg width="23" height="16">
+                          <use xlink:href="#icon-view"></use>
+                        </svg>
+                        120
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__comments">
+                        <svg width="19" height="16">
+                          <use xlink:href="#icon-comments"></use>
+                        </svg>
+                        5
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__tag">
+                        Иностранные языки
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="articles__item">
+              <div class="articles__content">
+                <a href="#" class="articles__img">
+                  <img src="img/articles-2.jpg" width="295" height="167" alt="Что изменилось в законах в 2020 году">
+                </a>
+                <div class="articles__info-block">
+                  <p class="articles__name">
+                    <a href="#">
+                      Что изменилось в
+                      законах в 2020 году
+                    </a>
+                  </p>
+                  <p class="articles__text">
+                    Новые лимиты на посылки, курилки
+                    в аэропортах и льготная ипотека для
+                    сельчан.
+                  </p>
+                  <div class="articles__details">
+                    <div class="articles__details__item">
+                      <p class="articles__date">
+                        <svg width="15" height="16">
+                          <use xlink:href="#icon-calendar"></use>
+                        </svg>
+                        20.12.2019
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__views-count">
+                        <svg width="23" height="16">
+                          <use xlink:href="#icon-view"></use>
+                        </svg>
+                        331
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__comments">
+                        <svg width="19" height="16">
+                          <use xlink:href="#icon-comments"></use>
+                        </svg>
+                        12
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__tag">
+                        Иностранные языки
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="articles__item">
+              <div class="articles__content">
+                <a href="#" class="articles__img">
+                  <img src="img/articles-3.jpg" width="295" height="167" alt="15 увлечений, которые могу приносить доход">
+                </a>
+                <div class="articles__info-block">
+                  <p class="articles__name">
+                    <a href="#">
+                      15 увлечений, которые
+                      могу приносить доход
+                    </a>
+                  </p>
+                  <p class="articles__text">
+                    Прежде чем брать подработку в
+                    ущерб хобби, подумайте. Возможно,
+                    именно любимое занятие подарит
+                    вам не только радость, но и деньги.
+                  </p>
+                  <div class="articles__details">
+                    <div class="articles__details__item">
+                      <p class="articles__date">
+                        <svg width="15" height="16">
+                          <use xlink:href="#icon-calendar"></use>
+                        </svg>
+                        18.12.2019
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__views-count">
+                        <svg width="23" height="16">
+                          <use xlink:href="#icon-view"></use>
+                        </svg>
+                        640
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__comments">
+                        <svg width="19" height="16">
+                          <use xlink:href="#icon-comments"></use>
+                        </svg>
+                        23
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__tag">
+                        Иностранные языки
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="articles__item">
+              <div class="articles__content">
+                <a href="#" class="articles__img">
+                  <img src="img/articles-4.jpg" width="295" height="167" alt="20 навыков, которыми можно овладеть за сутки">
+                </a>
+                <div class="articles__info-block">
+                  <p class="articles__name">
+                    <a href="#">
+                      20 навыков, которыми
+                      можно овладеть за
+                      сутки
+                    </a>
+                  </p>
+                  <p class="articles__text">
+                    И совсем не обязательно
+                    записываться на многомесячные
+                    курсы.
+                  </p>
+                  <div class="articles__details">
+                    <div class="articles__details__item">
+                      <p class="articles__date">
+                        <svg width="15" height="16">
+                          <use xlink:href="#icon-calendar"></use>
+                        </svg>
+                        15.12.2019
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__views-count">
+                        <svg width="23" height="16">
+                          <use xlink:href="#icon-view"></use>
+                        </svg>
+                        743
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__comments">
+                        <svg width="19" height="16">
+                          <use xlink:href="#icon-comments"></use>
+                        </svg>
+                        13
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__tag">
+                        Иностранные языки
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="articles__item">
+              <div class="articles__content">
+                <a href="#" class="articles__img">
+                  <img src="img/articles-5.jpg" width="295" height="167" alt="Как стать лучше в 2020 году">
+                </a>
+                <div class="articles__info-block">
+                  <p class="articles__name">
+                    <a href="#">
+                      Как стать лучше в 2020
+                      году
+                    </a>
+                  </p>
+                  <p class="articles__text">
+                    Наши самые интересные статьи о
+                    том, как поверить в себя, справиться
+                    с хандрой и достичь наконец своих
+                    целей.
+                  </p>
+                  <div class="articles__details">
+                    <div class="articles__details__item">
+                      <p class="articles__date">
+                        <svg width="15" height="16">
+                          <use xlink:href="#icon-calendar"></use>
+                        </svg>
+                        01.12.2019
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__views-count">
+                        <svg width="23" height="16">
+                          <use xlink:href="#icon-view"></use>
+                        </svg>
+                        782
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__comments">
+                        <svg width="19" height="16">
+                          <use xlink:href="#icon-comments"></use>
+                        </svg>
+                        33
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__tag">
+                        Иностранные языки
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="articles__item">
+              <div class="articles__content">
+                <a href="#" class="articles__img">
+                  <img src="img/articles-1.jpg" width="295" height="167" alt="27 кулинарных лайфхаков от повара-любителя">
+                </a>
+                <div class="articles__info-block">
+                  <p class="articles__name">
+                    <a href="#">
+                      27 кулинарных лайфхаков от
+                      <br>
+                      повара-любителя
+                    </a>
+                  </p>
+                  <p class="articles__text">
+                    Как взбить молоко для капучино в домашних условиях, приготовить натуральный
+                    усилитель вкуса и не получить кипящим маслом в глаз.
+                  </p>
+                  <div class="articles__details">
+                    <div class="articles__details__item">
+                      <p class="articles__date">
+                        <svg width="15" height="16">
+                          <use xlink:href="#icon-calendar"></use>
+                        </svg>
+                        28.12.2019
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__views-count">
+                        <svg width="23" height="16">
+                          <use xlink:href="#icon-view"></use>
+                        </svg>
+                        120
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__comments">
+                        <svg width="19" height="16">
+                          <use xlink:href="#icon-comments"></use>
+                        </svg>
+                        5
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__tag">
+                        Иностранные языки
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="articles__item">
+              <div class="articles__content">
+                <a href="#" class="articles__img">
+                  <img src="img/articles-2.jpg" width="295" height="167" alt="Что изменилось в законах в 2020 году">
+                </a>
+                <div class="articles__info-block">
+                  <p class="articles__name">
+                    <a href="#">
+                      Что изменилось в
+                      законах в 2020 году
+                    </a>
+                  </p>
+                  <p class="articles__text">
+                    Новые лимиты на посылки, курилки
+                    в аэропортах и льготная ипотека для
+                    сельчан.
+                  </p>
+                  <div class="articles__details">
+                    <div class="articles__details__item">
+                      <p class="articles__date">
+                        <svg width="15" height="16">
+                          <use xlink:href="#icon-calendar"></use>
+                        </svg>
+                        20.12.2019
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__views-count">
+                        <svg width="23" height="16">
+                          <use xlink:href="#icon-view"></use>
+                        </svg>
+                        331
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__comments">
+                        <svg width="19" height="16">
+                          <use xlink:href="#icon-comments"></use>
+                        </svg>
+                        12
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__tag">
+                        Иностранные языки
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="articles__item">
+              <div class="articles__content">
+                <a href="#" class="articles__img">
+                  <img src="img/articles-3.jpg" width="295" height="167" alt="15 увлечений, которые могу приносить доход">
+                </a>
+                <div class="articles__info-block">
+                  <p class="articles__name">
+                    <a href="#">
+                      15 увлечений, которые
+                      могу приносить доход
+                    </a>
+                  </p>
+                  <p class="articles__text">
+                    Прежде чем брать подработку в
+                    ущерб хобби, подумайте. Возможно,
+                    именно любимое занятие подарит
+                    вам не только радость, но и деньги.
+                  </p>
+                  <div class="articles__details">
+                    <div class="articles__details__item">
+                      <p class="articles__date">
+                        <svg width="15" height="16">
+                          <use xlink:href="#icon-calendar"></use>
+                        </svg>
+                        18.12.2019
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__views-count">
+                        <svg width="23" height="16">
+                          <use xlink:href="#icon-view"></use>
+                        </svg>
+                        640
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__comments">
+                        <svg width="19" height="16">
+                          <use xlink:href="#icon-comments"></use>
+                        </svg>
+                        23
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__tag">
+                        Иностранные языки
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="articles__item">
+              <div class="articles__content">
+                <a href="#" class="articles__img">
+                  <img src="img/articles-4.jpg" width="295" height="167" alt="20 навыков, которыми можно овладеть за сутки">
+                </a>
+                <div class="articles__info-block">
+                  <p class="articles__name">
+                    <a href="#">
+                      20 навыков, которыми
+                      можно овладеть за
+                      сутки
+                    </a>
+                  </p>
+                  <p class="articles__text">
+                    И совсем не обязательно
+                    записываться на многомесячные
+                    курсы.
+                  </p>
+                  <div class="articles__details">
+                    <div class="articles__details__item">
+                      <p class="articles__date">
+                        <svg width="15" height="16">
+                          <use xlink:href="#icon-calendar"></use>
+                        </svg>
+                        15.12.2019
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__views-count">
+                        <svg width="23" height="16">
+                          <use xlink:href="#icon-view"></use>
+                        </svg>
+                        743
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__comments">
+                        <svg width="19" height="16">
+                          <use xlink:href="#icon-comments"></use>
+                        </svg>
+                        13
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__tag">
+                        Иностранные языки
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="articles__item">
+              <div class="articles__content">
+                <a href="#" class="articles__img">
+                  <img src="img/articles-5.jpg" width="295" height="167" alt="Как стать лучше в 2020 году">
+                </a>
+                <div class="articles__info-block">
+                  <p class="articles__name">
+                    <a href="#">
+                      Как стать лучше в 2020
+                      году
+                    </a>
+                  </p>
+                  <p class="articles__text">
+                    Наши самые интересные статьи о
+                    том, как поверить в себя, справиться
+                    с хандрой и достичь наконец своих
+                    целей.
+                  </p>
+                  <div class="articles__details">
+                    <div class="articles__details__item">
+                      <p class="articles__date">
+                        <svg width="15" height="16">
+                          <use xlink:href="#icon-calendar"></use>
+                        </svg>
+                        01.12.2019
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__views-count">
+                        <svg width="23" height="16">
+                          <use xlink:href="#icon-view"></use>
+                        </svg>
+                        782
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__comments">
+                        <svg width="19" height="16">
+                          <use xlink:href="#icon-comments"></use>
+                        </svg>
+                        33
+                      </p>
+                    </div>
+                    <div class="articles__details__item">
+                      <p class="articles__tag">
+                        Иностранные языки
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <button type="button" class="button button--load-more all-articles__load-more">
+            Показать еще
+          </button>
+          <ul class="pagination articles__pagination">
+            <li class="pagination__item pagination__item--prev">
+              <a href="#" class="pagination__link">
+                <svg width="7" height="13">
+                  <use xlink:href="#icon-arrow-left"></use>
+                </svg>
+                Назад
+              </a>
+            </li>
+            <li class="pagination__item">
+              <a href="#" class="pagination__link">
+                1
+              </a>
+            </li>
+            <li class="pagination__item pagination__item--active">
+              <a class="pagination__link">
+                2
+              </a>
+            </li>
+            <li class="pagination__item pagination__item--next">
+              <a href="#" class="pagination__link">
+                Вперед
+                <svg width="7" height="13">
+                  <use xlink:href="#icon-arrow-right"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="top-articles all-articles__top-articles">
+          <h2 class="top-articles__title">
+            ТОП - 10 статей
+          </h2>
+          <ol class="top-articles__list">
+            <li class="top-articles__item">
+              <a href="#" class="top-articles__name">
+                27 кулинарных лайфхаков
+                от повара-любителя
+              </a>
+            </li>
+            <li class="top-articles__item">
+              <a href="#" class="top-articles__name">
+                Что изменилось в законах
+                в 2020 году
+              </a>
+            </li>
+            <li class="top-articles__item">
+              <a href="#" class="top-articles__name">
+                15 увлечений, которые
+                могу приносить доход
+              </a>
+            </li>
+            <li class="top-articles__item">
+              <a href="#" class="top-articles__name">
+                20 навыков, которыми
+                можно овладеть за сутки
+              </a>
+            </li>
+            <li class="top-articles__item">
+              <a href="#" class="top-articles__name">
+                Как стать лучше в 2020
+                году
+              </a>
+            </li>
+            <li class="top-articles__item">
+              <a href="#" class="top-articles__name">
+                27 кулинарных лайфхаков
+                от повара-любителя
+              </a>
+            </li>
+            <li class="top-articles__item">
+              <a href="#" class="top-articles__name">
+                Что изменилось в законах
+                в 2020 году
+              </a>
+            </li>
+            <li class="top-articles__item">
+              <a href="#" class="top-articles__name">
+                15 увлечений, которые
+                могу приносить доход
+              </a>
+            </li>
+            <li class="top-articles__item">
+              <a href="#" class="top-articles__name">
+                20 навыков, которыми
+                можно овладеть за сутки
+              </a>
+            </li>
+            <li class="top-articles__item">
+              <a href="#" class="top-articles__name">
+                Как стать лучше в 2020
+                году
+              </a>
+            </li>
+          </ol>
+        </section>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container site-footer__inner-top">
+      <div class="site-footer__social">
+        <div class="logo logo--footer">
+          <a href="/" class="logo__link">
+            <picture>
+              <img src="img/logo-375.png" width="167" height="45" alt="Логотип сайта">
+            </picture>
+          </a>
+        </div>
+        <div class="social social--footer">
+          <p class="social__title">
+            Присойденяйтесь к нам
+          </p>
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#" class="social__link" aria-label="Мы в инстаграм">
+                <svg width="20" height="19">
+                  <use xlink:href="#icon-instargam"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link" aria-label="Мы в ютуб">
+                <svg width="27" height="19">
+                  <use xlink:href="#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link" aria-label="Мы в телеграм">
+                <svg width="20" height="19">
+                  <use xlink:href="#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__navigation">
+        <div class="site-footer__column">
+          <div class="site-footer__title-wrapper">
+            <h6 class="h6">
+              Пользователям
+            </h6>
+            <button type="button" class="site-footer__toggle" aria-label="Открыть меню">
+              <svg width="13" height="7">
+                <use xlink:href="#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="site-footer__menu site-footer__menu--no-js">
+            <li>
+              <a href="#">
+                Офлайн курсы
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Онлайн курсы
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Мастер-классы
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Школы
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Статьи
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="site-footer__column">
+          <div class="site-footer__title-wrapper">
+            <h6 class="h6">
+              Организациям
+            </h6>
+            <button type="button" class="site-footer__toggle" aria-label="Открыть меню">
+              <svg width="13" height="7">
+                <use xlink:href="#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="site-footer__menu site-footer__menu--no-js">
+            <li>
+              <a href="#">
+                О проекте
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Услуги и тарифы
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                База знаний
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="site-footer__column">
+          <div class="site-footer__title-wrapper">
+            <h6 class="h6">
+              Общее
+            </h6>
+            <button type="button" class="site-footer__toggle" aria-label="Открыть меню">
+              <svg width="13" height="7">
+                <use xlink:href="#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="site-footer__menu site-footer__menu--no-js">
+            <li>
+              <a href="#">
+                Улучшения сайта
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Правила сайта
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Оферта
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer__background">
+      <div class="container site-footer__inner site-footer__inner--bottom">
+        <p class="site-footer__copyright">
+          © 2019 Get Skill
+        </p>
+        <ul class="site-footer__pay">
+          <li>
+            <picture>
+              <source media="(min-width: 992px)" srcset="img/visa-tablet.png">
+              <img src="img/visa.png" width="45" height="14" alt="Visa">
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <source media="(min-width: 992px)" srcset="img/mastercard-tablet.png">
+              <img src="img/mastercard.png" width="32" height="19" alt="MasterCard">
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <source media="(min-width: 992px)" srcset="img/liqpay-tablet.png">
+              <img src="img/liqpay.png" width="64" height="14" alt="Liqpay">
+            </picture>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</div>
+<script src="js/scripts.min.js"></script>
+</body>
+</html>

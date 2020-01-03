@@ -1,0 +1,169 @@
+.articles__list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.articles__img {
+  display: block;
+}
+
+.articles__img img {
+  display: block;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.articles__name {
+  margin: 0;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: normal;
+}
+
+.articles__name a {
+  color: $black-clear-color;
+  text-decoration: none;
+
+  &:focus {
+    color: rgba($black-clear-color, 0.3);
+  }
+}
+
+.articles__text {
+  margin-top: 29px;
+  font-size: 16px;
+  color: $black-clear-color
+}
+
+.articles__details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  margin: 17px -10px 0 -10px;
+}
+
+.articles__details__item {
+  padding: 10px;
+}
+
+.articles__date,
+.articles__views-count,
+.articles__comments,
+.articles__tag {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: 16px;
+  color: $black-color;
+
+  svg {
+    margin-right: 10px;
+  }
+}
+
+.articles__tag {
+  padding: 3.5px 5px;
+  color: $gray-lite-color;
+  border: 1px solid $gray-color;
+  border-radius: 3px;
+}
+
+.articles__content {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.articles__info-block {
+  padding-top: 20px;
+}
+
+.articles__item {
+  border-bottom: 1px solid $gray-color;
+}
+
+.all-articles__load-more {
+  margin-top: 30px;
+}
+
+.articles__pagination {
+  margin-top: 30px;
+}
+
+.all-articles {
+  margin-bottom: 60px;
+}
+
+@media (min-width: $tablet) {
+  .articles__content {
+    display: flex;
+  }
+
+  .articles__img {
+    width: 295px;
+  }
+
+  .articles__info-block {
+    padding-top: 0;
+    padding-left: 30px;
+    width: calc(100% - 295px);
+  }
+
+  .articles__text {
+    margin-top: 18px;
+    margin-bottom: 0;
+  }
+
+  .articles__details {
+    margin-top: 27px;
+  }
+
+  .articles__pagination {
+    justify-content: center;
+  }
+}
+
+@media (min-width: $tablet-large) {
+  .articles__content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .articles__name {
+    font-size: 28px;
+    line-height: 37px;
+  }
+
+  .articles__text {
+    margin-top: 21px;
+    flex-grow: 1;
+  }
+
+  .articles__details {
+    margin-top: 13px;
+  }
+
+  .articles__info-block {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $laptop) {
+  .articles__name a {
+    &:hover {
+      color: rgba($black-color, 0.6);
+    }
+
+    &:focus {
+      color: rgba($black-color, 0.3);
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .articles__name br {
+    display: none;
+  }
+}

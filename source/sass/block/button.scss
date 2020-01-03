@@ -292,6 +292,22 @@
   }
 }
 
+.button--load-more {
+  padding-top: 7px;
+  padding-bottom: 8px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 300;
+  color: $black-color;
+  background-color: $gray-standard-color;
+  border-color: $gray-standard-color;
+
+  &:focus {
+    color: $black-color;
+    box-shadow: 0 0 0 0.2rem rgba(136, 130, 130, 0.25);
+  }
+}
+
 @media (min-width: $tablet) {
   .button--save {
     padding: 11px 20px 11px 50px;
@@ -406,6 +422,17 @@
     &:focus {
       color: $gray-lite-color;
       box-shadow: 0 0 0 0.2rem rgba($gray-hover-color, 0.25);
+    }
+  }
+
+  .button--load-more {
+    &:hover {
+      color: rgba($black-color, 0.6);
+    }
+
+    &:focus {
+      color: rgba($black-color, 1);
+      box-shadow: 0 0 0 0.2rem rgba(136, 130, 130, 0.25);
     }
   }
 }
