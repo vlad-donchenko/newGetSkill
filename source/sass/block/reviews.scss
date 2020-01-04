@@ -415,6 +415,31 @@
   }
 }
 
+.reviews__not-reviews {
+  margin-top: 29px;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: normal;
+}
+
+.reviews__new-comment-add-item--submit {
+  text-align: right;
+}
+
+.reviews__new-comment-add-item {
+  margin-top: 30px;
+  margin-bottom: 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.reviews__new-comment-add-item--submit .button {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 @media (min-width: $iphone-breakpoint) {
   .rating__title {
     margin-right: 30px;

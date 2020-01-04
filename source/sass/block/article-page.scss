@@ -228,6 +228,13 @@
   .article-page__only-text td {
     padding: 20px;
   }
+
+  .article-page__more-products {
+    text-align: right;
+    margin-top: 22px;
+    margin-bottom: 0;
+    font-size: 16px;
+  }
 }
 @media (min-width: $desktop) {
   .article-page__left {
