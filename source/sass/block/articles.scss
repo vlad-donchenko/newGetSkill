@@ -109,6 +109,10 @@
 }
 
 @media (min-width: $laptop) {
+  .articles__content {
+    padding-bottom: 28px;
+  }
+
   .articles__name a {
     &:hover {
       color: rgba($black-color, 0.6);
@@ -123,5 +127,9 @@
 @media (min-width: $desktop) {
   .articles__name br {
     display: none;
+  }
+
+  .articles__content {
+    padding-bottom: 28px;
   }
 }

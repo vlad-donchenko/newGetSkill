@@ -12,6 +12,19 @@
   margin-bottom: 30px;
 }
 
+.reviews__new-cancel {
+  display: inline-block;
+  margin-right: 15px;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  color: $black-color;
+
+  &:focus {
+    color: rgba($black-color, 0.3);
+  }
+}
+
 .reviews__count {
   margin: 0;
   font-size: 28px;
@@ -486,5 +499,17 @@
   }
   .reviews__write-reviews {
     margin-left: auto;
+  }
+}
+
+@media (min-width: $laptop) {
+  .reviews__new-cancel {
+    &:hover {
+      color: rgba($black-color, 0.6);
+    }
+
+    &:focus {
+      color: rgba($black-color, 0.3);
+    }
   }
 }

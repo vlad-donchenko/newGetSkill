@@ -503,13 +503,13 @@
           <section class="reviews article-page__reviews">
             <div class="reviews__info">
               <h2 class="h2">
-                Отзывы
+                Комментарии
               </h2>
               <p class="reviews__count">
                 76
               </p>
               <span class="button reviews__write-reviews">
-              Написать отзыв
+              Написать комментарий
             </span>
             </div>
             <ul class="reviews__list" style="display: block;">
@@ -942,58 +942,31 @@
                 </article>
               </li>
             </ul>
-            <p class="reviews__all" style="display: block;">
+            <p class="reviews__all">
               <a href="#">
-                Смотреть все отзывы
+                Смотреть все коментарии
               </a>
             </p>
 
             <div class="reviews__new-write" style="display: none;">
-
-              <div class="reviews__rating rating">
-                <p class="rating__title">Поставьте рейтинг курсу</p>
-                <div class="rating__star rating__star--active">
-                  <svg width="16.5" height="15">
-                    <use xlink:href="#icon-rationg-star"></use>
-                  </svg>
-                </div>
-                <div class="rating__star rating__star">
-                  <svg width="16.5" height="15">
-                    <use xlink:href="#icon-rationg-star"></use>
-                  </svg>
-                </div>
-                <div class="rating__star rating__star">
-                  <svg width="16.5" height="15">
-                    <use xlink:href="#icon-rationg-star"></use>
-                  </svg>
-                </div>
-                <div class="rating__star rating__star">
-                  <svg width="16.5" height="15">
-                    <use xlink:href="#icon-rationg-star"></use>
-                  </svg>
-                </div>
-                <div class="rating__star rating__star">
-                  <svg width="16.5" height="15">
-                    <use xlink:href="#icon-rationg-star"></use>
-                  </svg>
-                </div>
-
+              <div class="reviews__new-comment-add">
+                <form action="new-comment.php" method="post">
+                  <p class="reviews__new-comment-add-item">
+                    <label for="new-write-reviews" class="label">
+                      Комментарии
+                    </label>
+                    <textarea name="new-write-reviews" id="new-write-reviews" class="input input--full-width input--textarea"></textarea>
+                  </p>
+                  <p class="reviews__new-comment-add-item reviews__new-comment-add-item--submit">
+                    <a href="#" class="reviews__new-cancel">
+                      Отменить
+                    </a>
+                    <button type="submit" class="button">
+                      Оставить комментарий
+                    </button>
+                  </p>
+                </form>
               </div>
-
-              <div class="new-write__text">
-                <label class="new-write__text__title">Комментарий</label>
-                <textarea name="new-write-reviews" id="new-write-reviews"
-                          class="input input--full-width input--textarea"></textarea>
-              </div>
-              <div class="new-write__text__button">
-                  <span class="button button--cancel">
-                    Отменить
-                  </span>
-                <button type="submit" class="button button--feedback">
-                  Оставить отзыв
-                </button>
-              </div>
-
             </div>
 
           </section>

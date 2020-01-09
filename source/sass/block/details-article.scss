@@ -65,3 +65,9 @@
     margin-bottom: -10px;
   }
 }
+
+@media (min-width: $laptop) {
+  .details-article--in-list {
+    margin-top: 16px;
+  }
+}

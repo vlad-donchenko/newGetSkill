@@ -1,14 +1,16 @@
 .top-articles__title {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0;
+  padding-bottom: 30px;
   font-size: 16px;
   font-weight: 500;
   line-height: normal;
+  border-bottom: 1px solid $gray-color;
 }
 
 .top-articles__list {
   padding-left: 0;
-  margin: 0;
+  margin: 11px 0 0 0;
   list-style: none;
   counter-reset: li;
 }
@@ -16,8 +18,9 @@
 .top-articles__item {
   position: relative;
   padding-top: 19px;
-  padding-bottom: 15px;
+  padding-bottom: 11px;
   padding-left: 65px;
+  min-height: 77px;
 
   &::before {
     counter-increment: li;
@@ -53,13 +56,13 @@
 
 .top-articles__item {
   border-bottom: 1px solid $gray-color;
-
-  &:first-child {
-    border-top: 1px solid $gray-color;
-  }
 }
 
 @media (min-width: $laptop) {
+  .top-articles__item {
+    padding-bottom: 18px;
+  }
+
   .top-articles__name {
     &:hover {
       color: rgba($black-color, 0.6);
@@ -68,5 +71,13 @@
     &:focus {
       color: rgba($black-color, 0.3);
     }
+  }
+}
+
+@media (min-width: $desktop) {
+  .top-articles__item {
+    min-height: 79px;
+    padding-top: 19px;
+    padding-bottom: 15px;
   }
 }
