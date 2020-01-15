@@ -1,0 +1,169 @@
+.info-site {
+  margin-bottom: 60px;
+}
+
+.info-site__menu {
+  position: relative;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.info-site__menu-link {
+  display: flex;
+  justify-content: center;
+  padding: 11px 13px;
+  font-size: 16px;
+  color: $black-color;
+  text-decoration: none;
+  background-color: $gray-standard-color;
+  border-radius: 21px;
+
+  &:focus {
+    color: $violet-dark-color;
+    background-color: $violet-lite-color;
+  }
+}
+
+.info-site__menu-link svg {
+  margin-right: 22px;
+}
+
+.info-site__menu-text {
+  display: block;
+  max-width: 140px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.info-site__menu-item--active .info-site__menu-link {
+  color: $violet-dark-color;
+  background-color: $violet-lite-color;
+}
+
+.info-site__page-name {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1209px) {
+  .info-site__menu {
+    margin: 0 -20px 31px -20px;
+
+    &::before,
+    &::after {
+      content: " ";
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 48px;
+      z-index: 1;
+    }
+
+    &::before {
+      left: 0;
+      background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.2) 0%, #ffffff 100%);
+    }
+
+    &::after {
+      right: 0;
+      background-image: linear-gradient(to right, rgba($white-color, 0.2) 0%, $white-color 100%);
+    }
+  }
+
+  .info-site__menu .slick-slide {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .info-site {
+    margin-top: 30px;
+  }
+
+  .info-site__text {
+    margin-top: 50px;
+  }
+
+  .info-site {
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: $laptop) {
+  .info-site__inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .info-site {
+    margin-bottom: 160px;
+  }
+
+  .info-site__menu {
+    width: 100%;
+    max-width: 260px;
+    padding-right: 30px;
+    padding-top: 2px;
+  }
+
+  .info-site__text {
+    margin-top: 0;
+    width: calc(100% - 260px);
+  }
+
+  .info-site__page-name {
+    width: 100%;
+    margin-bottom: 59px;
+  }
+
+  .info-site__menu-link {
+    padding: 11px 18px;
+    justify-content: flex-start;
+    background-color: transparent;
+    border-radius: 3px;
+
+    &[href]:hover {
+      color: rgba($violet-dark-color, 0.6);
+      background-color: $violet-lite-color;
+    }
+
+    &[href]:focus {
+      color: $violet-dark-color;
+      background-color: $violet-lite-color;
+    }
+  }
+
+  .info-site__menu-text {
+    flex-grow: 1;
+    max-width: calc(100% - 43px);
+    display: block;
+    overflow: initial;
+    white-space: normal;
+    text-overflow: initial;
+  }
+
+  .info-site__menu-item {
+    margin-bottom: 23px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .info-site__menu {
+    max-width: 345px;
+    padding-right: 30px;
+  }
+
+  .info-site__text {
+    width: calc(100% - 345px);
+  }
+
+  .info-site__menu-text {
+    max-width: 237px;
+  }
+}

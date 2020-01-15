@@ -127,12 +127,14 @@
                 Идеи по улучшению сайта
               </a>
             </li>
-            <li class="user-features__item user-features__item--user">
+            <li class="user-features__item">
               <a href="#" class="user-features__link">
-                <svg width="10" height="13" class="user-features__login-icon ">
-                  <use xlink:href="#icon-user"></use>
-                </svg>
-                Мой кабинет
+                Войти
+              </a>
+            </li>
+            <li class="user-features__item user-features__item--registration">
+              <a href="#" class="user-features__link">
+                Зарегистрироваться
                 <svg width="13" height="7" class="user-features__drop-icon">
                   <use xlink:href="#icon-arrow"></use>
                 </svg>
@@ -140,34 +142,12 @@
               <ul class="user-features__dropdown">
                 <li>
                   <a href="#" class="button">
-                    <svg width="21" height="21">
-                      <use xlink:href="#icon-cabinet-like"></use>
-                    </svg>
-                    Избранные
+                    Пользователь
                   </a>
                 </li>
                 <li>
                   <a href="#" class="button">
-                    <svg width="21" height="21">
-                      <use xlink:href="#icon-cabinet-setting"></use>
-                    </svg>
-                    Настройки
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="button">
-                    <svg width="21" height="20">
-                      <use xlink:href="#icon-cabinet-star"></use>
-                    </svg>
-                    Отзывы
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="button">
-                    <svg width="21" height="21">
-                      <use xlink:href="#icon-cabinet-exit"></use>
-                    </svg>
-                    Выход
+                    Организация
                   </a>
                 </li>
               </ul>
@@ -206,12 +186,7 @@
           </span>
         </a>
         <div class="search">
-          <form method="get" action="search.php" autocomplete="off" >
-            <a href="#" class="search__button-cancel">
-              <svg width="15" height="6">
-                <use xlink:href="#arrow-search-icon"></use>
-              </svg>
-            </a>
+          <form method="get" action="search.php" autocomplete="off">
             <label for="search" class="visually-hidden">
               Поиск
             </label>
@@ -221,35 +196,6 @@
               </svg>
             </button>
             <input type="search" name="search" class="input input--search" placeholder="Я ищу..." id="search">
-            <div class="result-search">
-              <div class="result-search__item">
-                <a href="#">
-                  <div class="result-search__item__name">Test test cat</div>
-                  <div class="result-search__item__text-and-price">
-                    <span class="price__text">Цена за курс:</span>
-                    <span class="price">1000 грн</span>
-                  </div>
-                </a>
-              </div>
-              <div class="result-search__item">
-                <a href="#">
-                  <div class="result-search__item__name">Test test cat</div>
-                  <div class="result-search__item__text-and-price">
-                    <span class="price__text">Цена за курс:</span>
-                    <span class="price">1000 грн</span>
-                  </div>
-                </a>
-              </div>
-              <div class="result-search__item">
-                <a href="#">
-                  <div class="result-search__item__name">Test test cat</div>
-                  <div class="result-search__item__text-and-price">
-                    <span class="price__text">Цена за курс:</span>
-                    <span class="price">1000 грн</span>
-                  </div>
-                </a>
-              </div>
-            </div>
           </form>
         </div>
         <a href="#" class="button button--organization-header">
@@ -286,70 +232,100 @@
     </nav>
   </header>
   <main class="site-main">
-    <div class="container">
-      <ul>
-        <li>
-          <a href="main.html">
-            Главная страница
-          </a>
-        </li>
-        <li>
-          <a href="deals.html">
-            Сделки
-          </a>
-        </li>
-        <li>
-          <a href="deals-edit.html">
-            Сделки редактирования
-          </a>
-        </li>
-        <li>
-          <a href="clients-list.html">
-           Клиенты
-          </a>
-        </li>
-        <li>
-          <a href="deals-clients-edit.html">
-            Клиенты редактирования
-          </a>
-        </li>
-        <li>
-          <a href="not-registration-favorites.html">
-            Избранное для незарегистрированных
-          </a>
-        </li>
-        <li>
-          <a href="analytics.html">
-            Аналитика
-          </a>
-        </li>
-        <li>
-          <a href="articles.html">
-            Статьи от Get Skill
-          </a>
-        </li>
-        <li>
-          <a href="article-page.html">
-            Статья
-          </a>
-        </li>
-        <li>
-          <a href="article-page-not-login.html">
-            Статья Без коментов
-          </a>
-        </li>
-        <li>
-          <a href="article-page-login.html">
-            Статья Комент
-          </a>
-        </li>
-        <li>
-          <a href="rulles.html">
-            Правила
-          </a>
-        </li>
-      </ul>
-    </div>
+    <section class="breadcrumbs">
+      <div class="container">
+        <h2 class="visually-hidden">
+          Постраничная Навигация
+        </h2>
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a href="/">
+              Главная
+            </a>
+          </li>
+          <li>
+            Поиск
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="info-site">
+      <div class="container info-site__inner">
+        <h2 class="h2 info-site__page-name">
+          Правила сайта
+        </h2>
+        <ul class="info-site__menu">
+          <li class="info-site__menu-item info-site__menu-item--active">
+            <a class="info-site__menu-link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-rulles"></use>
+              </svg>
+              <span class="info-site__menu-text">
+                Правила сайта
+              </span>
+            </a>
+          </li>
+          <li class="info-site__menu-item">
+            <a href="#" class="info-site__menu-link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-offerta"></use>
+              </svg>
+              <span class="info-site__menu-text">
+                Публичная оферта
+              </span>
+            </a>
+          </li>
+          <li class="info-site__menu-item">
+            <a href="#" class="info-site__menu-link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-privacy-policy"></use>
+              </svg>
+              <span class="info-site__menu-text">
+                Политика конфиденциальности
+              </span>
+            </a>
+          </li>
+        </ul>
+        <article class="info-site__text text">
+          <h4>
+            1. ТЕРМИНЫ, ИСПОЛЬЗУЕМЫЕ В НАСТОЯЩИХ ПРАВИЛАХ
+          </h4>
+          <p>
+            &laquo;Администрация Сайта&raquo;&nbsp;&mdash; Общество с&nbsp;ограниченной ответственностью &laquo;Тич Ми&nbsp;Плиз Рус&raquo; ОГРН 1167847250867, ИНН 7842110286, местонахождение&nbsp;г. Санкт-Петербург, улица Новгородская, дом&nbsp;23, литер&nbsp;А, офис 340-А, юридическое лицо, созданное и&nbsp;действующее в&nbsp;соответствии с&nbsp;действующим законодательством Российской Федерации.
+          </p>
+          <p>
+            &laquo;Аккаунт&raquo;&nbsp;&mdash; учётная запись на&nbsp;Сайте, создаваемая Пользователем при регистрации, содержащая реквизиты и&nbsp;позволяющая приобрести Курсы, а&nbsp;также иметь доступ к&nbsp;выставлению своих предложений о&nbsp;проведении Курсов.
+          </p>
+          <p>
+            &laquo;Курсы&raquo;&nbsp;&mdash; учебные/учебно-практические занятия в&nbsp;режиме реального времени в&nbsp;месте, определяемом Организатором Курсов, и&nbsp;(или) в&nbsp;форме видео- или аудиотрансляции&nbsp;и (или) обмена сообщениями посредством удалённого доступа через сеть Интернет, а&nbsp;также в&nbsp;иных формах.
+          </p>
+          <p>
+            &laquo;Пользователь Сайта&raquo;&nbsp;&mdash; любое лицо, посетившее Сайт&nbsp;и (или) прошедшее регистрацию и&nbsp;получившее учетную запись для доступа к&nbsp;Сайту.
+          </p>
+          <p>
+            &laquo;Сайт&raquo;&nbsp;&mdash; информационная система в&nbsp;сети Интернет, расположенная по&nbsp;адресам https://teachmeplease.ru и&nbsp;https://teachmeplease.com, включая все поддомены.
+          </p>
+          <h4>
+            ОБЩИЕ ПОЛОЖЕНИЯ
+          </h4>
+          <p>
+            2.1. Настоящие Правила разработаны Администрацией Сайта и&nbsp;определяют условия использования Сайта, а&nbsp;также права и&nbsp;обязанности его Пользователей и&nbsp;Администрации.
+          </p>
+          <p>
+            2.2. Настоящие Правила являются юридически обязательными для Пользователя и&nbsp;Администрации Сайта.
+          </p>
+          <p>
+            2.3. Использование Сайта любым третьим лицом, включая просмотр Сайта, регистрацию Пользователя на&nbsp;Сайте и&nbsp;иные действия, является акцептом и&nbsp;означает полное и&nbsp;безоговорочное принятие Пользователем настоящих Правил в&nbsp;соответствии со&nbsp;ст.&nbsp;438 Гражданского кодекса Российской Федерации.
+          </p>
+          <p>
+            2.4. Правила пользования Сайтом могут быть дополнены&nbsp;и (или) изменены в&nbsp;одностороннем порядке Администрацией Сайта без специального уведомления.
+          </p>
+          <p>
+            2.5. Действующая редакция Правил расположена в&nbsp;сети Интернет по&nbsp;адресу: https://teachmeplease.ru/pages/terms. Продолжение использования Сайта Пользователем после изменения&nbsp;и (или) дополнения Правил означает принятие и&nbsp;согласие Пользователя с&nbsp;данными изменениями&nbsp;и (или) дополнениями.
+          </p>
+        </article>
+      </div>
+    </section>
   </main>
   <footer class="site-footer">
     <div class="container site-footer__inner-top">
@@ -524,7 +500,6 @@
     </div>
   </footer>
 </div>
-
 <script src="js/scripts.min.js"></script>
 </body>
 </html>
