@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <title>Get Skill</title>
+  <link rel="preload" href="fonts/Roboto-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<div style="display: none">
+  <include src="build/img/sprite.svg"></include>
+</div>
+<div class="wrapper">
+  <header>
+    <nav class="navigation navigation--no-js">
+      <div class="mobile-menu">
+        <div class="mobile-menu__header">
+          <div class="logo logo--mobile-menu">
+            <a href="/" class="logo__link">
+              <picture>
+                <img src="img/logo-375.png" width="167" height="45" alt="Логотип сайта">
+              </picture>
+            </a>
+          </div>
+          <a href="#" class="button button--mobile-menu">
+            Мой кабинет
+          </a>
+        </div>
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-mobile-home"></use>
+              </svg>
+              Главная
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-mobile-curse"></use>
+              </svg>
+              Курсы
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-mobile-curse-online"></use>
+              </svg>
+              Онлайн-курсы
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <svg width="20" height="21">
+                <use xlink:href="#icon-mobile-master-class"></use>
+              </svg>
+              Мастер-классы
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-mobile-school"></use>
+              </svg>
+              Школы
+            </a>
+          </li>
+          <li class="mobile-menu__item mobile-menu__item--indicator">
+            <a href="#" class="mobile-menu__link">
+              <svg width="23" height="21">
+                <use xlink:href="#icon-mobile-like"></use>
+              </svg>
+              Избранные
+              <span class="mobile-menu__indicator">
+                1
+              </span>
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <svg width="23" height="21">
+                <use xlink:href="#icon-mobile-place"></use>
+              </svg>
+              Разместить огранизацию
+            </a>
+          </li>
+        </ul>
+        <div class="mobile-menu__footer">
+          <ul class="language">
+            <li class="language__item">
+              <a href="#" class="language__link">
+                українська
+              </a>
+            </li>
+            <li class="language__item language__item--active">
+              <a class="language__link">
+                русский
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="navigation__user-wrapper">
+        <div class="container navigation__user--inner">
+          <ul class="language language--header">
+            <li class="language__item">
+              <a href="#" class="language__link">
+                українська
+              </a>
+            </li>
+            <li class="language__item language__item--active">
+              <a class="language__link">
+                русский
+              </a>
+            </li>
+          </ul>
+          <ul class="user-features user-features--header">
+            <li class="user-features__item">
+              <a href="#" class="user-features__link">
+                Идеи по улучшению сайта
+              </a>
+            </li>
+            <li class="user-features__item user-features__item--user">
+              <a href="#" class="user-features__link">
+                <svg width="10" height="13" class="user-features__login-icon ">
+                  <use xlink:href="#icon-user"></use>
+                </svg>
+                Мой кабинет
+                <svg width="13" height="7" class="user-features__drop-icon">
+                  <use xlink:href="#icon-arrow"></use>
+                </svg>
+              </a>
+              <ul class="user-features__dropdown">
+                <li>
+                  <a href="#" class="button">
+                    <svg width="21" height="21">
+                      <use xlink:href="#icon-cabinet-like"></use>
+                    </svg>
+                    Избранные
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="button">
+                    <svg width="21" height="21">
+                      <use xlink:href="#icon-cabinet-setting"></use>
+                    </svg>
+                    Настройки
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="button">
+                    <svg width="21" height="20">
+                      <use xlink:href="#icon-cabinet-star"></use>
+                    </svg>
+                    Отзывы
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="button">
+                    <svg width="21" height="21">
+                      <use xlink:href="#icon-cabinet-exit"></use>
+                    </svg>
+                    Выход
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container navigation__inner navigation__inner--middle">
+        <button type="button" class="navigation__open-menu" aria-label="Открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="logo logo--header">
+          <a href="/" class="logo__link">
+            <picture>
+              <img src="img/logo-375.png" width="167" height="45" alt="Логотип сайта">
+            </picture>
+          </a>
+        </div>
+        <div class="navigation__text">
+          <p class="navigation__curse">
+            6 544
+          </p>
+          <p class="navigation__count-curse">
+            Объявления
+            о курсах
+          </p>
+        </div>
+        <a href="#" class="like like--active like--header" aria-label="Понравившееся">
+          <svg width="23" height="21">
+            <use xlink:href="#icon-like"></use>
+          </svg>
+          <span class="like__count">
+            1
+          </span>
+        </a>
+        <div class="search">
+          <form method="get" action="search.php" autocomplete="off">
+            <a href="#" class="search__button-cancel">
+              <svg width="15" height="6">
+                <use xlink:href="#arrow-search-icon"></use>
+              </svg>
+            </a>
+            <label for="search" class="visually-hidden">
+              Поиск
+            </label>
+            <button class="search__button" aria-label="Искать">
+              <svg width="15" height="16" class="search__icon">
+                <use xlink:href="#icon-search"></use>
+              </svg>
+            </button>
+            <input type="search" name="search" class="input input--search" placeholder="Я ищу..." id="search">
+            <div class="result-search">
+              <div class="result-search__item">
+                <a href="#">
+                  <div class="result-search__item__name">Test test cat</div>
+                  <div class="result-search__item__text-and-price">
+                    <span class="price__text">Цена за курс:</span>
+                    <span class="price">1000 грн</span>
+                  </div>
+                </a>
+              </div>
+              <div class="result-search__item">
+                <a href="#">
+                  <div class="result-search__item__name">Test test cat</div>
+                  <div class="result-search__item__text-and-price">
+                    <span class="price__text">Цена за курс:</span>
+                    <span class="price">1000 грн</span>
+                  </div>
+                </a>
+              </div>
+              <div class="result-search__item">
+                <a href="#">
+                  <div class="result-search__item__name">Test test cat</div>
+                  <div class="result-search__item__text-and-price">
+                    <span class="price__text">Цена за курс:</span>
+                    <span class="price">1000 грн</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </form>
+        </div>
+        <a href="#" class="button button--organization-header">
+          Разместить организацию
+        </a>
+      </div>
+      <div class="navigation__wrapper-menu">
+        <div class="container navigation__inner--menu">
+          <ul class="menu">
+            <li class="menu__list menu__list--active">
+              <a class="menu__link">
+                Курсы
+              </a>
+            </li>
+            <li class="menu__list">
+              <a href="#" class="menu__link">
+                Онлайн курсы
+              </a>
+            </li>
+            <li class="menu__list">
+              <a href="#" class="menu__link">
+                Мастер-классы
+              </a>
+            </li>
+            <li class="menu__list">
+              <a href="#" class="menu__link">
+                Школы
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </nav>
+  </header>
+  <main class="site-main">
+    <section class="breadcrumbs">
+      <div class="container">
+        <h2 class="visually-hidden">
+          Постраничная Навигация
+        </h2>
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a href="/">
+              Главная
+            </a>
+          </li>
+          <li>
+            Поиск
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="services-page">
+      <h1 class="visually-hidden">
+        Услуги
+      </h1>
+      <section class="services-page__promo">
+        <div class="container">
+          <h2 class="h2 services-page__promo-title">
+            Платные услуги Get Skill
+          </h2>
+          <p class="services-page__promo-text">
+            Используйте максимум возможностей для своего образовательного  бизнеса — получайте новых клиентов с маркетплейса Get Skill
+          </p>
+        </div>
+      </section>
+      <div class="tariff services-page__tariff">
+        <div class="container">
+          <div class="tariff__content">
+            <div class="tariff__list">
+              <article class="tariff__item tariff__item--base">
+                <svg width="77" height="52">
+                  <use xlink:href="#icon-tarif-1"></use>
+                </svg>
+                <h2 class="h2">
+                  Бесплатный
+                </h2>
+                <ul>
+                  <li>
+                    Страница школы
+                  </li>
+                  <li>
+                    Неограниченно кол-во курсов
+                  </li>
+                  <li>
+                    Создание и редактирование
+                  </li>
+                </ul>
+                <p class="tariff__price">
+                  0
+                  <span class="tariff__currency">
+                      грн./мес
+                    </span>
+                </p>
+              </article>
+              <article class="tariff__item tariff__item--standard">
+                <svg width="77" height="52">
+                  <use xlink:href="#icon-tarif-2"></use>
+                </svg>
+                <h2 class="h2">
+                  Расширенный
+                </h2>
+                <ul>
+                  <li>
+                    Добавление фото к курсам
+                  </li>
+                  <li>
+                    Добавление преподавателей
+                  </li>
+                  <li>
+                    Публикация
+                    <br>
+                    мастер-классов
+                  </li>
+                  <li>
+                    Аналитика по курсам
+                  </li>
+                </ul>
+                <p class="tariff__price">
+                  300
+                  <span class="tariff__currency">
+                      грн./мес
+                    </span>
+                </p>
+              </article>
+              <article class="tariff__item tariff__item--premium">
+                <svg width="77" height="52">
+                  <use xlink:href="#icon-tarif-3"></use>
+                </svg>
+                <h2 class="h2">
+                  Максимальный
+                </h2>
+                <ul>
+                  <li>
+                    Первые места в поиске
+                  </li>
+                  <li>
+                    Форма заказа на стр. курса
+                  </li>
+                  <li>
+                    Управление сделками
+                  </li>
+                  <li>
+                    Уведомление о заявках
+                  </li>
+                </ul>
+                <p class="tariff__price">
+                  900
+                  <span class="tariff__currency">
+                      грн./мес
+                    </span>
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="services-page__opportunities">
+        <div class="container">
+          <h2 class="visually-hidden">
+            Возможности
+          </h2>
+          <ul class="services-page__opportunities-list">
+            <li class="services-page__opportunities-item">
+              <article class="services-page__opportunities-article">
+                <div class="services-page__opportunities-info">
+                  <h2 class="h2">
+                    Добавление фото к курсу и организации
+                  </h2>
+                  <p>
+                    Данная функция позволяет добавить фотогалерею на&nbsp;странице курса и&nbsp;организации, что дает возможность показать примеры Ваших работ, место обучения и&nbsp;показать рабочую атмосферу
+                  </p>
+                  <a href="#">
+                    Только в&nbsp;пакете &laquo;Расширенный&raquo; и&nbsp;&laquo;Максимальный&raquo;
+                  </a>
+                </div>
+                <div class="services-page__opportunities-image">
+                  <img src="img/serv-1.jpg" width="665" height="390" alt="Добавление фото к курсу и организации">
+                </div>
+              </article>
+            </li>
+            <li class="services-page__opportunities-item">
+              <article class="services-page__opportunities-article">
+                <div class="services-page__opportunities-info">
+                  <h2 class="h2">
+                    Добавление преподавателей
+                  </h2>
+                  <p>
+                    Данная функция позволяет добавить информацию о&nbsp;преподавателях на&nbsp;странице курса. Вы&nbsp;можете добавить, как одного так и&nbsp;несколько преподавателей с&nbsp;личной фотографией и&nbsp;описанием
+                  </p>
+                  <a href="#">
+                    Только в&nbsp;пакете &laquo;Расширенный&raquo; и&nbsp;&laquo;Максимальный&raquo;
+                  </a>
+                </div>
+                <div class="services-page__opportunities-image">
+                  <img src="img/serv-2.jpg" width="491" height="291" alt="Добавление преподавателей">
+                </div>
+              </article>
+            </li>
+            <li class="services-page__opportunities-item">
+              <article class="services-page__opportunities-article">
+                <div class="services-page__opportunities-info">
+                  <h2 class="h2">
+                    Публикация мастер-классов
+                  </h2>
+                  <p>
+                    Данная функция позволяет опубликовать Ваши мастер-классы в&nbsp;отведенном для них разделе. Вы&nbsp;сможете без ограничений по&nbsp;количеству публиковать объявления, а&nbsp;также прикреплять дату и&nbsp;тип (офлайн или онлайн), что позволит упростить поиск Ваших мастер-классов
+                  </p>
+                  <a href="#">
+                    Только в&nbsp;пакете &laquo;Расширенный&raquo; и&nbsp;&laquo;Максимальный&raquo;
+                  </a>
+                </div>
+                <div class="services-page__opportunities-image">
+                  <img src="img/serv-3.jpg" width="660" height="212" alt="Публикация мастер-классов">
+                </div>
+              </article>
+            </li>
+            <li class="services-page__opportunities-item">
+              <article class="services-page__opportunities-article">
+                <div class="services-page__opportunities-info">
+                  <h2 class="h2">
+                    Аналитика по курсам
+                  </h2>
+                  <p>
+                    Данная функция позволяет просмотреть аналитику по&nbsp;каждому курсу в&nbsp;разрезе разных периодов: день, неделя, месяц. В&nbsp;статистике представлена информация о&nbsp;количестве просмотров курсов, открытых телефонов, добавленных курсов в&nbsp;избранные и&nbsp;отправленных заявок
+                  </p>
+                  <a href="#">
+                    Только в&nbsp;пакете &laquo;Расширенный&raquo; и&nbsp;&laquo;Максимальный&raquo;
+                  </a>
+                </div>
+                <div class="services-page__opportunities-image">
+                  <img src="img/serv-4.jpg" width="668" height="255" alt="Аналитика по курсам">
+                </div>
+              </article>
+            </li>
+            <li class="services-page__opportunities-item">
+              <article class="services-page__opportunities-article">
+                <div class="services-page__opportunities-info">
+                  <h2 class="h2">
+                    Первые места в поиске
+                  </h2>
+                  <p>
+                    В&nbsp;результатах поиска, Ваши курсы будут выводиться вверху страницы и&nbsp;выделены специальным значком &laquo;В&nbsp;ТОПе&raquo;. На&nbsp;странице категории выводиться одновременно не&nbsp;больше 4&nbsp;ТОП курсов, которые поочередно выбираются из&nbsp;списка всех ТОП курсов. Ваши курсы будут показываться как в&nbsp;ТОПе так и&nbsp;в&nbsp;обычном списке курсов
+                  </p>
+                  <a href="#">
+                    Только в&nbsp;пакете &laquo;Максимальный&raquo;
+                  </a>
+                </div>
+                <div class="services-page__opportunities-image">
+                  <img src="img/serv-5.jpg" width="661" height="291" alt="Первые места в поиске">
+                </div>
+              </article>
+            </li>
+            <li class="services-page__opportunities-item">
+              <article class="services-page__opportunities-article">
+                <div class="services-page__opportunities-info">
+                  <h2 class="h2">
+                    Управление сделками в личном кабинете
+                  </h2>
+                  <p>
+                    В&nbsp;личном кабинете вы&nbsp;сможете просмотреть все заявки, которые были оставлены на&nbsp;Ваши курсы, добавить новою заявку если клиент позвонил Вам напрямую, просмотреть и&nbsp;отредактировать информацию о&nbsp;заявке, изменить статус и&nbsp;добавить комментарий. А&nbsp;также собрать базу своих клиентов в&nbsp;разделе &laquo;Клиенты&raquo;
+                  </p>
+                  <a href="#">
+                    Только в&nbsp;пакете &laquo;Максимальный&raquo;
+                  </a>
+                </div>
+                <div class="services-page__opportunities-image">
+                  <img src="img/serv-6.jpg" width="666" height="467" alt="Управление сделками в личном кабинете">
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="proposition">
+        <div class="proposition__inner container">
+          <div class="proposition__img">
+            <picture>
+              <source type="image/webp" media="(min-width: 1210px)" srcset="img/proposition-desktop-@1x.webp 1x, img/proposition-desktop-@2x.webp 2x">
+              <source type="image/webp" srcset="img/proposition-mobile-@1x.webp 1x, img/proposition-mobile-@2x.webp 2x">
+              <source media="(min-width: 1210px)" srcset="img/proposition-desktop-@1x.jpg 1x, img/proposition-desktop-@2x.jpg 2x">
+              <img src="img/proposition-mobile-@1x.jpg" srcset="img/proposition-mobile-@2x.jpg 2x" width="257" height="171" alt="Вы преподавательили представляетеучебное заведение?">
+            </picture>
+          </div>
+          <div class="proposition__info-block">
+            <h2 class="h2 proposition__title">
+              Вы преподаватель
+              или представляете
+              учебное заведение?
+            </h2>
+            <p class="proposition__text">
+              Зарегистрируйтесь на GetSkill и
+              тысячи пользователей увидяn
+              Ваши курсы
+            </p>
+            <a href="#" class="button proposition__show-more">
+              Разместить  организацию
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container site-footer__inner-top">
+      <div class="site-footer__social">
+        <div class="logo logo--footer">
+          <a href="/" class="logo__link">
+            <picture>
+              <img src="img/logo-375.png" width="167" height="45" alt="Логотип сайта">
+            </picture>
+          </a>
+        </div>
+        <div class="social social--footer">
+          <p class="social__title">
+            Присойденяйтесь к нам
+          </p>
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#" class="social__link" aria-label="Мы в инстаграм">
+                <svg width="20" height="19">
+                  <use xlink:href="#icon-instargam"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link" aria-label="Мы в ютуб">
+                <svg width="27" height="19">
+                  <use xlink:href="#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link" aria-label="Мы в телеграм">
+                <svg width="20" height="19">
+                  <use xlink:href="#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__navigation">
+        <div class="site-footer__column">
+          <div class="site-footer__title-wrapper">
+            <h6 class="h6">
+              Пользователям
+            </h6>
+            <button type="button" class="site-footer__toggle" aria-label="Открыть меню">
+              <svg width="13" height="7">
+                <use xlink:href="#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="site-footer__menu site-footer__menu--no-js">
+            <li>
+              <a href="#">
+                Офлайн курсы
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Онлайн курсы
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Мастер-классы
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Школы
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Статьи
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="site-footer__column">
+          <div class="site-footer__title-wrapper">
+            <h6 class="h6">
+              Организациям
+            </h6>
+            <button type="button" class="site-footer__toggle" aria-label="Открыть меню">
+              <svg width="13" height="7">
+                <use xlink:href="#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="site-footer__menu site-footer__menu--no-js">
+            <li>
+              <a href="#">
+                О проекте
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Услуги и тарифы
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                База знаний
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="site-footer__column">
+          <div class="site-footer__title-wrapper">
+            <h6 class="h6">
+              Общее
+            </h6>
+            <button type="button" class="site-footer__toggle" aria-label="Открыть меню">
+              <svg width="13" height="7">
+                <use xlink:href="#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="site-footer__menu site-footer__menu--no-js">
+            <li>
+              <a href="#">
+                Улучшения сайта
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Правила сайта
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Оферта
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer__background">
+      <div class="container site-footer__inner site-footer__inner--bottom">
+        <p class="site-footer__copyright">
+          © 2019 Get Skill
+        </p>
+        <ul class="site-footer__pay">
+          <li>
+            <picture>
+              <source media="(min-width: 992px)" srcset="img/visa-tablet.png">
+              <img src="img/visa.png" width="45" height="14" alt="Visa">
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <source media="(min-width: 992px)" srcset="img/mastercard-tablet.png">
+              <img src="img/mastercard.png" width="32" height="19" alt="MasterCard">
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <source media="(min-width: 992px)" srcset="img/liqpay-tablet.png">
+              <img src="img/liqpay.png" width="64" height="14" alt="Liqpay">
+            </picture>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="js/scripts.min.js"></script>
+</body>
+</html>
