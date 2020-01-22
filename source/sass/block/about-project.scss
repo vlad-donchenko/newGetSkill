@@ -1,0 +1,571 @@
+.about-project__promo {
+  margin-top: 3px;
+  position: relative;
+  padding-top: 134px;
+  padding-bottom: 128px;
+  min-height: 408px;
+  color: $white-color;
+  background-color: $violet-dark-color;
+  background-image: url("../img/about-us.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(48deg, rgba(60, 4, 109, 0.5) 0%, rgba(95, 2, 141, 0.2) 100%);
+    z-index: -1;
+  }
+}
+
+.about-project__info-card {
+  display: block;
+  text-decoration: none;
+}
+
+.about-project__promo-title {
+  line-height: 32px;
+  color: $white-color;
+  text-align: center;
+}
+
+.about-project__text {
+  margin-top: 37px;
+  margin-bottom: 0;
+  color: $white-color;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  font-weight: 500;
+}
+
+.about-project__opportunities {
+  margin-top: 61px;
+}
+
+.about-project__opportunities-title {
+  line-height: 1.2;
+}
+
+.about-project__opportunities-text {
+  margin-top: 42px;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.about-project__opportunities-img {
+  margin-top: 40px;
+}
+
+.about-project__info-card {
+  position: relative;
+  min-height: 149px;
+  padding: 31px 15px 15px 15px;
+  color: $white-color;
+  z-index: 1;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(69deg, rgba(60, 4, 109, 0.5) 0%, rgba(95, 2, 141, 0.2) 100%);
+    z-index: -1;
+  }
+}
+
+.about-project__info-card-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.about-project__info-card-statistics {
+  margin: 0;
+  line-height: normal;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.about-project__info-card-value {
+  display: block;
+  font-size: 50px;
+  line-height: 1.2;
+}
+
+.about-project__info-item {
+  margin-top: 30px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.about-project__info-text {
+  margin-top: 33px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+.about-project__info-list {
+  margin-top: 39px;
+}
+
+.about-project__info {
+  margin-top: 55px;
+}
+
+.about-project__emotions {
+  margin-top: 60px;
+}
+
+.about-project__emotion-text {
+  margin-top: 31px;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.about-project__emotion-stats {
+  margin-top: 38px;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.about-project__emotion-stats span {
+  font-weight: 500;
+  color: $violet-dark-color;
+}
+
+.about-project__emotion-img {
+  margin-top: 28px;
+}
+
+.about-project__lessons {
+  margin-top: 59px;
+}
+
+.about-project__lessons-list {
+  margin-top: 30px;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.about-project__lessons-item {
+  position: relative;
+  padding-left: 15px;
+  margin-top: 20px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 6px;
+    height: 6px;
+    background-color: $yellow-color;
+    border-radius: 50%;
+  }
+}
+
+.about-project__lessons-link {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration: none;
+  color: $black-color;
+
+  &:focus {
+    color: rgba($black-color, 0.3);
+  }
+}
+
+.about-project__lessons-count {
+  font-size: 16px;
+  color: $gray-lite-color;
+
+  &::after {
+    content: ")";
+  }
+
+  &::before {
+    content: "(";
+  }
+}
+
+.about-project__lessons-load {
+  margin-top: 28px;
+}
+
+.about-project__proposition {
+  margin-top: 60px;
+}
+
+.about-project {
+  margin-bottom: 60px;
+}
+
+@media (min-width: $iphone-breakpoint) {
+  .about-project__promo {
+    padding-top: 194px;
+    padding-bottom: 191px;
+    min-height: 507px;
+    background-image: url("../img/about-us-iphone.jpg");
+  }
+
+  .about-project__promo-title br {
+    display: none;
+  }
+
+  .about-project__text {
+    margin-top: 39px;
+  }
+
+  .about-project__opportunities {
+    margin-top: 44px;
+  }
+
+  .about-project__opportunities-text {
+    margin-top: 35px;
+  }
+
+  .about-project__info-list {
+    margin-top: 34px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .about-project__promo {
+    background-image: url("../img/about-us-tablet.jpg");
+  }
+
+  .about-project__info-card {
+    padding: 78px 15px;
+  }
+
+  .about-project__inner {
+    display: flex;
+  }
+
+  .about-project__opportunities-inner {
+    display: flex;
+  }
+
+  .about-project__opportunities-info {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .about-project__opportunities-img {
+    margin-left: auto;
+    margin-top: 0;
+    max-width: 340px;
+    width: 100%;
+  }
+
+  .about-project__lessons-list {
+    columns: 3;
+  }
+
+  .about-project__lessons-load {
+    display: none;
+  }
+
+  .about-project {
+    margin-bottom: 116px;
+  }
+
+  .about-project__emotions-inner {
+    display: flex;
+  }
+
+  .about-project__emotions-info {
+    max-width: 340px;
+  }
+
+  .about-project__emotion-img {
+    max-width: 340px;
+    margin-left: auto;
+    margin-top: 0;
+  }
+}
+
+@media(min-width: $tablet-large) {
+  .about-project__promo {
+    margin-top: 0;
+  }
+
+  .about-project__promo-title {
+    font-size: 50px;
+    line-height: 66px;
+  }
+
+  .about-project__text {
+    font-size: 28px;
+    line-height: 37px;
+  }
+
+  .about-project__opportunities-info {
+    padding-top: 90px;
+    max-width: 465px;
+  }
+
+  .about-project__opportunities-img {
+    max-width: 461px;
+  }
+
+  .about-project__emotions-info {
+    padding-top: 112px;
+    max-width: 461px;
+  }
+
+  .about-project__emotion-img {
+    max-width: 461px;
+  }
+
+  .about-project {
+    margin-bottom: 121px;
+  }
+
+  .about-project__info-list {
+    margin-top: 61px;
+    display: grid;
+    grid-template-columns: 543px 379px;
+    grid-template-rows: 242px 242px;
+    grid-gap: 30px;
+  }
+
+  .about-project__info-item {
+    margin: 0;
+  }
+
+  .about-project__info-item--online-curse {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+
+  .about-project__info-item--master-class {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .about-project__info-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .about-project__promo {
+    padding-top: 253px;
+    padding-bottom: 247px;
+    margin-top: 39px;
+  }
+
+  .about-project__text {
+    margin-top: 57px;
+  }
+
+  .about-project__opportunities {
+    margin-top: 100px;
+  }
+
+  .about-project__opportunities-title {
+    line-height: 1.3;
+  }
+
+  .about-project__opportunities-text {
+    margin-top: 33px;
+  }
+
+  .about-project__info {
+    margin-top: 96px;
+  }
+
+  .about-project__info-header {
+    max-width: 707px;
+  }
+
+  .about-project__emotions {
+    margin-top: 99px;
+  }
+
+  .about-project__lessons {
+    margin-top: 97px;
+  }
+
+  .about-project__lessons-list {
+    margin-top: 60px;
+  }
+
+  .about-project__proposition {
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: $laptop) {
+  .about-project__opportunities-info {
+    max-width: 560px;
+  }
+
+  .about-project__promo {
+    margin-top: 0;
+    padding-top: 191px;
+    padding-bottom: 187px;
+    background-image: url("../img/about-us-laptop.jpg");
+  }
+
+  .about-project__opportunities {
+    margin-top: 150px;
+  }
+
+  .about-project__opportunities-info {
+    padding-top: 162px;
+    max-width: 560px;
+  }
+
+  .about-project__opportunities-img {
+    max-width: 570px;
+  }
+
+  .about-project__info-inner {
+    display: grid;
+    grid-template-columns: 370px 770px;
+    grid-gap: 30px;
+  }
+
+  .about-project__info-list {
+    margin-top: 0;
+    grid-template-columns: 470px 270px;
+  }
+
+  .about-project__info-header {
+    padding: 36px 34px 36px 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $gray-standard-color;
+  }
+
+  .about-project__info {
+    margin-top: 141px;
+  }
+
+  .about-project__info-title {
+    max-width: 262px;
+    margin-right: auto;
+  }
+
+  .about-project__emotions-info {
+    max-width: 517px;
+    padding-top: 157px;
+  }
+
+  .about-project__emotion-img {
+    max-width: 570px;
+  }
+
+  .about-project__emotions {
+    margin-top: 150px;
+  }
+
+  .about-project__lessons {
+    margin-top: 146px;
+  }
+
+  .about-project__lessons-list {
+    columns: 4;
+  }
+
+  .about-project__proposition {
+    margin-top: 148px;
+  }
+
+  .about-project {
+    margin-bottom: 196px;
+  }
+
+  .about-project__lessons-link {
+    &:hover {
+      color: rgba($black-color, 0.6);
+    }
+
+    &:focus {
+      color: rgba($black-color, 0.3);
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .about-project__promo {
+    margin-top: 0;
+    padding-top: 253px;
+    padding-bottom: 245px;
+    background-image: url("../img/about-us-desktop.jpg");
+  }
+
+  .about-project__opportunities-img {
+    max-width: 660px;
+  }
+
+  .about-project__opportunities-info {
+    padding-top: 220px;
+  }
+
+  .about-project__text {
+    margin-top: 58px;
+  }
+
+  .about-project__info {
+    margin-top: 147px;
+  }
+
+  .about-project__info-inner {
+    grid-template-columns: 430px 887px;
+  }
+
+  .about-project__info-list {
+    grid-template-columns: 545px 312px;
+  }
+
+  .about-project__info-header {
+    padding: 66px;
+  }
+
+  .about-project__emotion-img {
+    max-width: 660px;
+  }
+
+  .about-project__emotions-info {
+    padding-top: 196px;
+  }
+
+  .about-project__emotions {
+    margin-top: 139px;
+  }
+}

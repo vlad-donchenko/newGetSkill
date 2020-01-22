@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <title>Get Skill</title>
+  <link rel="preload" href="fonts/Roboto-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<div style="display: none">
+  <include src="build/img/sprite.svg"></include>
+</div>
+<div class="wrapper">
+  <header>
+    <nav class="navigation navigation--no-js">
+      <div class="mobile-menu">
+        <div class="mobile-menu__header">
+          <div class="logo logo--mobile-menu">
+            <a href="/" class="logo__link">
+              <picture>
+                <img src="img/logo-375.png" width="167" height="45" alt="Логотип сайта">
+              </picture>
+            </a>
+          </div>
+          <a href="#" class="button button--mobile-menu">
+            Мой кабинет
+          </a>
+        </div>
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-mobile-home"></use>
+              </svg>
+              Главная
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-mobile-curse"></use>
+              </svg>
+              Курсы
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-mobile-curse-online"></use>
+              </svg>
+              Онлайн-курсы
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <svg width="20" height="21">
+                <use xlink:href="#icon-mobile-master-class"></use>
+              </svg>
+              Мастер-классы
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-mobile-school"></use>
+              </svg>
+              Школы
+            </a>
+          </li>
+          <li class="mobile-menu__item mobile-menu__item--indicator">
+            <a href="#" class="mobile-menu__link">
+              <svg width="23" height="21">
+                <use xlink:href="#icon-mobile-like"></use>
+              </svg>
+              Избранные
+              <span class="mobile-menu__indicator">
+                1
+              </span>
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">
+              <svg width="23" height="21">
+                <use xlink:href="#icon-mobile-place"></use>
+              </svg>
+              Разместить огранизацию
+            </a>
+          </li>
+        </ul>
+        <div class="mobile-menu__footer">
+          <ul class="language">
+            <li class="language__item">
+              <a href="#" class="language__link">
+                українська
+              </a>
+            </li>
+            <li class="language__item language__item--active">
+              <a class="language__link">
+                русский
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="navigation__user-wrapper">
+        <div class="container navigation__user--inner">
+          <ul class="language language--header">
+            <li class="language__item">
+              <a href="#" class="language__link">
+                українська
+              </a>
+            </li>
+            <li class="language__item language__item--active">
+              <a class="language__link">
+                русский
+              </a>
+            </li>
+          </ul>
+          <ul class="user-features user-features--header">
+            <li class="user-features__item">
+              <a href="#" class="user-features__link">
+                Идеи по улучшению сайта
+              </a>
+            </li>
+            <li class="user-features__item user-features__item--user">
+              <a href="#" class="user-features__link">
+                <svg width="10" height="13" class="user-features__login-icon ">
+                  <use xlink:href="#icon-user"></use>
+                </svg>
+                Мой кабинет
+                <svg width="13" height="7" class="user-features__drop-icon">
+                  <use xlink:href="#icon-arrow"></use>
+                </svg>
+              </a>
+              <ul class="user-features__dropdown">
+                <li>
+                  <a href="#" class="button">
+                    <svg width="21" height="21">
+                      <use xlink:href="#icon-cabinet-like"></use>
+                    </svg>
+                    Избранные
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="button">
+                    <svg width="21" height="21">
+                      <use xlink:href="#icon-cabinet-setting"></use>
+                    </svg>
+                    Настройки
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="button">
+                    <svg width="21" height="20">
+                      <use xlink:href="#icon-cabinet-star"></use>
+                    </svg>
+                    Отзывы
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="button">
+                    <svg width="21" height="21">
+                      <use xlink:href="#icon-cabinet-exit"></use>
+                    </svg>
+                    Выход
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container navigation__inner navigation__inner--middle">
+        <button type="button" class="navigation__open-menu" aria-label="Открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="logo logo--header">
+          <a href="/" class="logo__link">
+            <picture>
+              <img src="img/logo-375.png" width="167" height="45" alt="Логотип сайта">
+            </picture>
+          </a>
+        </div>
+        <div class="navigation__text">
+          <p class="navigation__curse">
+            6 544
+          </p>
+          <p class="navigation__count-curse">
+            Объявления
+            о курсах
+          </p>
+        </div>
+        <a href="#" class="like like--active like--header" aria-label="Понравившееся">
+          <svg width="23" height="21">
+            <use xlink:href="#icon-like"></use>
+          </svg>
+          <span class="like__count">
+            1
+          </span>
+        </a>
+        <div class="search">
+          <form method="get" action="search.php" autocomplete="off" >
+            <a href="#" class="search__button-cancel">
+              <svg width="15" height="6">
+                <use xlink:href="#arrow-search-icon"></use>
+              </svg>
+            </a>
+            <label for="search" class="visually-hidden">
+              Поиск
+            </label>
+            <button class="search__button" aria-label="Искать">
+              <svg width="15" height="16" class="search__icon">
+                <use xlink:href="#icon-search"></use>
+              </svg>
+            </button>
+            <input type="search" name="search" class="input input--search" placeholder="Я ищу..." id="search">
+            <div class="result-search">
+              <div class="result-search__item">
+                <a href="#">
+                  <div class="result-search__item__name">Test test cat</div>
+                  <div class="result-search__item__text-and-price">
+                    <span class="price__text">Цена за курс:</span>
+                    <span class="price">1000 грн</span>
+                  </div>
+                </a>
+              </div>
+              <div class="result-search__item">
+                <a href="#">
+                  <div class="result-search__item__name">Test test cat</div>
+                  <div class="result-search__item__text-and-price">
+                    <span class="price__text">Цена за курс:</span>
+                    <span class="price">1000 грн</span>
+                  </div>
+                </a>
+              </div>
+              <div class="result-search__item">
+                <a href="#">
+                  <div class="result-search__item__name">Test test cat</div>
+                  <div class="result-search__item__text-and-price">
+                    <span class="price__text">Цена за курс:</span>
+                    <span class="price">1000 грн</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </form>
+        </div>
+        <a href="#" class="button button--organization-header">
+          Разместить организацию
+        </a>
+      </div>
+      <div class="navigation__wrapper-menu">
+        <div class="container navigation__inner--menu">
+          <ul class="menu">
+            <li class="menu__list menu__list--active">
+              <a class="menu__link">
+                Курсы
+              </a>
+            </li>
+            <li class="menu__list">
+              <a href="#" class="menu__link">
+                Онлайн курсы
+              </a>
+            </li>
+            <li class="menu__list">
+              <a href="#" class="menu__link">
+                Мастер-классы
+              </a>
+            </li>
+            <li class="menu__list">
+              <a href="#" class="menu__link">
+                Школы
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </nav>
+  </header>
+  <main class="site-main">
+    <section class="breadcrumbs">
+      <div class="container">
+        <h2 class="visually-hidden">
+          Постраничная Навигация
+        </h2>
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a href="/">
+              Главная
+            </a>
+          </li>
+          <li>
+            Поиск
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="about-project">
+      <div class="about-project__promo">
+        <div class="about-project__promo-inner container">
+          <h2 class="h2 about-project__promo-title">
+            Get Skill — сайт
+            <br>
+            для поисков курсов
+          </h2>
+          <p class="about-project__text">
+            Делаем поиск знаний удобнее и быстрее
+          </p>
+        </div>
+      </div>
+      <article class="about-project__opportunities">
+        <div class="container about-project__opportunities-inner">
+          <div class="about-project__opportunities-info">
+            <h2 class="h2 about-project__opportunities-title">
+              Откройте для себя обширную базу
+              курсов
+            </h2>
+            <p class="about-project__opportunities-text">
+              GetSkill.com.ua — сайт для поиска курсов, мастер-классов в Украине. Ведущие образовательные школы Украины размещают свои курсы и находят своих учеников с помощью нашего сайта.
+            </p>
+          </div>
+          <div class="about-project__opportunities-img">
+            <img src="img/about-project-cub.jpg" width="655" height="519" alt="Откройте для себя обширную базукурсов">
+          </div>
+        </div>
+      </article>
+      <div class="about-project__info">
+        <div class="about-project__info-inner container">
+          <div class="about-project__info-header">
+            <h2 class="h2 about-project__info-title">
+              Мы разложили все
+              по полочкам
+            </h2>
+            <p class="about-project__info-text">
+              Мы делаем все, чтобы каждому посетителю GetSkill.com.ua запомнился как самый удобный, быстрый и эффективный сайт по поиску офлайн и онлайн курсов
+            </p>
+          </div>
+          <div class="about-project__info-list">
+            <div class="about-project__info-item about-project__info-item--online-curse">
+              <a href="#" class="about-project__info-card">
+                <p class="about-project__info-card-statistics">
+                  <span class="about-project__info-card-value">
+                    1203
+                  </span>
+                  Онлайн курсов
+                </p>
+                <img src="img/projects-info-card-1.jpg" width="545" height="242" class="about-project__info-card-img" alt="1203 Онлайн курсов">
+              </a>
+            </div>
+            <div class="about-project__info-item about-project__info-item--offline-curse">
+              <a href="#" class="about-project__info-card">
+                <p class="about-project__info-card-statistics">
+                  <span class="about-project__info-card-value">
+                    6135
+                  </span>
+                  Офлайн курсов
+                </p>
+                <img src="img/projects-info-card-2.jpg" width="545" height="242" class="about-project__info-card-img" alt="6135 Офлайн курсов">
+              </a>
+            </div>
+            <div class="about-project__info-item about-project__info-item--master-class">
+              <a href="#" class="about-project__info-card">
+                <p class="about-project__info-card-statistics">
+                  <span class="about-project__info-card-value">
+                    731
+                  </span>
+                  Мастер-классов
+                </p>
+                <img src="img/projects-info-card-3.jpg" width="312" height="513" class="about-project__info-card-img" alt="731 Мастер-классов">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <article class="about-project__emotions">
+        <div class="container about-project__emotions-inner">
+          <div class="about-project__emotions-info">
+            <h2 class="h2 about-project__emotion-title">
+              Делитесь своими
+              эмоциями
+            </h2>
+            <p class="about-project__emotion-text">
+              Расскажете о своих впечатлениях, выразите собственное мнение. Его прочтут тысячи других пользователей на сайте.
+            </p>
+            <p class="about-project__emotion-stats">
+              Сейчас на сайте:
+              <span>
+                731
+              </span>
+              отзывов
+            </p>
+          </div>
+          <div class="about-project__emotion-img">
+            <img src="img/about-project-emotions.jpg" width="664" height="549" alt="Делитесь своими эмоциями">
+          </div>
+        </div>
+      </article>
+      <div class="about-project__lessons">
+        <div class="container about-project__lessons-inner">
+          <h2 class="h2 about-project__lessons-title">
+            Знания по всей
+            Украине
+          </h2>
+          <ul class="about-project__lessons-list">
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Александрия
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Ивано-Франковск
+              </a>
+              <span class="about-project__lessons-count">
+                  146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Луцк
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Симферополь
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Каменец-Подольский
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Львов
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Славянск
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Белая Церковь
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Каменское
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Макеевка
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Стаханов
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Бердянск
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Мариуполь
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Сумы
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Бровары
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Киев
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Мелитополь
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Тернополь
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Винница
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Константиновка
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Николаев
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Ужгород
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Горловка
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Краматорск
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Никополь
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Харьков
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Днепр
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Красный Луч
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Одесса
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Херсон
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Донецк
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Кременчуг
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Павлоград
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Хмельницкий
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Евпатория
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Кривой Рог
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Полтава
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Черкассы
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Енакиево
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Кропивницкий
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Ровно
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Чернигов
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Житомир
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Лисичанск
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Севастополь
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Черновцы
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Запорожье
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Луганск
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+            <li class="about-project__lessons-item">
+              <a href="#" class="about-project__lessons-link">
+                Северодонецк
+              </a>
+              <span class="about-project__lessons-count">
+                146
+              </span>
+            </li>
+          </ul>
+          <button type="button" class="button button--load-more about-project__lessons-load">
+            Показать все города
+          </button>
+        </div>
+      </div>
+      <section class="proposition about-project__proposition">
+        <div class="proposition__inner container">
+          <div class="proposition__img">
+            <picture>
+              <source type="image/webp" media="(min-width: 1210px)" srcset="img/proposition-desktop-@1x.webp 1x, img/proposition-desktop-@2x.webp 2x">
+              <source type="image/webp" srcset="img/proposition-mobile-@1x.webp 1x, img/proposition-mobile-@2x.webp 2x">
+              <source media="(min-width: 1210px)" srcset="img/proposition-desktop-@1x.jpg 1x, img/proposition-desktop-@2x.jpg 2x">
+              <img src="img/proposition-mobile-@1x.jpg" srcset="img/proposition-mobile-@2x.jpg 2x" width="257" height="171" alt="Вы преподавательили представляетеучебное заведение?">
+            </picture>
+          </div>
+          <div class="proposition__info-block">
+            <h2 class="h2 proposition__title">
+              Вы преподаватель
+              или представляете
+              учебное заведение?
+            </h2>
+            <p class="proposition__text">
+              Зарегистрируйтесь на GetSkill и
+              тысячи пользователей увидяn
+              Ваши курсы
+            </p>
+            <a href="#" class="button proposition__show-more">
+              Разместить  организацию
+            </a>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container site-footer__inner-top">
+      <div class="site-footer__social">
+        <div class="logo logo--footer">
+          <a href="/" class="logo__link">
+            <picture>
+              <img src="img/logo-375.png" width="167" height="45" alt="Логотип сайта">
+            </picture>
+          </a>
+        </div>
+        <div class="social social--footer">
+          <p class="social__title">
+            Присойденяйтесь к нам
+          </p>
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#" class="social__link" aria-label="Мы в инстаграм">
+                <svg width="20" height="19">
+                  <use xlink:href="#icon-instargam"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link" aria-label="Мы в ютуб">
+                <svg width="27" height="19">
+                  <use xlink:href="#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link" aria-label="Мы в телеграм">
+                <svg width="20" height="19">
+                  <use xlink:href="#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__navigation">
+        <div class="site-footer__column">
+          <div class="site-footer__title-wrapper">
+            <h6 class="h6">
+              Пользователям
+            </h6>
+            <button type="button" class="site-footer__toggle" aria-label="Открыть меню">
+              <svg width="13" height="7">
+                <use xlink:href="#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="site-footer__menu site-footer__menu--no-js">
+            <li>
+              <a href="#">
+                Офлайн курсы
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Онлайн курсы
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Мастер-классы
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Школы
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Статьи
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="site-footer__column">
+          <div class="site-footer__title-wrapper">
+            <h6 class="h6">
+              Организациям
+            </h6>
+            <button type="button" class="site-footer__toggle" aria-label="Открыть меню">
+              <svg width="13" height="7">
+                <use xlink:href="#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="site-footer__menu site-footer__menu--no-js">
+            <li>
+              <a href="#">
+                О проекте
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Услуги и тарифы
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                База знаний
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="site-footer__column">
+          <div class="site-footer__title-wrapper">
+            <h6 class="h6">
+              Общее
+            </h6>
+            <button type="button" class="site-footer__toggle" aria-label="Открыть меню">
+              <svg width="13" height="7">
+                <use xlink:href="#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="site-footer__menu site-footer__menu--no-js">
+            <li>
+              <a href="#">
+                Улучшения сайта
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Правила сайта
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Оферта
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer__background">
+      <div class="container site-footer__inner site-footer__inner--bottom">
+        <p class="site-footer__copyright">
+          © 2019 Get Skill
+        </p>
+        <ul class="site-footer__pay">
+          <li>
+            <picture>
+              <source media="(min-width: 992px)" srcset="img/visa-tablet.png">
+              <img src="img/visa.png" width="45" height="14" alt="Visa">
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <source media="(min-width: 992px)" srcset="img/mastercard-tablet.png">
+              <img src="img/mastercard.png" width="32" height="19" alt="MasterCard">
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <source media="(min-width: 992px)" srcset="img/liqpay-tablet.png">
+              <img src="img/liqpay.png" width="64" height="14" alt="Liqpay">
+            </picture>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="js/scripts.min.js"></script>
+</body>
+</html>
