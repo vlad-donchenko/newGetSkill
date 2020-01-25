@@ -9,6 +9,10 @@
 }
 
 .slider__action {
+  max-width: 90%;
+}
+
+.slider__action {
   position: relative;
   margin-top: 30px;
 }
@@ -44,16 +48,15 @@
   position: relative;
   height: 4px;
   background-color: $gray-color;
+  border: none;
 }
 
-.slider__line {
-  position: absolute;
+.slider .noUi-connect {
   height: 4px;
   background-color: $violet-dark-color;
 }
 
-.slider__handle {
-  position: absolute;
+.slider  .noUi-handle {
   top: -8px;
   width: 20px;
   height: 20px;
@@ -61,11 +64,17 @@
   border: 1px solid $gray-color;
   border-radius: 50%;
   z-index: 1;
+  box-shadow: none;
 
   &:focus {
     outline: none;
     box-shadow: 0 0 5px rgba($black-color, 0.2);
     transform: scale(1.2);
+  }
+
+  &::before,
+  &::after {
+    display: none;
   }
 }
 

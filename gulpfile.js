@@ -99,8 +99,9 @@ gulp.task("copy", function () {
 
 gulp.task("js-min", function () {
   return gulp.src([
-    "source/libs/**/*.min.js",
-    "source/libs/**/*.js",
+    "source/libs/jquery/jquery-3.3.1.min.js",
+    "source/libs/slick/slick.js",
+    "source/libs/nouslider/nouislider.js",
     "source/js/*.js"
   ])
     .pipe(concat("scripts.min.js"))

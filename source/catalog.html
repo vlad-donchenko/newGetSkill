@@ -744,6 +744,19 @@
                         </label>
                       </p>
                     </fieldset>
+                    <fieldset class="filter__item filter__item--date">
+                      <legend>
+                       Дата:
+                      </legend>
+                      <label for="date_1" class="visually-hidden">
+                        Дата
+                      </label>
+                      <input type="text" name="date_1" class="input" id="date_1">
+                      <label for="date_2" class="visually-hidden">
+                        Дата
+                      </label>
+                      <input type="text" name="date_2" class="input" id="date_2">
+                    </fieldset>
                     <fieldset class="filter__item">
                       <legend>
                         Диапазон цен
@@ -753,21 +766,17 @@
                           <label for="filter_min_price" class="label">
                             от
                           </label>
-                          <input type="number" name="filter_min_price" min="0" max="1200" class="input" id="filter_min_price" value="800">
+                          <input type="number" name="filter_min_price" min="0" max="1200" class="input" id="filter_min_price">
                           <label for="filter_max_price" class="label">
                             до
                           </label>
-                          <input type="number" name="filter_max_price" min="0" max="1200" class="input" id="filter_max_price" value="1000">
+                          <input type="number" name="filter_max_price" min="0" max="1200" class="input" id="filter_max_price">
                           <span class="slider__currency">
                           грн.
                         </span>
                         </div>
                         <div class="slider__action">
-                          <button type="button" class="slider__handle slider__handle--left" aria-label="Цена от цена" style="left: 17px;"></button>
-                          <button type="button" class="slider__handle slider__handle--right" aria-label="Цена до цена" style="right: 17px;"></button>
-                          <div class="slider__progress">
-                            <div class="slider__line" style="width: 82%; left: 22px;"></div>
-                          </div>
+                          <div class="slider__progress"></div>
                         </div>
                       </div>
                     </fieldset>
