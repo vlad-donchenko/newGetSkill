@@ -4,8 +4,7 @@
   right: 0;
   display: none;
   width: 250px;
-  margin-top: 10px;
-  margin: 0;
+  margin: 10px 0 0 0;
   padding-left: 0;
   background-color: $white-color;
   list-style: none;
@@ -43,10 +42,7 @@
 }
 
 .sorting__selected {
-  max-width: 103px;
   display: block;
-  white-space: nowrap;
-  overflow: hidden;
 }
 
 .sorting--open .sorting__dropdown {

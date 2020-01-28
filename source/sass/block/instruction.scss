@@ -1,0 +1,111 @@
+.instruction {
+  margin-bottom: 60px;
+}
+
+.instruction__title {
+  font-size: 24px;
+  margin-bottom: 28px;
+}
+
+.instruction__link {
+  padding: 20px 30px;
+  display: block;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500;
+  color: $black-color;
+  text-decoration: none;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba($black-clear-color, 0.1);
+
+  &:focus {
+    color: rgba($black-color, 0.3);
+  }
+}
+
+.instruction__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.instruction__item {
+  margin-top: 20px;
+  width: 100%;
+  flex-basis: 100%;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.instruction__elements {
+  padding-top: 33px;
+  padding-bottom: 33px;
+  border-bottom: 1px solid $gray-color;
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: $tablet) {
+  .instruction {
+    margin-top: 28px;
+  }
+}
+
+@media (min-width: $tablet-large) {
+  .instruction {
+    margin-bottom: 100px;
+  }
+
+  .instruction__link {
+    width: 100%;
+  }
+
+  .instruction__list {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .instruction__item {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 50%;
+    flex-basis: 50%;
+
+    &:nth-child(2) {
+      margin-top: 0;
+    }
+  }
+
+  .instruction__elements {
+    padding-top: 28px;
+    padding-bottom: 59px;
+  }
+}
+
+@media (min-width: $laptop) {
+  .instruction {
+    margin-bottom: 140px;
+  }
+
+  .instruction__link {
+    &:hover {
+      color: rgba($black-color, 0.6);
+    }
+
+    &:focus {
+      color: rgba($black-color, 0.3);
+    }
+  }
+}

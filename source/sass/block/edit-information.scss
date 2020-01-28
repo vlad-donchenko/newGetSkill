@@ -163,6 +163,16 @@
   padding-bottom: 30px;
 }
 
+.edit-information__name .load-file img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
 @media (min-width: $tablet) {
   .edit-information__buttons {
     display: flex;

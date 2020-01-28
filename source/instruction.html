@@ -127,12 +127,14 @@
                 Идеи по улучшению сайта
               </a>
             </li>
-            <li class="user-features__item user-features__item--user">
+            <li class="user-features__item">
               <a href="#" class="user-features__link">
-                <svg width="10" height="13" class="user-features__login-icon ">
-                  <use xlink:href="#icon-user"></use>
-                </svg>
-                Мой кабинет
+                Войти
+              </a>
+            </li>
+            <li class="user-features__item user-features__item--registration">
+              <a href="#" class="user-features__link">
+                Зарегистрироваться
                 <svg width="13" height="7" class="user-features__drop-icon">
                   <use xlink:href="#icon-arrow"></use>
                 </svg>
@@ -140,34 +142,12 @@
               <ul class="user-features__dropdown">
                 <li>
                   <a href="#" class="button">
-                    <svg width="21" height="21">
-                      <use xlink:href="#icon-cabinet-like"></use>
-                    </svg>
-                    Избранные
+                    Пользователь
                   </a>
                 </li>
                 <li>
                   <a href="#" class="button">
-                    <svg width="21" height="21">
-                      <use xlink:href="#icon-cabinet-setting"></use>
-                    </svg>
-                    Настройки
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="button">
-                    <svg width="21" height="20">
-                      <use xlink:href="#icon-cabinet-star"></use>
-                    </svg>
-                    Отзывы
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="button">
-                    <svg width="21" height="21">
-                      <use xlink:href="#icon-cabinet-exit"></use>
-                    </svg>
-                    Выход
+                    Организация
                   </a>
                 </li>
               </ul>
@@ -206,12 +186,7 @@
           </span>
         </a>
         <div class="search">
-          <form method="get" action="search.php" autocomplete="off" >
-            <a href="#" class="search__button-cancel">
-              <svg width="15" height="6">
-                <use xlink:href="#arrow-search-icon"></use>
-              </svg>
-            </a>
+          <form method="get" action="search.php" autocomplete="off">
             <label for="search" class="visually-hidden">
               Поиск
             </label>
@@ -221,35 +196,6 @@
               </svg>
             </button>
             <input type="search" name="search" class="input input--search" placeholder="Я ищу..." id="search">
-            <div class="result-search">
-              <div class="result-search__item">
-                <a href="#">
-                  <div class="result-search__item__name">Test test cat</div>
-                  <div class="result-search__item__text-and-price">
-                    <span class="price__text">Цена за курс:</span>
-                    <span class="price">1000 грн</span>
-                  </div>
-                </a>
-              </div>
-              <div class="result-search__item">
-                <a href="#">
-                  <div class="result-search__item__name">Test test cat</div>
-                  <div class="result-search__item__text-and-price">
-                    <span class="price__text">Цена за курс:</span>
-                    <span class="price">1000 грн</span>
-                  </div>
-                </a>
-              </div>
-              <div class="result-search__item">
-                <a href="#">
-                  <div class="result-search__item__name">Test test cat</div>
-                  <div class="result-search__item__text-and-price">
-                    <span class="price__text">Цена за курс:</span>
-                    <span class="price">1000 грн</span>
-                  </div>
-                </a>
-              </div>
-            </div>
           </form>
         </div>
         <a href="#" class="button button--organization-header">
@@ -286,95 +232,249 @@
     </nav>
   </header>
   <main class="site-main">
-    <div class="container">
-      <ul>
-        <li>
-          <a href="main.html">
-            Главная страница
-          </a>
-        </li>
-        <li>
-          <a href="deals.html">
-            Сделки
-          </a>
-        </li>
-        <li>
-          <a href="deals-edit.html">
-            Сделки редактирования
-          </a>
-        </li>
-        <li>
-          <a href="clients-list.html">
-           Клиенты
-          </a>
-        </li>
-        <li>
-          <a href="deals-clients-edit.html">
-            Клиенты редактирования
-          </a>
-        </li>
-        <li>
-          <a href="not-registration-favorites.html">
-            Избранное для незарегистрированных
-          </a>
-        </li>
-        <li>
-          <a href="analytics.html">
-            Аналитика
-          </a>
-        </li>
-        <li>
-          <a href="articles.html">
-            Статьи от Get Skill
-          </a>
-        </li>
-        <li>
-          <a href="article-page.html">
-            Статья
-          </a>
-        </li>
-        <li>
-          <a href="article-page-not-login.html">
-            Статья Без коментов
-          </a>
-        </li>
-        <li>
-          <a href="article-page-login.html">
-            Статья Комент
-          </a>
-        </li>
-        <li>
-          <a href="rulles.html">
-            Правила
-          </a>
-        </li>
-        <li>
-          <a href="contacts.html">
-            Контакты
-          </a>
-        </li>
-        <li>
-          <a href="services.html">
-            Услуги
-          </a>
-        </li>
-        <li>
-          <a href="about-us.html">
-            Про проект
-          </a>
-        </li>
-        <li>
-          <a href="instruction.html">
-            Инструкция
-          </a>
-        </li>
-        <li>
-          <a href="instruction-details.html">
-            Инструкция - пункт
-          </a>
-        </li>
-      </ul>
-    </div>
+    <section class="breadcrumbs">
+      <div class="container">
+        <h2 class="visually-hidden">
+          Постраничная Навигация
+        </h2>
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a href="/">
+              Главная
+            </a>
+          </li>
+          <li>
+            Поиск
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="instruction">
+      <div class="container instruction__inner">
+        <div class="instruction__elements">
+          <h2 class="instruction__title h2">
+            С чего начать?
+          </h2>
+          <ul class="instruction__list">
+            <li class="instruction__item">
+              <a href="#" class="instruction__link">
+                Как зарегистрироваться на портале Get Skill?
+              </a>
+            </li>
+            <li class="instruction__item">
+              <a href="#" class="instruction__link">
+                Как подтвердить свой профиль?
+              </a>
+            </li>
+            <li class="instruction__item">
+              <a href="#" class="instruction__link">
+                Как добавить организацию в каталог "Школы"?
+              </a>
+            </li>
+            <li class="instruction__item">
+              <a href="#" class="instruction__link">
+                Как добавить офлайн / онлайн курс в каталог?
+              </a>
+            </li>
+            <li class="instruction__item">
+              <a href="#" class="instruction__link">
+                Как добавить мастер-класс?
+              </a>
+            </li>
+            <li class="instruction__item">
+              <a href="#" class="instruction__link">
+                Как добавить фото к курсу?
+              </a>
+            </li>
+            <li class="instruction__item">
+              <a href="#" class="instruction__link">
+                Как добавить информацию о преподавателях?
+              </a>
+            </li>
+            <li class="instruction__item">
+              <a href="#" class="instruction__link">
+                Как редактировать информацию о курсе?
+              </a>
+            </li>
+            <li class="instruction__item">
+              <a href="#" class="instruction__link">
+                Как посмотреть статистику курса?
+              </a>
+            </li>
+            <li class="instruction__item">
+              <a href="#" class="instruction__link">
+                Как удалить курс?
+              </a>
+            </li>
+            <li class="instruction__item">
+              <a href="#" class="instruction__link">
+                Как формируется и пополняется клиентская база?
+              </a>
+            </li>
+            <li class="instruction__item">
+              <a href="#" class="instruction__link">
+                Как отредактировать информацию о клиенте?
+              </a>
+            </li>
+            <li class="instruction__item">
+              <a href="#" class="instruction__link">
+                Как добавить форму заявки на странице курса?
+              </a>
+            </li>
+            <li class="instruction__item">
+              <a href="#" class="instruction__link">
+                Как добавить контактную информацию к курсу?
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="instruction__elements">
+          <h2 class="instruction__title h2">
+            Управление заявками
+          </h2>
+          <ul class="instruction__list">
+            <li class="instruction__item">
+              <a href="#" class="instruction__link">
+                Куда приходят заявки на курс?
+              </a>
+            </li>
+            <li class="instruction__item">
+              <a href="#" class="instruction__link">
+                Что такое статус заявки и как его изменить?
+              </a>
+            </li>
+            <li class="instruction__item">
+              <a href="#" class="instruction__link">
+                Как добавить комментарий к заявке?
+              </a>
+            </li>
+            <li class="instruction__item">
+              <a href="#" class="instruction__link">
+                Как изменить информацию в заявке?
+              </a>
+            </li>
+            <li class="instruction__item">
+              <a href="#" class="instruction__link">
+                Что такое тегирование в заявке?
+              </a>
+            </li>
+            <li class="instruction__item">
+              <a href="#" class="instruction__link">
+                Как удалить заявку?
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="instruction__elements">
+          <h2 class="instruction__title h2">
+            Настройки профиля
+          </h2>
+          <ul class="instruction__list">
+            <li class="instruction__item">
+              <a href="#" class="instruction__link">
+                Как изменить электронный адрес авторизации?
+              </a>
+            </li>
+            <li class="instruction__item">
+              <a href="#" class="instruction__link">
+                Как восстановить / изменить пароль?
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="instruction__elements">
+          <h2 class="instruction__title h2">
+            Тарифы и оплата
+          </h2>
+          <ul class="instruction__list">
+            <li class="instruction__item">
+              <a href="#" class="instruction__link">
+                Тарифы и оплата
+              </a>
+            </li>
+            <li class="instruction__item">
+              <a href="#" class="instruction__link">
+                Как посмотреть текущий тариф и изменить его?
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="instruction__elements">
+          <h2 class="instruction__title h2">
+            Отзывы
+          </h2>
+          <ul class="instruction__list">
+            <li class="instruction__item">
+              <a href="#" class="instruction__link">
+                Как оставить отзыв о курсе / компании?
+              </a>
+            </li>
+            <li class="instruction__item">
+              <a href="#" class="instruction__link">
+                Как пожаловаться на негативный отзыв?
+              </a>
+            </li>
+            <li class="instruction__item">
+              <a href="#" class="instruction__link">
+                Где написаны правила публикации отзывов?
+              </a>
+            </li>
+            <li class="instruction__item">
+              <a href="#" class="instruction__link">
+                Как ответить на отзыв?
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="instruction__elements">
+          <h2 class="instruction__title h2">
+            Часто задаваемые (общие) вопросы
+          </h2>
+          <ul class="instruction__list">
+            <li class="instruction__item">
+              <a href="#" class="instruction__link">
+                На сайте размещена моя организация, как получить доступ к личному кабинету?
+              </a>
+            </li>
+            <li class="instruction__item">
+              <a href="#" class="instruction__link">
+                Как предложить улучшения по сайту?
+              </a>
+            </li>
+            <li class="instruction__item">
+              <a href="#" class="instruction__link">
+                Можно ли оплачивать помесячно?
+              </a>
+            </li>
+            <li class="instruction__item">
+              <a href="#" class="instruction__link">
+                Почему у меня есть кабинет компании и пользователя?
+              </a>
+            </li>
+            <li class="instruction__item">
+              <a href="#" class="instruction__link">
+                Можно ли выставить информацию о школе и курсах бесплатно?
+              </a>
+            </li>
+            <li class="instruction__item">
+              <a href="#" class="instruction__link">
+                Где посмотреть все курсы, что добавлены в избранные?
+              </a>
+            </li>
+            <li class="instruction__item">
+              <a href="#" class="instruction__link">
+                Когда мастер-класс скрывается с каталога?
+              </a>
+            </li>
+            <li class="instruction__item">
+              <a href="#" class="instruction__link">
+                Как отображаются ТОП курсы в каталоге?
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="site-footer">
     <div class="container site-footer__inner-top">
@@ -549,7 +649,6 @@
     </div>
   </footer>
 </div>
-
 <script src="js/scripts.min.js"></script>
 </body>
 </html>

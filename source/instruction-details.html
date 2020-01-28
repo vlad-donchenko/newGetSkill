@@ -127,12 +127,14 @@
                 Идеи по улучшению сайта
               </a>
             </li>
-            <li class="user-features__item user-features__item--user">
+            <li class="user-features__item">
               <a href="#" class="user-features__link">
-                <svg width="10" height="13" class="user-features__login-icon ">
-                  <use xlink:href="#icon-user"></use>
-                </svg>
-                Мой кабинет
+                Войти
+              </a>
+            </li>
+            <li class="user-features__item user-features__item--registration">
+              <a href="#" class="user-features__link">
+                Зарегистрироваться
                 <svg width="13" height="7" class="user-features__drop-icon">
                   <use xlink:href="#icon-arrow"></use>
                 </svg>
@@ -140,34 +142,12 @@
               <ul class="user-features__dropdown">
                 <li>
                   <a href="#" class="button">
-                    <svg width="21" height="21">
-                      <use xlink:href="#icon-cabinet-like"></use>
-                    </svg>
-                    Избранные
+                    Пользователь
                   </a>
                 </li>
                 <li>
                   <a href="#" class="button">
-                    <svg width="21" height="21">
-                      <use xlink:href="#icon-cabinet-setting"></use>
-                    </svg>
-                    Настройки
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="button">
-                    <svg width="21" height="20">
-                      <use xlink:href="#icon-cabinet-star"></use>
-                    </svg>
-                    Отзывы
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="button">
-                    <svg width="21" height="21">
-                      <use xlink:href="#icon-cabinet-exit"></use>
-                    </svg>
-                    Выход
+                    Организация
                   </a>
                 </li>
               </ul>
@@ -206,12 +186,7 @@
           </span>
         </a>
         <div class="search">
-          <form method="get" action="search.php" autocomplete="off" >
-            <a href="#" class="search__button-cancel">
-              <svg width="15" height="6">
-                <use xlink:href="#arrow-search-icon"></use>
-              </svg>
-            </a>
+          <form method="get" action="search.php" autocomplete="off">
             <label for="search" class="visually-hidden">
               Поиск
             </label>
@@ -221,35 +196,6 @@
               </svg>
             </button>
             <input type="search" name="search" class="input input--search" placeholder="Я ищу..." id="search">
-            <div class="result-search">
-              <div class="result-search__item">
-                <a href="#">
-                  <div class="result-search__item__name">Test test cat</div>
-                  <div class="result-search__item__text-and-price">
-                    <span class="price__text">Цена за курс:</span>
-                    <span class="price">1000 грн</span>
-                  </div>
-                </a>
-              </div>
-              <div class="result-search__item">
-                <a href="#">
-                  <div class="result-search__item__name">Test test cat</div>
-                  <div class="result-search__item__text-and-price">
-                    <span class="price__text">Цена за курс:</span>
-                    <span class="price">1000 грн</span>
-                  </div>
-                </a>
-              </div>
-              <div class="result-search__item">
-                <a href="#">
-                  <div class="result-search__item__name">Test test cat</div>
-                  <div class="result-search__item__text-and-price">
-                    <span class="price__text">Цена за курс:</span>
-                    <span class="price">1000 грн</span>
-                  </div>
-                </a>
-              </div>
-            </div>
           </form>
         </div>
         <a href="#" class="button button--organization-header">
@@ -286,95 +232,85 @@
     </nav>
   </header>
   <main class="site-main">
-    <div class="container">
-      <ul>
-        <li>
-          <a href="main.html">
-            Главная страница
-          </a>
-        </li>
-        <li>
-          <a href="deals.html">
-            Сделки
-          </a>
-        </li>
-        <li>
-          <a href="deals-edit.html">
-            Сделки редактирования
-          </a>
-        </li>
-        <li>
-          <a href="clients-list.html">
-           Клиенты
-          </a>
-        </li>
-        <li>
-          <a href="deals-clients-edit.html">
-            Клиенты редактирования
-          </a>
-        </li>
-        <li>
-          <a href="not-registration-favorites.html">
-            Избранное для незарегистрированных
-          </a>
-        </li>
-        <li>
-          <a href="analytics.html">
-            Аналитика
-          </a>
-        </li>
-        <li>
-          <a href="articles.html">
-            Статьи от Get Skill
-          </a>
-        </li>
-        <li>
-          <a href="article-page.html">
-            Статья
-          </a>
-        </li>
-        <li>
-          <a href="article-page-not-login.html">
-            Статья Без коментов
-          </a>
-        </li>
-        <li>
-          <a href="article-page-login.html">
-            Статья Комент
-          </a>
-        </li>
-        <li>
-          <a href="rulles.html">
-            Правила
-          </a>
-        </li>
-        <li>
-          <a href="contacts.html">
-            Контакты
-          </a>
-        </li>
-        <li>
-          <a href="services.html">
-            Услуги
-          </a>
-        </li>
-        <li>
-          <a href="about-us.html">
-            Про проект
-          </a>
-        </li>
-        <li>
-          <a href="instruction.html">
-            Инструкция
-          </a>
-        </li>
-        <li>
-          <a href="instruction-details.html">
-            Инструкция - пункт
-          </a>
-        </li>
-      </ul>
-    </div>
+    <section class="breadcrumbs">
+      <div class="container">
+        <h2 class="visually-hidden">
+          Постраничная Навигация
+        </h2>
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a href="/">
+              Главная
+            </a>
+          </li>
+          <li>
+            Поиск
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="instruction-details">
+      <div class="instruction-details__inner container">
+        <h2 class="h2 instruction-details__title">
+          Как зарегистрироваться на портале Get Skill?
+        </h2>
+        <article class="instruction-details__text text">
+          <h3>
+            Lorem ipsum
+          </h3>
+          <p>
+            Как оформить виртуальную карту для оплаты тарифов?
+            Статья поможет вам легко оформить виртуальную карту
+            Для чего?
+          </p>
+          <p>
+            Если вы сомневаетесь в вопросе привязки вашей банковской карты к аккаунту Marquiz, то вы можете завести виртуальную карту Яндекс Деньги или QIWI и привязать ее. Пополнять карту можно только на ту сумму, которую планируете затратить за услуги нашего сервиса.
+          </p>
+          <p>
+            Какие бывают карты и как оформить?
+          </p>
+          <p>
+            Какие бывают карты и как оформить?
+          </p>
+          <p>
+            Заходим на основной сайт https://qiwi.com/main и авторизуемся.
+            <br>
+            Выбираем раздел "Банковские карты" .
+            <br>
+            Чуть ниже будет ваша виртуальная карта, от которой вам нужно получить реквизиты, кликнув по кнопке "получить реквизиты".
+          </p>
+          <p>
+            Вам придут первые и последние 4 цифры карты, теперь у вас есть весь номер карты и вы можете ей оплачивать или привязывать её к сервису.
+          </p>
+          <p>
+            Виртуальная карта Яндекс.Денег:
+          </p>
+          <p>
+            Авторизуемся на https://money.yandex.ru/
+            <br>
+            Выбираем "Карты Яндекс Денег".
+          </p>
+          <p>
+            Выбираем "Виртуальная карта" и нажимаем "Подробнее".
+          </p>
+          <p>
+            Далее "Получить карту".
+          </p>
+          <p>
+            Затем подтверждаем в приложении "ЯндексДенег" на телефоне или выбираем "Подтвердить по смс".
+          </p>
+          <p>
+            Вбиваем код и нажимаем "Продолжить".
+          </p>
+          <p>
+            Ваша виртуальная карта готова!
+          </p>
+          <p>
+            На открывшейся странице вы увидите способы пополнения, реквизиты и прочую информацию.
+          </p>
+        </article>
+      </div>
+    </section>
   </main>
   <footer class="site-footer">
     <div class="container site-footer__inner-top">
@@ -549,7 +485,6 @@
     </div>
   </footer>
 </div>
-
 <script src="js/scripts.min.js"></script>
 </body>
 </html>

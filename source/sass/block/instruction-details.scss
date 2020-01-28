@@ -1,0 +1,29 @@
+.instruction-details {
+  margin-bottom: 60px;
+}
+
+.instruction-details__title {
+  margin-bottom: 35px;
+}
+
+@media (min-width: $tablet) {
+  .instruction-details {
+    margin-top: 28px;
+  }
+}
+
+@media (min-width: $tablet-large) {
+  .instruction-details {
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: $tablet-large) {
+  .instruction-details {
+    margin-bottom: 150px;
+  }
+
+  .instruction-details__title {
+    margin-bottom: 59px;
+  }
+}
