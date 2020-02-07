@@ -1,3 +1,5 @@
 (function () {
-  console.log('sayHi no');
+  var lazyLoadInstance = new LazyLoad({
+    elements_selector: ".lazy"
+  });
 })();

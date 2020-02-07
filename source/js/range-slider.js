@@ -6,14 +6,16 @@
     KEY_UP_SLIDER_CODE: 38,
     KEY_DOWN_SLIDER_CODE: 40
   };
+
   var slider = document.querySelector('.slider__progress');
-  var inputMinPrice = document.querySelector('#filter_min_price');
-  var inputMaxPrice = document.querySelector('#filter_max_price');
-  var minValue = parseInt(inputMinPrice.min);
-  var maxValue = parseInt(inputMinPrice.max);
-  var inputs = [inputMinPrice, inputMaxPrice];
 
   if (slider) {
+    var inputMinPrice = document.querySelector('#filter_min_price');
+    var inputMaxPrice = document.querySelector('#filter_max_price');
+    var minValue = parseInt(inputMinPrice.min);
+    var maxValue = parseInt(inputMinPrice.max);
+    var inputs = [inputMinPrice, inputMaxPrice];
+
     noUiSlider.create(slider, {
       start: [minValue, maxValue],
       connect: true,

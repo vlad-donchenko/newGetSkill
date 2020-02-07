@@ -88,7 +88,7 @@
 
   curseGallerySlider.slick({
     dots: false,
-    infinite: false,
+    infinite: true,
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -114,9 +114,9 @@
         }
       },
       {
-        breakpoint: 1919,
+        breakpoint: 1209,
         settings: {
-          infinite: true,
+          infinite: false,
           slidesToShow: 4,
           slidesToScroll: 1,
         }

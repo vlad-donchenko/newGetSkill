@@ -82,7 +82,8 @@
 }
 
 .about-curse__info-value {
-  max-width: 90px;
+  max-width: calc(100% - 135px);
+  padding-left: 10px;
   width: 100%;
   margin: 0;
   font-weight: 500;
@@ -205,7 +206,11 @@
   }
 
   .about-curse__info-label {
-    max-width: 205px;
+    max-width: 140px;
+  }
+
+  .about-curse__info-value {
+    width: calc(100% - 140px);
   }
 
   .about-curse__info-item {
@@ -276,6 +281,18 @@
     align-items: center;
     width: 100%;
     margin-top: 27px;
+  }
+
+  .about-curse__info-item {
+    max-width: 400px;
+  }
+
+  .about-curse__info-label {
+    max-width: 205px;
+  }
+
+  .about-curse__info-value {
+    width: calc(100% - 205px);
   }
 }
 
