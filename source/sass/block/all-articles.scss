@@ -37,6 +37,12 @@
   display: none;
 }
 
+@media (max-width: 767px) {
+  .all-articles {
+    margin-top: 25px;
+  }
+}
+
 @media (min-width: $tablet) {
   .all-articles {
     margin-top: 33px;

@@ -7,6 +7,10 @@
   line-height: 21px;
 }
 
+.label--has-icon {
+  position: relative;
+}
+
 .label--has-icon svg {
   position: absolute;
   right: -22px;

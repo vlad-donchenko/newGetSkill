@@ -26,11 +26,12 @@
   position: absolute;
   left: 0;
   top: 100%;
-  margin-top: 4px;
+  margin-top: 10px;
   width: 280px;
   background-color: $white-color;
   box-shadow: 0 3px 6px rgba($black-clear-color, 0.16);
   border-radius: 0 0 3px 3px;
+  z-index: 11;
 }
 
 .tag-select {
@@ -72,4 +73,21 @@
 .tag-select--open .tag-select__content {
   display: block;
   z-index: 3;
+}
+
+@media (min-width: $tablet-large) {
+  .tag-select__content {
+    left: initial;
+    right: 0;
+    width: 388px;
+  }
+}
+
+@media (min-width: $laptop) {
+  .tag-select__option {
+    &:hover,
+    &:focus {
+      background-color: $gray-standard-color;
+    }
+  }
 }

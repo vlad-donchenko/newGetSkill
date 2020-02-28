@@ -2,7 +2,9 @@
   position: relative;
   height: 84px;
   overflow: hidden;
+}
 
+.seo-text--has-open .seo-text__wrapper {
   &::before {
     content: " ";
     position: absolute;

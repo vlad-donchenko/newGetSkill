@@ -80,6 +80,12 @@
   }
 }
 
+@media (max-width: 767px) {
+  .menu-cabinet {
+    margin-top: 25px;
+  }
+}
+
 @media (min-width: $tablet-large) {
   .menu-cabinet {
     margin-bottom: 30px;

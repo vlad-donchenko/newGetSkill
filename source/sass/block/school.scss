@@ -128,9 +128,6 @@
   display: block;
   height: auto;
   padding: 20px 30px 8px;
-  // > span {
-  //   display: none;
-  // }
   position: fixed;
   left: 0;
   width: 100%;
@@ -247,13 +244,11 @@
   }
 }
 
-@media (max-height: $horizontal-mobile) {
+@media (max-width: $horizontal-mobile) {
   .popup__all-numbers.tabs__item--open,
   .school__about-this-curse.popup--open {
     top: 20px;
     bottom: inherit;
-    max-height: calc(100% - 100px);
-    overflow-y: scroll;
   }
 }
 

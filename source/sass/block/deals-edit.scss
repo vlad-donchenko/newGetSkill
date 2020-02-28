@@ -30,6 +30,7 @@
 .deals-edit__item-input {
   width: 100%;
   height: 22px;
+  font-size: 16px;
   border: none;
   border-bottom: 1px solid $gray-color;
 
@@ -274,7 +275,7 @@
     position: relative;
     padding-right: 37px;
     padding-left: 40px;
-    max-width: calc(100% - 120px);
+    width: calc(100% - 120px);
   }
 
   .deals-edit__edit-list .deals-edit__button-edit {
@@ -295,7 +296,7 @@
   }
 
   .deals-edit__edit-list .deals-edit__item-input {
-    height: 14px;
+    height: 18px;
   }
 
   .deals-edit__edit-list .deals-edit__item {

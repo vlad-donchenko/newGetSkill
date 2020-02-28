@@ -1,5 +1,4 @@
 .services-page {
-  margin-top: 3px;
   margin-bottom: 60px;
 }
 
@@ -23,6 +22,10 @@
     background-image: linear-gradient(180deg, rgba($black-clear-color, 0.3) 0%, rgba($black-clear-color, 0.8) 100%);
     z-index: -1;
   }
+}
+
+.services-page__tariff .tariff__item {
+  cursor: default;
 }
 
 .services-page__promo-title {
@@ -117,6 +120,10 @@
 
   .services-page {
     margin-bottom: 121px;
+  }
+
+  .services-page__tariff .tariff__item {
+    cursor: default;
   }
 }
 

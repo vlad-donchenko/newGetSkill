@@ -103,6 +103,7 @@ gulp.task("js-min", function () {
     "source/libs/slick/slick.js",
     "source/libs/nouslider/nouislider.js",
     "source/libs/lazzyload/lazyload.min.js",
+    "source/libs/jqScrollbar/jquery.mCustomScrollbar.concat.min.js",
     "source/js/*.js"
   ])
     .pipe(concat("scripts.min.js"))

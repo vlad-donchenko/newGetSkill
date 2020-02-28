@@ -78,6 +78,15 @@
 }
 
 @media (max-width: 767px) {
+  .sorting__dropdown {
+    top: initial;
+    right: initial;
+    margin-bottom: 44px;
+    margin-top: 0;
+    bottom: 0;
+    left: 0;
+  }
+
   .sorting__toggle {
     padding: 8px 17px 9px 17px;
     font-weight: 500;
@@ -88,6 +97,18 @@
     &:focus {
       box-shadow: 0 0 0 0.2rem rgba($violet-dark-color, 0.25);
     }
+  }
+
+  .sorting .sorting__selected {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 550px) {
+  .sorting .sorting__selected {
+    max-width: 93px;
+    white-space: nowrap;
+    overflow: hidden;
   }
 }
 

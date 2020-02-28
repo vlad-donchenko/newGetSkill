@@ -3,6 +3,11 @@
   margin-bottom: 60px;
 }
 
+.about-curse__short-info {
+  padding-bottom: 33px;
+  border-bottom: 1px solid $gray-color;
+}
+
 .about-curse__price {
   display: flex;
   align-items: center;
@@ -39,6 +44,7 @@
 
 .price__sum--active-discount .price__sum__discount {
   display: inline-block;
+  right: -40px;
 }
 
 .about-curse__views {
@@ -109,11 +115,6 @@
   white-space: pre-line;
 }
 
-.about-curse__teachers {
-  margin-top: 32px;
-  margin-bottom: 58px;
-}
-
 .about-curse__teachers .h2 {
   margin-bottom: 27px;
 }
@@ -180,10 +181,16 @@
 }
 
 .about-curse__item {
-  margin-top: 60px;
-  padding-top: 33px;
-  border-top: 1px solid $gray-color;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid $gray-color;
+
+  &:last-child {
+    border-bottom: none;
+  }
 }
+
+
 .about-curse__item.curse-gallery-description {
   margin-top: 30px;
   border-top: 0;
@@ -198,10 +205,19 @@
   margin-top: 0;
 }
 
+@media (max-width: 767px) {
+  .about-curse {
+    margin-top: 25px;
+  }
+}
+
 @media (min-width: $tablet) {
   .about-curse__info {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .about-curse__inner {
     margin-top: 30px;
   }
 
@@ -236,6 +252,10 @@
     margin-bottom: 111px;
   }
 
+  .about-curse__inner {
+    margin-top: 0;
+  }
+
   .about-curse__teacher {
     display: flex;
   }
@@ -247,6 +267,7 @@
 
   .about-curse__teacher__img {
     max-width: 315px;
+    width: 100%;
     margin-right: 30px;
   }
 
@@ -271,8 +292,8 @@
     margin-top: 0;
   }
 
-  .about-curse__name h2 {
-    max-width: 500px;
+  .about-curse__name {
+    max-width: 700px;
     width: 100%;
   }
 
@@ -294,9 +315,54 @@
   .about-curse__info-value {
     width: calc(100% - 205px);
   }
+
+  .about-curse__consultation-inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-curse__consultation-main {
+    max-width: 430px;
+    width: 100%;
+    flex-basis: 430px;
+  }
+
+  .about-curse__consultation-item {
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .about-curse__consultation-text {
+    margin-top: 21px;
+    margin-left: auto;
+    max-width: 422px;
+    width: 100%;
+    flex-basis: 422px;
+  }
+
+  .about-curse__item {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 @media (min-width: $laptop) {
+  .about-curse__consultation-text {
+    max-width: 385px;
+    flex-basis: 385px;
+  }
+
+  .about-curse__name {
+    max-width: 600px;
+    width: 100%;
+  }
+
+  .about-curse__consultation-main {
+    max-width: 385px;
+    flex-basis: 385px;
+  }
+
   .about-curse__row {
     display: flex;
     justify-content: space-between;
@@ -316,8 +382,24 @@
     margin-top: 60px;
   }
 }
+
 @media (min-width: $desktop) {
   .about-curse__info-item:nth-child(2n) {
     margin-left: 10%;
+  }
+
+  .about-curse__name {
+    max-width: 685px;
+    width: 100%;
+  }
+
+  .about-curse__consultation-text {
+    max-width: 422px;
+    flex-basis: 422px;
+  }
+
+  .about-curse__consultation-main {
+    max-width: 430px;
+    flex-basis: 430px;
   }
 }

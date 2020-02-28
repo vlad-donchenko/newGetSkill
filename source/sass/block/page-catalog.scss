@@ -3,6 +3,12 @@
   padding-bottom: 59px;
 }
 
+@media (max-width: 767px) {
+  .page-name {
+    margin-top: 25px;
+  }
+}
+
 @media (min-width: $tablet) {
   .page-catalog {
     margin-top: 49px;
@@ -17,6 +23,7 @@
 
   .page-catalog__inner .filter {
     max-width: 270px;
+    width: 100%;
   }
 
   .page-catalog__inner .filter__tags {

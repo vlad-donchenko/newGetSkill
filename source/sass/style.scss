@@ -1,6 +1,7 @@
 @import "global/normalize";
 @import "../libs/slick/slick.scss";
 @import "../libs/nouslider/nouislider";
+@import "../libs/jqScrollbar/jquery.mCustomScrollbar";
 @import "global/fonts.scss";
 @import "global/variables";
 @import "global/mixin";
@@ -107,3 +108,5 @@
 @import "block/about-project";
 @import "block/instruction";
 @import "block/instruction-details";
+@import "block/popup";
+@import "plagins/scroll";

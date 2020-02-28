@@ -33,6 +33,7 @@
 
 .curse__img img {
   width: 100%;
+  max-height: 66px;
 }
 
 .curse__item {
@@ -85,6 +86,11 @@
   padding-right: 35px;
 }
 
+.curse__action .select-standard__list {
+  height: auto;
+  max-height: 200px;
+}
+
 .curse__action .select-standard__title {
   line-height: 33px;
 }
@@ -131,6 +137,11 @@
 
 .curse__teachers--edit .edit-information__name {
   margin-bottom: 30px;
+}
+
+.curse__navigation-right .select-standard__body .select-standard__list {
+  max-height: 175px;
+  height: auto;
 }
 
 @media (min-width: $tablet) {

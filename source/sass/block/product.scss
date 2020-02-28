@@ -129,6 +129,10 @@
 .product__sale {
   margin-left: 5px;
   color: $red-color;
+
+  &::before {
+    content: "-";
+  }
 }
 
 .product__rating {
@@ -181,7 +185,7 @@
 .product__picture {
   position: relative;
   display: flex;
-  height: 250px;
+  height: 210px;
 }
 
 .product__img {

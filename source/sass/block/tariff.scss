@@ -112,6 +112,7 @@
   padding: 18px 20px 18px 20px;
   margin: 0 auto;
   border: 2px solid transparent;
+  cursor: pointer;
 
   &:focus {
     outline: none;
@@ -446,12 +447,14 @@
     margin-right: 30px;
     max-width: 297px;
     width: 100%;
+    transition: transform $animation-time $timing-function;
+    cursor: pointer;
   }
 
   .tariff__plan-input--base:checked ~ .tariff__item--base,
   .tariff__plan-input--premium:checked ~ .tariff__item--premium,
   .tariff__plan-input--standard:checked ~ .tariff__item--standard {
-    transform: scaleY(1.14);
+    transform: scale(1.1);
   }
 
   .tariff__content {

@@ -10,14 +10,23 @@
 
   &:focus {
     outline: none;
-    border-color: $violet-dark-color;
-    box-shadow: 0 0 0 0.2rem rgba($violet-dark-color, 0.25);
+    border-color: $yellow-color;
   }
 }
 
+.select-standard__body .input--search {
+  &:focus {
+    border-color: $yellow-color;
+    box-shadow: none;
+  }
+}
+
+.select-standard__body {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
 .select-standard__toggle:focus .select-standard__arrow {
-  border-color: $violet-dark-color;
-  box-shadow: 0 0 0 0.2rem rgba($violet-dark-color, 0.25);
+  border-color: $yellow-color;
 }
 
 .select-standard__toggle .select-standard__title {
@@ -68,16 +77,19 @@
   top: 100%;
   left: 0;
   width: 100%;
-  max-height: 175px;
   border: 1px solid $gray-color;
   border-top: 0;
   border-radius: 0 0 3px 3px;
   background-color: #fff;
-  overflow-y: scroll;
   z-index: 2;
   .select-standard__list {
+    position: relative;
     list-style: none;
     padding-left: 0;
+    margin-bottom: 7px;
+    margin-top: 55px;
+    height: 175px;
+    overflow-y: auto;
 
     .select-standard__option {
       border: 0;
@@ -95,25 +107,34 @@
   }
 }
 
+.select-standard--without-search .select-standard__list {
+  margin-top: 7px;
+}
+
 .select-standard {
   .search {
+    padding: 10px;
     width: 100%;
     max-width: 100%;
-    padding: 15px 15px 0;
+    position: absolute;
+    left: 0;
+    margin: 0;
     .search__button {
-      padding: 15px 15px 0 0;
+      padding: 0;
+      height: 37px;
+      width: 37px;
+      right: 10px;
+      top: 10px;
     }
     .input--search {
+      top: 0;
       height: 37px;
     }
   }
 }
 
 .select-standard__body.select_list.select_list-for-curse {
-  max-height: inherit;
-  overflow-y: overlay;
   margin-top: 10px;
-  // padding: 10px 0;
   right: 0;
   left: inherit;
   border: 0;
@@ -127,8 +148,17 @@
   }
 
   .select-standard__toggle:focus .select-standard__arrow {
-    border-color: $violet-dark-color;
-    box-shadow: 0 0 0 0.2rem rgba($violet-dark-color, 0.25);
+    border-color: $yellow-color;
+  }
+
+  .select-standard__body .input--search {
+    &:hover {
+      border-color: $black-color;
+    }
+
+    &:focus {
+      border-color: $yellow-color;
+    }
   }
 
   .select-standard__toggle {
@@ -137,8 +167,7 @@
     }
 
     &:focus {
-      border-color: $violet-dark-color;
-      box-shadow: 0 0 0 0.2rem rgba($violet-dark-color, 0.25);
+      border-color: $yellow-color;
     }
   }
 

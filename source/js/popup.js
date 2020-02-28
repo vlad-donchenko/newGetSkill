@@ -1,41 +1,58 @@
 "use strict";
 
 (function() {
-  var reviewsOptionDropdown = document.querySelectorAll(
-    ".reviews__option-dropdown"
-  );
-  var popuBlock = document.querySelector(".popup");
+  var body = document.querySelector('body');
+  var popupButtons = Array.from(document.querySelectorAll('.popup-call'));
 
-  if (reviewsOptionDropdown) {
-    function showModalWin() {
-      var darkLayer = document.getElementById("shadow");
-      darkLayer.style.display = "flex";
-      // darkLayer.id = 'shadow';
-      // document.body.appendChild(darkLayer);
+  if (popupButtons) {
+    var closePopup = function () {
+      var popup = document.querySelector('.popup');
+      popup.classList.remove('popup--open');
+      body.classList.remove('overflow-popup');
+      document.removeEventListener('keydown', closePopupKeyPressHandler);
+      document.removeEventListener('click', closePopupOutsideClickHandler);
+    };
 
-      var modalWin = document.getElementById("popupWin");
-      modalWin.style.display = "block";
+    var openPopup = function (element) {
+      var popup = element;
+      popup.classList.add('popup--open');
+      body.classList.add('overflow-popup');
+      var closeButton = popup.querySelector('.popup__cancel');
+      closeButton.focus();
+      closeButton.addEventListener('click', closePopupClickHandler);
+      document.addEventListener('keydown', closePopupKeyPressHandler);
+      document.addEventListener('click', closePopupOutsideClickHandler);
+    };
 
-      var btnCancel = document.querySelector(
-        ".modalwin__button .button--cancel"
-      );
+    var closePopupClickHandler = function (evt) {
+      evt.preventDefault();
+      closePopup();
+    };
 
-      darkLayer.addEventListener("click", () => {
-        darkLayer.style.display = "none";
-        // darkLayer.parentNode.removeChild(darkLayer);
-        modalWin.style.display = "none";
-        return false;
-      });
-      btnCancel.addEventListener("click", () => {
-        darkLayer.style.display = "none";
-        // darkLayer.parentNode.removeChild(darkLayer);
-        modalWin.style.display = "none";
-        return false;
-      });
-    }
+    var closePopupKeyPressHandler = function (evt) {
+      var isEsc = evt.code === 'Escape' || 'Esc';
 
-    reviewsOptionDropdown.forEach(element => {
-      element.addEventListener("click", showModalWin);
+      if (isEsc) {
+        closePopup();
+      }
+    };
+
+    var closePopupOutsideClickHandler = function (evt) {
+      if (evt.target.classList.contains('popup--open')) {
+        closePopup();
+      }
+    };
+
+    var openPopupClickHandler = function (evt) {
+      evt.preventDefault();
+      var popupName = document.querySelector('#' + evt.target.dataset.popup);
+      openPopup(popupName);
+    };
+
+    popupButtons.forEach(function (popupButton) {
+      console.log(popupButton);
+      popupButton.addEventListener('click', openPopupClickHandler);
     });
   }
+
 })();

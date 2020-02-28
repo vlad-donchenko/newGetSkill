@@ -94,6 +94,12 @@
   }
 }
 
+@media (max-width: 767px) {
+  .instruction {
+    margin-top: 25px;
+  }
+}
+
 @media (min-width: $laptop) {
   .instruction {
     margin-bottom: 140px;

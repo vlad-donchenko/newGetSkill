@@ -736,9 +736,9 @@
                           <span class="reviews__options-circle"></span>
                         </button>
                         <div class="reviews__option-dropdown ">
-                          <span class="reviews__report">
+                          <a href="#" class="reviews__report popup-call" data-popup="report">
                             Пожаловаться
-                          </span>
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -1757,7 +1757,36 @@
       </div>
     </div>
   </div>
-
+<section class="popup" id="report">
+  <div class="popup__content">
+    <h6 class="h6 popup__title">
+      Пожаловаться
+    </h6>
+    <div class="popup__info">
+      <p>
+        Мы рассматриваем только жалобы на отзывы, нарушающие правила сайта в
+        <br>
+        отношении контента. На это может потребоваться время. Не отправляйте
+        <br>
+        жалобу повторно.
+      </p>
+      <p>
+        Отзывы, которые не нарушают правила сайта, удалены не будут
+      </p>
+    </div>
+    <div class="popup__send-control">
+      <button type="button" class="button button--with-icon popup__send">
+        <svg width="24" height="20">
+          <use xlink:href="#icon-telegram-full"></use>
+        </svg>
+        Отправить
+      </button>
+      <button type="button" class="popup__cancel">
+        Отмена
+      </button>
+    </div>
+  </div>
+</section>
 <script src="js/scripts.min.js"></script>
 </body>
 </html>

@@ -120,6 +120,12 @@
   @include headline-h2($white-color);
 }
 
+@media (max-width: 767px) {
+  .registration {
+    margin-top: 25px;
+  }
+}
+
 @media (min-width: $iphone-breakpoint) {
   .registration__info-block {
     padding-top: 63px;
